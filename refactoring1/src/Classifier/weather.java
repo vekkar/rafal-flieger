@@ -7,32 +7,32 @@ public class weather
 	private String humidity;
 	private String wind;
 
-	private void setAura(String aura)
+	public void setAura(String aura)
 	{
 		this.aura = aura;
 	}
 
-	private String getAura()
+	public String getAura()
 	{
 		return aura;
 	}
 
-	private void setTemperature(String temperature)
+	public void setTemperature(String temperature)
 	{
 		this.temperature = temperature;
 	}
 
-	private String getTemperature()
+	public String getTemperature()
 	{
 		return temperature;
 	}
 
-	private void setHumidity(String humidity)
+	public void setHumidity(String humidity)
 	{
 		this.humidity = humidity;
 	}
 
-	private String getHumidity()
+	public String getHumidity()
 	{
 		return humidity;
 	}
