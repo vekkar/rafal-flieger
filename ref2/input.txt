@@ -1,0 +1,2 @@
+temperature=warm,climate=sunny,humidity=big,wind=weak
+climate=cloudy,temperature=moderate,humidity=big,wind=strong
