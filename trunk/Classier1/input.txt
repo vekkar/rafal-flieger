@@ -1,0 +1,3 @@
+sunny,warm,great,frail
+overcast,warm,great,frail
+overcast,warm,great,strong
