@@ -11,9 +11,21 @@ public class Classifier
 	public static void main(String args[])
 	{
 
-		String learningFileName = "learning.txt";
-		String inputFileName = "input.txt";
-		String outputFileName = "output.txt";
+		String learningFileName = "";
+		String inputFileName = "";
+		String outputFileName = "";
+
+		if (args.length != 3)
+		{
+			learningFileName = "learning.txt";
+			inputFileName = "input.txt";
+			outputFileName = "output.txt";
+		} else
+		{
+			learningFileName = args[0];
+			inputFileName = args[1];
+			outputFileName = args[2];
+		}
 
 		File learningFile = new File(learningFileName);
 		File inputFile = new File(inputFileName);
@@ -25,12 +37,11 @@ public class Classifier
 			IFileProcessor processor = new StandardFileProcessor();
 			List<Weather> learningRecords = processor.readFile(learningFile);
 			List<Weather> inputRecords = processor.readFile(inputFile);
-			
+
 			DecisionMaker dm = new DecisionMaker();
 			dm.learn(learningRecords);
-			List<Weather> outputRecords =dm.assignClassToItems(inputRecords);
-			
-			
+			List<Weather> outputRecords = dm.assignClassToItems(inputRecords);
+
 			processor.saveData(outputFile, outputRecords);
 
 		} catch (Exception e)
