@@ -7,8 +7,17 @@ public class Classifier
 	// The weather is great when aura is sunny
 	public static void main(String args[])
 	{
-		String inputFileName = "input.txt";
-		String outputFileName = "output.txt";
+		String inputFileName = "";
+		String outputFileName = "";
+		if (args.length != 2)
+		{
+			inputFileName = "input.txt";
+			outputFileName = "output.txt";
+		} else
+		{
+			inputFileName = args[0];
+			outputFileName = args[1];
+		}
 
 		File inputFile = new File(inputFileName);
 		File outputFile = new File(outputFileName);
