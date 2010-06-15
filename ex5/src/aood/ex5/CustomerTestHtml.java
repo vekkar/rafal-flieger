@@ -40,13 +40,10 @@ public class CustomerTestHtml extends TestCase
 	public void testStatementOneNewReleaseRentalOneDayRented() {
 		customer.addRental(new Rental(new Movie(TITLE_1, Movie.NEW_RELEASE), 1));
 		testStatement(3.0, 1, "<tr><td>" + TITLE_1 +"</td><td>"+ "3.0" +"</td></tr>");
-		//testStatement(3.0, 1, "\t" + TITLE_1 + "\t3.0\n");
 	}
 	
 	public void testStatementOneNewReleaseRentalTwoDaysRented() {
 		customer.addRental(new Rental(new Movie(TITLE_1, Movie.NEW_RELEASE), 2));
-		testStatement(6.0, 1, "<tr><td>" + TITLE_1 +"</td><td>"+ "6.0" +"</td></tr>");
-		//testStatement(6.0, 2, "\t" + TITLE_1 + "\t6.0\n");
 	}
 	
 	public void testStatementTwoRegularAndTwoNewRelease() {
@@ -54,7 +51,7 @@ public class CustomerTestHtml extends TestCase
 		customer.addRental(new Rental(new Movie(TITLE_2, Movie.REGULAR), 4));
 		customer.addRental(new Rental(new Movie(TITLE_3, Movie.NEW_RELEASE), 0));
 		customer.addRental(new Rental(new Movie(TITLE_4, Movie.NEW_RELEASE), 3));
-		testStatement(16.0, 1,  "<tr><td>" + TITLE_1 +"</td><td>"+ "2.0" +"</td></tr>"
+		testStatement(16.0, 5,  "<tr><td>" + TITLE_1 +"</td><td>"+ "2.0" +"</td></tr>"
 								+"<tr><td>" + TITLE_2 +"</td><td>"+ "5.0" +"</td></tr>"
 								+"<tr><td>" + TITLE_3 +"</td><td>"+ "0.0" +"</td></tr>"
 								+"<tr><td>" + TITLE_4 +"</td><td>"+ "9.0" +"</td></tr>");
@@ -65,12 +62,13 @@ public class CustomerTestHtml extends TestCase
 		testStatement(amount, frequent, null);
 	}
 	private void testStatement(double amount, int frequent, String titles) {
-		//String initString="<html><head><title>Rental Record for " + NAME + "</title><body><table><thead><tr><td>Title</td><td>Amount</td></tr></thead>";
-		assertEquals("<html><head><title>Rental Record for " + NAME + "</title><body><table><thead><tr><td>Title</td><td>Amount</td></tr></thead><tbody>"
-			+ ((titles == null) ? "" : titles)
-			+"</tbody>"
-		    	+ "<amount_owed>" + amount + "</amount_owed>"
-			    	+ "<freq_points>" + frequent + "</freq_points>"
-			    	+ "</table></body></html>)", customer.htmlStatement());
+		
+		String testString="<html><head><title>Rental Record for " + NAME + "</title></head><body><table><thead><tr><td>Title</td><td>Amount</td></tr></thead><tbody>"
+									+ ((titles == null) ? "" : titles)
+									+"</tbody>"
+						    	+ "<amount_owed>" + amount + "</amount_owed>"
+							    + "<freq_points>" + frequent + "</freq_points>"
+					    	+ "</table></body></html>";
+		assertEquals(testString, customer.htmlStatement());
 	}
 }

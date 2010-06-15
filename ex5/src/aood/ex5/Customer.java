@@ -117,7 +117,7 @@ public class Customer
 	 */
 	public String htmlStatement()
 	{
-		String result= "<html><head><title>Rental Record for " + getName()+"</title>";
+		String result= "<html><head><title>Rental Record for " + getName()+"</title></head>";
 		result+="<body><table>";
 		
 			result+="<thead><tr><td>Title</td><td>Amount</td></tr></thead><tbody>";
