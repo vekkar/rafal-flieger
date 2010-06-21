@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<logger name="net.sf.ehcache">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.acegisecurity">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.apache">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.hibernate">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.springframework">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.apache.commons.validator.ValidatorResources">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="net.sf.dozer">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.apache.myfaces.shared_impl.renderkit.html">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.appfuse">
+		<level value="WARN" />
+	</logger>
+
+</log4j:configuration>
