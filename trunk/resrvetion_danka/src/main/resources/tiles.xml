@@ -1,0 +1,92 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+	<!-- Sprawdzić jak można importować zewnętrzne pliki z definicjami i rozbić extendy na osobne pliki. -->
+
+	<definition name="tiles.base" template="/tiles/layout.jsp">
+	</definition>
+	
+	<definition name="tiles.index" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/form.jsp"/>
+	</definition>
+
+	<definition name="tiles.hello" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/successLog.jsp"/>
+	</definition>
+	
+	<definition name="tiles.logFail" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/logFail.jsp"/>
+	</definition>
+	
+	<definition name="tiles.fail" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/fail.jsp"/>
+	</definition>
+	
+	<!-- users manager -->
+	
+	<definition name="tiles.userList" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/users/userList.jsp"/>
+	</definition>	
+	<definition name="tiles.addUser" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/users/userAdd.jsp"/>
+	</definition>	
+	<definition name="tiles.updateUser" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/users/updateUser.jsp"/>
+	</definition>
+	<!-- end user manager -->
+	<!-- resource manager -->
+	<definition name="tiles.showResources" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/resources/resourcesList.jsp"/>
+	</definition>
+	<definition name="tiles.rooms" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/resources/rooms.jsp"/>
+	</definition>
+	<definition name="tiles.devices" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/resources/devices.jsp"/>
+	</definition>
+	<definition name="tiles.addRoom" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/resources/addRoom.jsp"/>
+	</definition>
+	<definition name="tiles.successfulAddedRoom" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/resources/successfulAddedResource.jsp"/>
+	</definition>
+	<definition name="tiles.addDevice" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/resources/addDevice.jsp"/>
+	</definition>
+	<definition name="tiles.updateRoom" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/resources/updateRoom.jsp"/>
+	</definition>
+	<definition name="tiles.updateDevice" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/resources/updateDevice.jsp"/>
+	</definition>
+	<!-- end resource manager -->
+	<!-- buildings -->
+	<definition name="tiles.buildings" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/resources/buildings.jsp"/>
+	</definition>
+	<definition name="tiles.addBuilding" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/resources/addBuilding.jsp"/>
+	</definition>
+	<definition name="tiles.updateBuilding" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/resources/updateBuilding.jsp"/>
+	</definition>
+	<!-- end buildings -->
+	<!-- reservation -->
+	<definition name="tiles.reservationList" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/reservations/reservationList.jsp"/>
+	</definition>
+	<definition name="tiles.addRoomReservation" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/reservations/addRoomReservation.jsp"/>
+	</definition>
+	<definition name="tiles.addDeviceReservation" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/reservations/addDeviceReservation.jsp"/>
+	</definition>
+	<!-- end reservation -->
+	
+	<definition name="tiles.logout" extends="tiles.base">
+		<put-attribute name="body" value="/tiles/form.jsp"/>
+	</definition>
+</tiles-definitions>

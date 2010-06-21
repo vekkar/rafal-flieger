@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+body
+{
+	margin-left: auto;
+    margin-right: auto;
+	font-family: Helvetica, Verdana, Tahoma;
+	width: 817px;
+	color:#3A342E;
+}
+
+#navbar
+{
+	background-color: #EFE9DB;
+	height: 100px;
+}
+#navbar a
+{
+	text-decoration: none;
+	color:#3A342E;
+}
+#navbar a:hover
+{
+	text-decoration: underline;
+	color:#B6B3AF;
+}
+a
+{
+	text-decoration: none;
+	color:#54AC98; 
+	margin-right: 15px;
+}
+
+a:hover 
+{
+	text-decoration: underline;
+	color: #B6B3AF;
+}
