@@ -18,8 +18,8 @@ using System.Runtime.Serialization;
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
 
-[assembly: EdmRelationshipAttribute("NorthwindModel", "Orders_FK00", "Customers", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(SdtBusinessApplication.Web.Customers), "Orders", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SdtBusinessApplication.Web.Orders), true)]
-[assembly: EdmRelationshipAttribute("NorthwindModel", "Orders_FK02", "Employees", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SdtBusinessApplication.Web.Employees), "Orders", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SdtBusinessApplication.Web.Orders), true)]
+[assembly: EdmRelationshipAttribute("NorthwindModel", "Orders_FK00", "Customers", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(SdtBusinessApplication.Web.Customer), "Orders", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SdtBusinessApplication.Web.Orders), true)]
+[assembly: EdmRelationshipAttribute("NorthwindModel", "Orders_FK02", "Employees", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(SdtBusinessApplication.Web.Employee), "Orders", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(SdtBusinessApplication.Web.Orders), true)]
 
 #endregion
 
@@ -74,34 +74,34 @@ namespace SdtBusinessApplication.Web
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<Customers> Customers
+        public ObjectSet<Customer> Customers
         {
             get
             {
                 if ((_Customers == null))
                 {
-                    _Customers = base.CreateObjectSet<Customers>("Customers");
+                    _Customers = base.CreateObjectSet<Customer>("Customers");
                 }
                 return _Customers;
             }
         }
-        private ObjectSet<Customers> _Customers;
+        private ObjectSet<Customer> _Customers;
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<Employees> Employees
+        public ObjectSet<Employee> Employees
         {
             get
             {
                 if ((_Employees == null))
                 {
-                    _Employees = base.CreateObjectSet<Employees>("Employees");
+                    _Employees = base.CreateObjectSet<Employee>("Employees");
                 }
                 return _Employees;
             }
         }
-        private ObjectSet<Employees> _Employees;
+        private ObjectSet<Employee> _Employees;
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -125,17 +125,17 @@ namespace SdtBusinessApplication.Web
         /// <summary>
         /// Deprecated Method for adding a new object to the Customers EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
-        public void AddToCustomers(Customers customers)
+        public void AddToCustomers(Customer customer)
         {
-            base.AddObject("Customers", customers);
+            base.AddObject("Customers", customer);
         }
     
         /// <summary>
         /// Deprecated Method for adding a new object to the Employees EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
-        public void AddToEmployees(Employees employees)
+        public void AddToEmployees(Employee employee)
         {
-            base.AddObject("Employees", employees);
+            base.AddObject("Employees", employee);
         }
     
         /// <summary>
@@ -157,24 +157,24 @@ namespace SdtBusinessApplication.Web
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="NorthwindModel", Name="Customers")]
+    [EdmEntityTypeAttribute(NamespaceName="NorthwindModel", Name="Customer")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
-    public partial class Customers : EntityObject
+    public partial class Customer : EntityObject
     {
         #region Factory Method
     
         /// <summary>
-        /// Create a new Customers object.
+        /// Create a new Customer object.
         /// </summary>
         /// <param name="customer_ID">Initial value of the Customer_ID property.</param>
         /// <param name="company_Name">Initial value of the Company_Name property.</param>
-        public static Customers CreateCustomers(global::System.String customer_ID, global::System.String company_Name)
+        public static Customer CreateCustomer(global::System.String customer_ID, global::System.String company_Name)
         {
-            Customers customers = new Customers();
-            customers.Customer_ID = customer_ID;
-            customers.Company_Name = company_Name;
-            return customers;
+            Customer customer = new Customer();
+            customer.Customer_ID = customer_ID;
+            customer.Company_Name = company_Name;
+            return customer;
         }
 
         #endregion
@@ -332,30 +332,6 @@ namespace SdtBusinessApplication.Web
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String Region
-        {
-            get
-            {
-                return _Region;
-            }
-            set
-            {
-                OnRegionChanging(value);
-                ReportPropertyChanging("Region");
-                _Region = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Region");
-                OnRegionChanged();
-            }
-        }
-        private global::System.String _Region;
-        partial void OnRegionChanging(global::System.String value);
-        partial void OnRegionChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
         public global::System.String Postal_Code
         {
             get
@@ -374,78 +350,6 @@ namespace SdtBusinessApplication.Web
         private global::System.String _Postal_Code;
         partial void OnPostal_CodeChanging(global::System.String value);
         partial void OnPostal_CodeChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String Country
-        {
-            get
-            {
-                return _Country;
-            }
-            set
-            {
-                OnCountryChanging(value);
-                ReportPropertyChanging("Country");
-                _Country = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Country");
-                OnCountryChanged();
-            }
-        }
-        private global::System.String _Country;
-        partial void OnCountryChanging(global::System.String value);
-        partial void OnCountryChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String Phone
-        {
-            get
-            {
-                return _Phone;
-            }
-            set
-            {
-                OnPhoneChanging(value);
-                ReportPropertyChanging("Phone");
-                _Phone = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Phone");
-                OnPhoneChanged();
-            }
-        }
-        private global::System.String _Phone;
-        partial void OnPhoneChanging(global::System.String value);
-        partial void OnPhoneChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String Fax
-        {
-            get
-            {
-                return _Fax;
-            }
-            set
-            {
-                OnFaxChanging(value);
-                ReportPropertyChanging("Fax");
-                _Fax = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Fax");
-                OnFaxChanged();
-            }
-        }
-        private global::System.String _Fax;
-        partial void OnFaxChanging(global::System.String value);
-        partial void OnFaxChanged();
 
         #endregion
     
@@ -479,26 +383,26 @@ namespace SdtBusinessApplication.Web
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="NorthwindModel", Name="Employees")]
+    [EdmEntityTypeAttribute(NamespaceName="NorthwindModel", Name="Employee")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
-    public partial class Employees : EntityObject
+    public partial class Employee : EntityObject
     {
         #region Factory Method
     
         /// <summary>
-        /// Create a new Employees object.
+        /// Create a new Employee object.
         /// </summary>
         /// <param name="employee_ID">Initial value of the Employee_ID property.</param>
         /// <param name="last_Name">Initial value of the Last_Name property.</param>
         /// <param name="first_Name">Initial value of the First_Name property.</param>
-        public static Employees CreateEmployees(global::System.Int32 employee_ID, global::System.String last_Name, global::System.String first_Name)
+        public static Employee CreateEmployee(global::System.Int32 employee_ID, global::System.String last_Name, global::System.String first_Name)
         {
-            Employees employees = new Employees();
-            employees.Employee_ID = employee_ID;
-            employees.Last_Name = last_Name;
-            employees.First_Name = first_Name;
-            return employees;
+            Employee employee = new Employee();
+            employee.Employee_ID = employee_ID;
+            employee.Last_Name = last_Name;
+            employee.First_Name = first_Name;
+            return employee;
         }
 
         #endregion
@@ -608,78 +512,6 @@ namespace SdtBusinessApplication.Web
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public Nullable<global::System.DateTime> Birth_Date
-        {
-            get
-            {
-                return _Birth_Date;
-            }
-            set
-            {
-                OnBirth_DateChanging(value);
-                ReportPropertyChanging("Birth_Date");
-                _Birth_Date = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("Birth_Date");
-                OnBirth_DateChanged();
-            }
-        }
-        private Nullable<global::System.DateTime> _Birth_Date;
-        partial void OnBirth_DateChanging(Nullable<global::System.DateTime> value);
-        partial void OnBirth_DateChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.DateTime> Hire_Date
-        {
-            get
-            {
-                return _Hire_Date;
-            }
-            set
-            {
-                OnHire_DateChanging(value);
-                ReportPropertyChanging("Hire_Date");
-                _Hire_Date = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("Hire_Date");
-                OnHire_DateChanged();
-            }
-        }
-        private Nullable<global::System.DateTime> _Hire_Date;
-        partial void OnHire_DateChanging(Nullable<global::System.DateTime> value);
-        partial void OnHire_DateChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String Address
-        {
-            get
-            {
-                return _Address;
-            }
-            set
-            {
-                OnAddressChanging(value);
-                ReportPropertyChanging("Address");
-                _Address = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Address");
-                OnAddressChanged();
-            }
-        }
-        private global::System.String _Address;
-        partial void OnAddressChanging(global::System.String value);
-        partial void OnAddressChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
         public global::System.String City
         {
             get
@@ -704,126 +536,6 @@ namespace SdtBusinessApplication.Web
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String Region
-        {
-            get
-            {
-                return _Region;
-            }
-            set
-            {
-                OnRegionChanging(value);
-                ReportPropertyChanging("Region");
-                _Region = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Region");
-                OnRegionChanged();
-            }
-        }
-        private global::System.String _Region;
-        partial void OnRegionChanging(global::System.String value);
-        partial void OnRegionChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String Postal_Code
-        {
-            get
-            {
-                return _Postal_Code;
-            }
-            set
-            {
-                OnPostal_CodeChanging(value);
-                ReportPropertyChanging("Postal_Code");
-                _Postal_Code = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Postal_Code");
-                OnPostal_CodeChanged();
-            }
-        }
-        private global::System.String _Postal_Code;
-        partial void OnPostal_CodeChanging(global::System.String value);
-        partial void OnPostal_CodeChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String Country
-        {
-            get
-            {
-                return _Country;
-            }
-            set
-            {
-                OnCountryChanging(value);
-                ReportPropertyChanging("Country");
-                _Country = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Country");
-                OnCountryChanged();
-            }
-        }
-        private global::System.String _Country;
-        partial void OnCountryChanging(global::System.String value);
-        partial void OnCountryChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String Home_Phone
-        {
-            get
-            {
-                return _Home_Phone;
-            }
-            set
-            {
-                OnHome_PhoneChanging(value);
-                ReportPropertyChanging("Home_Phone");
-                _Home_Phone = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Home_Phone");
-                OnHome_PhoneChanged();
-            }
-        }
-        private global::System.String _Home_Phone;
-        partial void OnHome_PhoneChanging(global::System.String value);
-        partial void OnHome_PhoneChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String Extension
-        {
-            get
-            {
-                return _Extension;
-            }
-            set
-            {
-                OnExtensionChanging(value);
-                ReportPropertyChanging("Extension");
-                _Extension = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Extension");
-                OnExtensionChanged();
-            }
-        }
-        private global::System.String _Extension;
-        partial void OnExtensionChanging(global::System.String value);
-        partial void OnExtensionChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
         public global::System.Byte[] Photo
         {
             get
@@ -842,54 +554,6 @@ namespace SdtBusinessApplication.Web
         private global::System.Byte[] _Photo;
         partial void OnPhotoChanging(global::System.Byte[] value);
         partial void OnPhotoChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String Notes
-        {
-            get
-            {
-                return _Notes;
-            }
-            set
-            {
-                OnNotesChanging(value);
-                ReportPropertyChanging("Notes");
-                _Notes = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("Notes");
-                OnNotesChanged();
-            }
-        }
-        private global::System.String _Notes;
-        partial void OnNotesChanging(global::System.String value);
-        partial void OnNotesChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.Int32> Reports_To
-        {
-            get
-            {
-                return _Reports_To;
-            }
-            set
-            {
-                OnReports_ToChanging(value);
-                ReportPropertyChanging("Reports_To");
-                _Reports_To = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("Reports_To");
-                OnReports_ToChanged();
-            }
-        }
-        private Nullable<global::System.Int32> _Reports_To;
-        partial void OnReports_ToChanging(Nullable<global::System.Int32> value);
-        partial void OnReports_ToChanged();
 
         #endregion
     
@@ -1296,15 +960,15 @@ namespace SdtBusinessApplication.Web
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("NorthwindModel", "Orders_FK00", "Customers")]
-        public Customers Customers
+        public Customer Customers
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Customers>("NorthwindModel.Orders_FK00", "Customers").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Customer>("NorthwindModel.Orders_FK00", "Customers").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Customers>("NorthwindModel.Orders_FK00", "Customers").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Customer>("NorthwindModel.Orders_FK00", "Customers").Value = value;
             }
         }
         /// <summary>
@@ -1312,17 +976,17 @@ namespace SdtBusinessApplication.Web
         /// </summary>
         [BrowsableAttribute(false)]
         [DataMemberAttribute()]
-        public EntityReference<Customers> CustomersReference
+        public EntityReference<Customer> CustomersReference
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Customers>("NorthwindModel.Orders_FK00", "Customers");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Customer>("NorthwindModel.Orders_FK00", "Customers");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Customers>("NorthwindModel.Orders_FK00", "Customers", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Customer>("NorthwindModel.Orders_FK00", "Customers", value);
                 }
             }
         }
@@ -1334,15 +998,15 @@ namespace SdtBusinessApplication.Web
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("NorthwindModel", "Orders_FK02", "Employees")]
-        public Employees Employees
+        public Employee Employees
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Employees>("NorthwindModel.Orders_FK02", "Employees").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Employee>("NorthwindModel.Orders_FK02", "Employees").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Employees>("NorthwindModel.Orders_FK02", "Employees").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Employee>("NorthwindModel.Orders_FK02", "Employees").Value = value;
             }
         }
         /// <summary>
@@ -1350,17 +1014,17 @@ namespace SdtBusinessApplication.Web
         /// </summary>
         [BrowsableAttribute(false)]
         [DataMemberAttribute()]
-        public EntityReference<Employees> EmployeesReference
+        public EntityReference<Employee> EmployeesReference
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Employees>("NorthwindModel.Orders_FK02", "Employees");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Employee>("NorthwindModel.Orders_FK02", "Employees");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Employees>("NorthwindModel.Orders_FK02", "Employees", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Employee>("NorthwindModel.Orders_FK02", "Employees", value);
                 }
             }
         }

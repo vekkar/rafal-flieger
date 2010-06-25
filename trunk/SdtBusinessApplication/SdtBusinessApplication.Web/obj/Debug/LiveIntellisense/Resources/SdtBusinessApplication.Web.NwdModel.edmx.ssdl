@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NorthwindModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="NorthwindModelStoreContainer">
+    <EntitySet Name="Customers" EntityType="NorthwindModel.Store.Customers" store:Type="Tables" />
+    <EntitySet Name="Employees" EntityType="NorthwindModel.Store.Employees" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="NorthwindModel.Store.Orders" store:Type="Tables" />
+    <AssociationSet Name="Orders_FK00" Association="NorthwindModel.Store.Orders_FK00">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="Orders_FK02" Association="NorthwindModel.Store.Orders_FK02">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="Customer ID" />
+    </Key>
+    <Property Name="Customer ID" Type="nvarchar" Nullable="false" MaxLength="5" />
+    <Property Name="Company Name" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Contact Name" Type="nvarchar" MaxLength="30" />
+    <Property Name="Contact Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Address" Type="nvarchar" MaxLength="60" />
+    <Property Name="City" Type="nvarchar" MaxLength="15" />
+    <Property Name="Region" Type="nvarchar" MaxLength="15" />
+    <Property Name="Postal Code" Type="nvarchar" MaxLength="10" />
+    <Property Name="Country" Type="nvarchar" MaxLength="15" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="24" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="24" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="Employee ID" />
+    </Key>
+    <Property Name="Employee ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Last Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="First Name" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Birth Date" Type="datetime" />
+    <Property Name="Hire Date" Type="datetime" />
+    <Property Name="Address" Type="nvarchar" MaxLength="60" />
+    <Property Name="City" Type="nvarchar" MaxLength="15" />
+    <Property Name="Region" Type="nvarchar" MaxLength="15" />
+    <Property Name="Postal Code" Type="nvarchar" MaxLength="10" />
+    <Property Name="Country" Type="nvarchar" MaxLength="15" />
+    <Property Name="Home Phone" Type="nvarchar" MaxLength="24" />
+    <Property Name="Extension" Type="nvarchar" MaxLength="4" />
+    <Property Name="Photo" Type="image" />
+    <Property Name="Notes" Type="ntext" />
+    <Property Name="Reports To" Type="int" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Order ID" />
+    </Key>
+    <Property Name="Order ID" Type="int" Nullable="false" />
+    <Property Name="Customer ID" Type="nvarchar" Nullable="false" MaxLength="5" />
+    <Property Name="Employee ID" Type="int" />
+    <Property Name="Ship Name" Type="nvarchar" MaxLength="40" />
+    <Property Name="Ship Address" Type="nvarchar" MaxLength="60" />
+    <Property Name="Ship City" Type="nvarchar" MaxLength="15" />
+    <Property Name="Ship Region" Type="nvarchar" MaxLength="15" />
+    <Property Name="Ship Postal Code" Type="nvarchar" MaxLength="10" />
+    <Property Name="Ship Country" Type="nvarchar" MaxLength="15" />
+    <Property Name="Ship Via" Type="int" />
+    <Property Name="Order Date" Type="datetime" />
+    <Property Name="Required Date" Type="datetime" />
+    <Property Name="Shipped Date" Type="datetime" />
+    <Property Name="Freight" Type="money" />
+  </EntityType>
+  <Association Name="Orders_FK00">
+    <End Role="Customers" Type="NorthwindModel.Store.Customers" Multiplicity="1" />
+    <End Role="Orders" Type="NorthwindModel.Store.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="Customer ID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Customer ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Orders_FK02">
+    <End Role="Employees" Type="NorthwindModel.Store.Employees" Multiplicity="0..1" />
+    <End Role="Orders" Type="NorthwindModel.Store.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="Employee ID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Employee ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
