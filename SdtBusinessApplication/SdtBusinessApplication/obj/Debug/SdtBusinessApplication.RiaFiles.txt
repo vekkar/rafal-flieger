@@ -1,2 +1,2 @@
-c:\users\tomasz karowski\documents\visual studio 2010\Projects\SdtBusinessApplication\SdtBusinessApplication\Generated_Code\SdtBusinessApplication.Web.g.cs
-c:\users\tomasz karowski\documents\visual studio 2010\Projects\SdtBusinessApplication\SdtBusinessApplication\Generated_Code\Models\Shared\User.shared.cs
+C:\Users\Tomasz Karowski\Documents\Visual Studio 2010\Projects\code.google\rafal-flieger\SdtBusinessApplication\SdtBusinessApplication\Generated_Code\SdtBusinessApplication.Web.g.cs
+C:\Users\Tomasz Karowski\Documents\Visual Studio 2010\Projects\code.google\rafal-flieger\SdtBusinessApplication\SdtBusinessApplication\Generated_Code\Models\Shared\User.shared.cs
