@@ -26,7 +26,6 @@ namespace SdtBusinessApplication.Web.Services
         // Consider constraining the results of your query method.  If you need additional input you can
         // add parameters to this method or create additional query methods with different names.
         // To support paging you will need to add ordering to the 'Customers' query.
-        [Query(IsDefault = true)]
         public IQueryable<Customer> GetCustomers()
         {
             return this.ObjectContext.Customers;
@@ -62,7 +61,6 @@ namespace SdtBusinessApplication.Web.Services
         // Consider constraining the results of your query method.  If you need additional input you can
         // add parameters to this method or create additional query methods with different names.
         // To support paging you will need to add ordering to the 'Employees' query.
-        [Query(IsDefault = true)]
         public IQueryable<Employee> GetEmployees()
         {
             return this.ObjectContext.Employees;
@@ -98,7 +96,6 @@ namespace SdtBusinessApplication.Web.Services
         // Consider constraining the results of your query method.  If you need additional input you can
         // add parameters to this method or create additional query methods with different names.
         // To support paging you will need to add ordering to the 'Orders' query.
-        [Query(IsDefault = true)]
         public IQueryable<Orders> GetOrders()
         {
             return this.ObjectContext.Orders;
