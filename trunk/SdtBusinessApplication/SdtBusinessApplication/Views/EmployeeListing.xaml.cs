@@ -18,6 +18,7 @@ namespace SdtBusinessApplication.Views
         public EmployeeListing()
         {
             InitializeComponent();
+            this.DataContext = new EmployeeListingVModel();
         }
 
         // Executes when the user navigates to this page.
