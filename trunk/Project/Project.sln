@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project", "Project\Project.csproj", "{72397A0F-D8C0-4B1F-86B9-CFEEB61BCFE2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4DD7B1F8-498C-4D02-BDF0-0CC7A4303332} = {4DD7B1F8-498C-4D02-BDF0-0CC7A4303332}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Web", "Project.Web\Project.Web.csproj", "{4DD7B1F8-498C-4D02-BDF0-0CC7A4303332}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72397A0F-D8C0-4B1F-86B9-CFEEB61BCFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72397A0F-D8C0-4B1F-86B9-CFEEB61BCFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72397A0F-D8C0-4B1F-86B9-CFEEB61BCFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72397A0F-D8C0-4B1F-86B9-CFEEB61BCFE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD7B1F8-498C-4D02-BDF0-0CC7A4303332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD7B1F8-498C-4D02-BDF0-0CC7A4303332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD7B1F8-498C-4D02-BDF0-0CC7A4303332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD7B1F8-498C-4D02-BDF0-0CC7A4303332}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
