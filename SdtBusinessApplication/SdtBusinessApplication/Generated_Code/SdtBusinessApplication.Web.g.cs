@@ -90,6 +90,7 @@ namespace SdtBusinessApplication.Web
     using System.ServiceModel.DomainServices.Client;
     using System.ServiceModel.DomainServices.Client.ApplicationServices;
     using System.ServiceModel.Web;
+    using System.Xml.Serialization;
     using SdtBusinessApplication.Web.Resources;
     
     
@@ -308,6 +309,1071 @@ namespace SdtBusinessApplication.Web
         DuplicateEmail = 7,
         
         Failure = 8,
+    }
+    
+    /// <summary>
+    /// The 'Customer' entity class.
+    /// </summary>
+    [DataContract(Namespace="http://schemas.datacontract.org/2004/07/SdtBusinessApplication.Web")]
+    public sealed partial class Customer : Entity
+    {
+        
+        private string _address;
+        
+        private string _city;
+        
+        private string _company_Name;
+        
+        private string _contact_Name;
+        
+        private string _contact_Title;
+        
+        private string _customer_ID;
+        
+        private EntityCollection<Orders> _orders;
+        
+        private string _postal_Code;
+        
+        #region Extensibility Method Definitions
+
+        /// <summary>
+        /// This method is invoked from the constructor once initialization is complete and
+        /// can be used for further object setup.
+        /// </summary>
+        partial void OnCreated();
+        partial void OnAddressChanging(string value);
+        partial void OnAddressChanged();
+        partial void OnCityChanging(string value);
+        partial void OnCityChanged();
+        partial void OnCompany_NameChanging(string value);
+        partial void OnCompany_NameChanged();
+        partial void OnContact_NameChanging(string value);
+        partial void OnContact_NameChanged();
+        partial void OnContact_TitleChanging(string value);
+        partial void OnContact_TitleChanged();
+        partial void OnCustomer_IDChanging(string value);
+        partial void OnCustomer_IDChanged();
+        partial void OnPostal_CodeChanging(string value);
+        partial void OnPostal_CodeChanged();
+
+        #endregion
+        
+        
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Customer"/> class.
+        /// </summary>
+        public Customer()
+        {
+            this.OnCreated();
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Address' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(60)]
+        public string Address
+        {
+            get
+            {
+                return this._address;
+            }
+            set
+            {
+                if ((this._address != value))
+                {
+                    this.OnAddressChanging(value);
+                    this.RaiseDataMemberChanging("Address");
+                    this.ValidateProperty("Address", value);
+                    this._address = value;
+                    this.RaiseDataMemberChanged("Address");
+                    this.OnAddressChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'City' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(15)]
+        public string City
+        {
+            get
+            {
+                return this._city;
+            }
+            set
+            {
+                if ((this._city != value))
+                {
+                    this.OnCityChanging(value);
+                    this.RaiseDataMemberChanging("City");
+                    this.ValidateProperty("City", value);
+                    this._city = value;
+                    this.RaiseDataMemberChanged("City");
+                    this.OnCityChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Company_Name' value.
+        /// </summary>
+        [DataMember()]
+        [Required()]
+        [StringLength(40)]
+        public string Company_Name
+        {
+            get
+            {
+                return this._company_Name;
+            }
+            set
+            {
+                if ((this._company_Name != value))
+                {
+                    this.OnCompany_NameChanging(value);
+                    this.RaiseDataMemberChanging("Company_Name");
+                    this.ValidateProperty("Company_Name", value);
+                    this._company_Name = value;
+                    this.RaiseDataMemberChanged("Company_Name");
+                    this.OnCompany_NameChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Contact_Name' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(30)]
+        public string Contact_Name
+        {
+            get
+            {
+                return this._contact_Name;
+            }
+            set
+            {
+                if ((this._contact_Name != value))
+                {
+                    this.OnContact_NameChanging(value);
+                    this.RaiseDataMemberChanging("Contact_Name");
+                    this.ValidateProperty("Contact_Name", value);
+                    this._contact_Name = value;
+                    this.RaiseDataMemberChanged("Contact_Name");
+                    this.OnContact_NameChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Contact_Title' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(30)]
+        public string Contact_Title
+        {
+            get
+            {
+                return this._contact_Title;
+            }
+            set
+            {
+                if ((this._contact_Title != value))
+                {
+                    this.OnContact_TitleChanging(value);
+                    this.RaiseDataMemberChanging("Contact_Title");
+                    this.ValidateProperty("Contact_Title", value);
+                    this._contact_Title = value;
+                    this.RaiseDataMemberChanged("Contact_Title");
+                    this.OnContact_TitleChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Customer_ID' value.
+        /// </summary>
+        [DataMember()]
+        [Editable(false, AllowInitialValue=true)]
+        [Key()]
+        [Required()]
+        [RoundtripOriginal()]
+        [StringLength(5)]
+        public string Customer_ID
+        {
+            get
+            {
+                return this._customer_ID;
+            }
+            set
+            {
+                if ((this._customer_ID != value))
+                {
+                    this.OnCustomer_IDChanging(value);
+                    this.ValidateProperty("Customer_ID", value);
+                    this._customer_ID = value;
+                    this.RaisePropertyChanged("Customer_ID");
+                    this.OnCustomer_IDChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets the collection of associated <see cref="Orders"/> entities.
+        /// </summary>
+        [Association("Customer_Orders", "Customer_ID", "Customer_ID")]
+        [XmlIgnore()]
+        public EntityCollection<Orders> Orders
+        {
+            get
+            {
+                if ((this._orders == null))
+                {
+                    this._orders = new EntityCollection<Orders>(this, "Orders", this.FilterOrders, this.AttachOrders, this.DetachOrders);
+                }
+                return this._orders;
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Postal_Code' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(10)]
+        public string Postal_Code
+        {
+            get
+            {
+                return this._postal_Code;
+            }
+            set
+            {
+                if ((this._postal_Code != value))
+                {
+                    this.OnPostal_CodeChanging(value);
+                    this.RaiseDataMemberChanging("Postal_Code");
+                    this.ValidateProperty("Postal_Code", value);
+                    this._postal_Code = value;
+                    this.RaiseDataMemberChanged("Postal_Code");
+                    this.OnPostal_CodeChanged();
+                }
+            }
+        }
+        
+        private void AttachOrders(Orders entity)
+        {
+            entity.Customers = this;
+        }
+        
+        private void DetachOrders(Orders entity)
+        {
+            entity.Customers = null;
+        }
+        
+        private bool FilterOrders(Orders entity)
+        {
+            return (entity.Customer_ID == this.Customer_ID);
+        }
+        
+        /// <summary>
+        /// Computes a value from the key fields that uniquely identifies this entity instance.
+        /// </summary>
+        /// <returns>An object instance that uniquely identifies this entity instance.</returns>
+        public override object GetIdentity()
+        {
+            return this._customer_ID;
+        }
+    }
+    
+    /// <summary>
+    /// The 'Employee' entity class.
+    /// </summary>
+    [DataContract(Namespace="http://schemas.datacontract.org/2004/07/SdtBusinessApplication.Web")]
+    public sealed partial class Employee : Entity
+    {
+        
+        private string _city;
+        
+        private int _employee_ID;
+        
+        private string _first_Name;
+        
+        private string _last_Name;
+        
+        private EntityCollection<Orders> _orders;
+        
+        private byte[] _photo;
+        
+        private string _title;
+        
+        #region Extensibility Method Definitions
+
+        /// <summary>
+        /// This method is invoked from the constructor once initialization is complete and
+        /// can be used for further object setup.
+        /// </summary>
+        partial void OnCreated();
+        partial void OnCityChanging(string value);
+        partial void OnCityChanged();
+        partial void OnEmployee_IDChanging(int value);
+        partial void OnEmployee_IDChanged();
+        partial void OnFirst_NameChanging(string value);
+        partial void OnFirst_NameChanged();
+        partial void OnLast_NameChanging(string value);
+        partial void OnLast_NameChanged();
+        partial void OnPhotoChanging(byte[] value);
+        partial void OnPhotoChanged();
+        partial void OnTitleChanging(string value);
+        partial void OnTitleChanged();
+
+        #endregion
+        
+        
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Employee"/> class.
+        /// </summary>
+        public Employee()
+        {
+            this.OnCreated();
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'City' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(15)]
+        public string City
+        {
+            get
+            {
+                return this._city;
+            }
+            set
+            {
+                if ((this._city != value))
+                {
+                    this.OnCityChanging(value);
+                    this.RaiseDataMemberChanging("City");
+                    this.ValidateProperty("City", value);
+                    this._city = value;
+                    this.RaiseDataMemberChanged("City");
+                    this.OnCityChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Employee_ID' value.
+        /// </summary>
+        [DataMember()]
+        [Editable(false, AllowInitialValue=true)]
+        [Key()]
+        [RoundtripOriginal()]
+        public int Employee_ID
+        {
+            get
+            {
+                return this._employee_ID;
+            }
+            set
+            {
+                if ((this._employee_ID != value))
+                {
+                    this.OnEmployee_IDChanging(value);
+                    this.ValidateProperty("Employee_ID", value);
+                    this._employee_ID = value;
+                    this.RaisePropertyChanged("Employee_ID");
+                    this.OnEmployee_IDChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'First_Name' value.
+        /// </summary>
+        [DataMember()]
+        [Required()]
+        [StringLength(10)]
+        public string First_Name
+        {
+            get
+            {
+                return this._first_Name;
+            }
+            set
+            {
+                if ((this._first_Name != value))
+                {
+                    this.OnFirst_NameChanging(value);
+                    this.RaiseDataMemberChanging("First_Name");
+                    this.ValidateProperty("First_Name", value);
+                    this._first_Name = value;
+                    this.RaiseDataMemberChanged("First_Name");
+                    this.OnFirst_NameChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Last_Name' value.
+        /// </summary>
+        [DataMember()]
+        [Required()]
+        [StringLength(20)]
+        public string Last_Name
+        {
+            get
+            {
+                return this._last_Name;
+            }
+            set
+            {
+                if ((this._last_Name != value))
+                {
+                    this.OnLast_NameChanging(value);
+                    this.RaiseDataMemberChanging("Last_Name");
+                    this.ValidateProperty("Last_Name", value);
+                    this._last_Name = value;
+                    this.RaiseDataMemberChanged("Last_Name");
+                    this.OnLast_NameChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets the collection of associated <see cref="Orders"/> entities.
+        /// </summary>
+        [Association("Employee_Orders", "Employee_ID", "Employee_ID")]
+        [XmlIgnore()]
+        public EntityCollection<Orders> Orders
+        {
+            get
+            {
+                if ((this._orders == null))
+                {
+                    this._orders = new EntityCollection<Orders>(this, "Orders", this.FilterOrders, this.AttachOrders, this.DetachOrders);
+                }
+                return this._orders;
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Photo' value.
+        /// </summary>
+        [DataMember()]
+        public byte[] Photo
+        {
+            get
+            {
+                return this._photo;
+            }
+            set
+            {
+                if ((this._photo != value))
+                {
+                    this.OnPhotoChanging(value);
+                    this.RaiseDataMemberChanging("Photo");
+                    this.ValidateProperty("Photo", value);
+                    this._photo = value;
+                    this.RaiseDataMemberChanged("Photo");
+                    this.OnPhotoChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Title' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(30)]
+        public string Title
+        {
+            get
+            {
+                return this._title;
+            }
+            set
+            {
+                if ((this._title != value))
+                {
+                    this.OnTitleChanging(value);
+                    this.RaiseDataMemberChanging("Title");
+                    this.ValidateProperty("Title", value);
+                    this._title = value;
+                    this.RaiseDataMemberChanged("Title");
+                    this.OnTitleChanged();
+                }
+            }
+        }
+        
+        private void AttachOrders(Orders entity)
+        {
+            entity.Employees = this;
+        }
+        
+        private void DetachOrders(Orders entity)
+        {
+            entity.Employees = null;
+        }
+        
+        private bool FilterOrders(Orders entity)
+        {
+            return (entity.Employee_ID == this.Employee_ID);
+        }
+        
+        /// <summary>
+        /// Computes a value from the key fields that uniquely identifies this entity instance.
+        /// </summary>
+        /// <returns>An object instance that uniquely identifies this entity instance.</returns>
+        public override object GetIdentity()
+        {
+            return this._employee_ID;
+        }
+    }
+    
+    /// <summary>
+    /// The 'Orders' entity class.
+    /// </summary>
+    [DataContract(Namespace="http://schemas.datacontract.org/2004/07/SdtBusinessApplication.Web")]
+    public sealed partial class Orders : Entity
+    {
+        
+        private string _customer_ID;
+        
+        private EntityRef<Customer> _customers;
+        
+        private Nullable<int> _employee_ID;
+        
+        private EntityRef<Employee> _employees;
+        
+        private Nullable<decimal> _freight;
+        
+        private Nullable<DateTime> _order_Date;
+        
+        private int _order_ID;
+        
+        private Nullable<DateTime> _required_Date;
+        
+        private string _ship_Address;
+        
+        private string _ship_City;
+        
+        private string _ship_Country;
+        
+        private string _ship_Name;
+        
+        private string _ship_Postal_Code;
+        
+        private string _ship_Region;
+        
+        private Nullable<int> _ship_Via;
+        
+        private Nullable<DateTime> _shipped_Date;
+        
+        #region Extensibility Method Definitions
+
+        /// <summary>
+        /// This method is invoked from the constructor once initialization is complete and
+        /// can be used for further object setup.
+        /// </summary>
+        partial void OnCreated();
+        partial void OnCustomer_IDChanging(string value);
+        partial void OnCustomer_IDChanged();
+        partial void OnEmployee_IDChanging(Nullable<int> value);
+        partial void OnEmployee_IDChanged();
+        partial void OnFreightChanging(Nullable<decimal> value);
+        partial void OnFreightChanged();
+        partial void OnOrder_DateChanging(Nullable<DateTime> value);
+        partial void OnOrder_DateChanged();
+        partial void OnOrder_IDChanging(int value);
+        partial void OnOrder_IDChanged();
+        partial void OnRequired_DateChanging(Nullable<DateTime> value);
+        partial void OnRequired_DateChanged();
+        partial void OnShip_AddressChanging(string value);
+        partial void OnShip_AddressChanged();
+        partial void OnShip_CityChanging(string value);
+        partial void OnShip_CityChanged();
+        partial void OnShip_CountryChanging(string value);
+        partial void OnShip_CountryChanged();
+        partial void OnShip_NameChanging(string value);
+        partial void OnShip_NameChanged();
+        partial void OnShip_Postal_CodeChanging(string value);
+        partial void OnShip_Postal_CodeChanged();
+        partial void OnShip_RegionChanging(string value);
+        partial void OnShip_RegionChanged();
+        partial void OnShip_ViaChanging(Nullable<int> value);
+        partial void OnShip_ViaChanged();
+        partial void OnShipped_DateChanging(Nullable<DateTime> value);
+        partial void OnShipped_DateChanged();
+
+        #endregion
+        
+        
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Orders"/> class.
+        /// </summary>
+        public Orders()
+        {
+            this.OnCreated();
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Customer_ID' value.
+        /// </summary>
+        [DataMember()]
+        [Required()]
+        [RoundtripOriginal()]
+        [StringLength(5)]
+        public string Customer_ID
+        {
+            get
+            {
+                return this._customer_ID;
+            }
+            set
+            {
+                if ((this._customer_ID != value))
+                {
+                    this.OnCustomer_IDChanging(value);
+                    this.RaiseDataMemberChanging("Customer_ID");
+                    this.ValidateProperty("Customer_ID", value);
+                    this._customer_ID = value;
+                    this.RaiseDataMemberChanged("Customer_ID");
+                    this.OnCustomer_IDChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the associated <see cref="Customer"/> entity.
+        /// </summary>
+        [Association("Customer_Orders", "Customer_ID", "Customer_ID", IsForeignKey=true)]
+        [XmlIgnore()]
+        public Customer Customers
+        {
+            get
+            {
+                if ((this._customers == null))
+                {
+                    this._customers = new EntityRef<Customer>(this, "Customers", this.FilterCustomers);
+                }
+                return this._customers.Entity;
+            }
+            set
+            {
+                Customer previous = this.Customers;
+                if ((previous != value))
+                {
+                    this.ValidateProperty("Customers", value);
+                    if ((previous != null))
+                    {
+                        this._customers.Entity = null;
+                        previous.Orders.Remove(this);
+                    }
+                    if ((value != null))
+                    {
+                        this.Customer_ID = value.Customer_ID;
+                    }
+                    else
+                    {
+                        this.Customer_ID = default(string);
+                    }
+                    this._customers.Entity = value;
+                    if ((value != null))
+                    {
+                        value.Orders.Add(this);
+                    }
+                    this.RaisePropertyChanged("Customers");
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Employee_ID' value.
+        /// </summary>
+        [DataMember()]
+        [RoundtripOriginal()]
+        public Nullable<int> Employee_ID
+        {
+            get
+            {
+                return this._employee_ID;
+            }
+            set
+            {
+                if ((this._employee_ID != value))
+                {
+                    this.OnEmployee_IDChanging(value);
+                    this.RaiseDataMemberChanging("Employee_ID");
+                    this.ValidateProperty("Employee_ID", value);
+                    this._employee_ID = value;
+                    this.RaiseDataMemberChanged("Employee_ID");
+                    this.OnEmployee_IDChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the associated <see cref="Employee"/> entity.
+        /// </summary>
+        [Association("Employee_Orders", "Employee_ID", "Employee_ID", IsForeignKey=true)]
+        [XmlIgnore()]
+        public Employee Employees
+        {
+            get
+            {
+                if ((this._employees == null))
+                {
+                    this._employees = new EntityRef<Employee>(this, "Employees", this.FilterEmployees);
+                }
+                return this._employees.Entity;
+            }
+            set
+            {
+                Employee previous = this.Employees;
+                if ((previous != value))
+                {
+                    this.ValidateProperty("Employees", value);
+                    if ((previous != null))
+                    {
+                        this._employees.Entity = null;
+                        previous.Orders.Remove(this);
+                    }
+                    if ((value != null))
+                    {
+                        this.Employee_ID = value.Employee_ID;
+                    }
+                    else
+                    {
+                        this.Employee_ID = default(Nullable<int>);
+                    }
+                    this._employees.Entity = value;
+                    if ((value != null))
+                    {
+                        value.Orders.Add(this);
+                    }
+                    this.RaisePropertyChanged("Employees");
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Freight' value.
+        /// </summary>
+        [DataMember()]
+        public Nullable<decimal> Freight
+        {
+            get
+            {
+                return this._freight;
+            }
+            set
+            {
+                if ((this._freight != value))
+                {
+                    this.OnFreightChanging(value);
+                    this.RaiseDataMemberChanging("Freight");
+                    this.ValidateProperty("Freight", value);
+                    this._freight = value;
+                    this.RaiseDataMemberChanged("Freight");
+                    this.OnFreightChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Order_Date' value.
+        /// </summary>
+        [DataMember()]
+        public Nullable<DateTime> Order_Date
+        {
+            get
+            {
+                return this._order_Date;
+            }
+            set
+            {
+                if ((this._order_Date != value))
+                {
+                    this.OnOrder_DateChanging(value);
+                    this.RaiseDataMemberChanging("Order_Date");
+                    this.ValidateProperty("Order_Date", value);
+                    this._order_Date = value;
+                    this.RaiseDataMemberChanged("Order_Date");
+                    this.OnOrder_DateChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Order_ID' value.
+        /// </summary>
+        [DataMember()]
+        [Editable(false, AllowInitialValue=true)]
+        [Key()]
+        [RoundtripOriginal()]
+        public int Order_ID
+        {
+            get
+            {
+                return this._order_ID;
+            }
+            set
+            {
+                if ((this._order_ID != value))
+                {
+                    this.OnOrder_IDChanging(value);
+                    this.ValidateProperty("Order_ID", value);
+                    this._order_ID = value;
+                    this.RaisePropertyChanged("Order_ID");
+                    this.OnOrder_IDChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Required_Date' value.
+        /// </summary>
+        [DataMember()]
+        public Nullable<DateTime> Required_Date
+        {
+            get
+            {
+                return this._required_Date;
+            }
+            set
+            {
+                if ((this._required_Date != value))
+                {
+                    this.OnRequired_DateChanging(value);
+                    this.RaiseDataMemberChanging("Required_Date");
+                    this.ValidateProperty("Required_Date", value);
+                    this._required_Date = value;
+                    this.RaiseDataMemberChanged("Required_Date");
+                    this.OnRequired_DateChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Ship_Address' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(60)]
+        public string Ship_Address
+        {
+            get
+            {
+                return this._ship_Address;
+            }
+            set
+            {
+                if ((this._ship_Address != value))
+                {
+                    this.OnShip_AddressChanging(value);
+                    this.RaiseDataMemberChanging("Ship_Address");
+                    this.ValidateProperty("Ship_Address", value);
+                    this._ship_Address = value;
+                    this.RaiseDataMemberChanged("Ship_Address");
+                    this.OnShip_AddressChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Ship_City' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(15)]
+        public string Ship_City
+        {
+            get
+            {
+                return this._ship_City;
+            }
+            set
+            {
+                if ((this._ship_City != value))
+                {
+                    this.OnShip_CityChanging(value);
+                    this.RaiseDataMemberChanging("Ship_City");
+                    this.ValidateProperty("Ship_City", value);
+                    this._ship_City = value;
+                    this.RaiseDataMemberChanged("Ship_City");
+                    this.OnShip_CityChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Ship_Country' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(15)]
+        public string Ship_Country
+        {
+            get
+            {
+                return this._ship_Country;
+            }
+            set
+            {
+                if ((this._ship_Country != value))
+                {
+                    this.OnShip_CountryChanging(value);
+                    this.RaiseDataMemberChanging("Ship_Country");
+                    this.ValidateProperty("Ship_Country", value);
+                    this._ship_Country = value;
+                    this.RaiseDataMemberChanged("Ship_Country");
+                    this.OnShip_CountryChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Ship_Name' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(40)]
+        public string Ship_Name
+        {
+            get
+            {
+                return this._ship_Name;
+            }
+            set
+            {
+                if ((this._ship_Name != value))
+                {
+                    this.OnShip_NameChanging(value);
+                    this.RaiseDataMemberChanging("Ship_Name");
+                    this.ValidateProperty("Ship_Name", value);
+                    this._ship_Name = value;
+                    this.RaiseDataMemberChanged("Ship_Name");
+                    this.OnShip_NameChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Ship_Postal_Code' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(10)]
+        public string Ship_Postal_Code
+        {
+            get
+            {
+                return this._ship_Postal_Code;
+            }
+            set
+            {
+                if ((this._ship_Postal_Code != value))
+                {
+                    this.OnShip_Postal_CodeChanging(value);
+                    this.RaiseDataMemberChanging("Ship_Postal_Code");
+                    this.ValidateProperty("Ship_Postal_Code", value);
+                    this._ship_Postal_Code = value;
+                    this.RaiseDataMemberChanged("Ship_Postal_Code");
+                    this.OnShip_Postal_CodeChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Ship_Region' value.
+        /// </summary>
+        [DataMember()]
+        [StringLength(15)]
+        public string Ship_Region
+        {
+            get
+            {
+                return this._ship_Region;
+            }
+            set
+            {
+                if ((this._ship_Region != value))
+                {
+                    this.OnShip_RegionChanging(value);
+                    this.RaiseDataMemberChanging("Ship_Region");
+                    this.ValidateProperty("Ship_Region", value);
+                    this._ship_Region = value;
+                    this.RaiseDataMemberChanged("Ship_Region");
+                    this.OnShip_RegionChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Ship_Via' value.
+        /// </summary>
+        [DataMember()]
+        public Nullable<int> Ship_Via
+        {
+            get
+            {
+                return this._ship_Via;
+            }
+            set
+            {
+                if ((this._ship_Via != value))
+                {
+                    this.OnShip_ViaChanging(value);
+                    this.RaiseDataMemberChanging("Ship_Via");
+                    this.ValidateProperty("Ship_Via", value);
+                    this._ship_Via = value;
+                    this.RaiseDataMemberChanged("Ship_Via");
+                    this.OnShip_ViaChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Shipped_Date' value.
+        /// </summary>
+        [DataMember()]
+        public Nullable<DateTime> Shipped_Date
+        {
+            get
+            {
+                return this._shipped_Date;
+            }
+            set
+            {
+                if ((this._shipped_Date != value))
+                {
+                    this.OnShipped_DateChanging(value);
+                    this.RaiseDataMemberChanging("Shipped_Date");
+                    this.ValidateProperty("Shipped_Date", value);
+                    this._shipped_Date = value;
+                    this.RaiseDataMemberChanged("Shipped_Date");
+                    this.OnShipped_DateChanged();
+                }
+            }
+        }
+        
+        private bool FilterCustomers(Customer entity)
+        {
+            return (entity.Customer_ID == this.Customer_ID);
+        }
+        
+        private bool FilterEmployees(Employee entity)
+        {
+            return (entity.Employee_ID == this.Employee_ID);
+        }
+        
+        /// <summary>
+        /// Computes a value from the key fields that uniquely identifies this entity instance.
+        /// </summary>
+        /// <returns>An object instance that uniquely identifies this entity instance.</returns>
+        public override object GetIdentity()
+        {
+            return this._order_ID;
+        }
     }
     
     /// <summary>
@@ -863,6 +1929,229 @@ namespace SdtBusinessApplication.Web
             public UserRegistrationContextEntityContainer()
             {
                 this.CreateEntitySet<RegistrationData>(EntitySetOperations.None);
+            }
+        }
+    }
+}
+namespace SdtBusinessApplication.Web.Services
+{
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
+    using System.Linq;
+    using System.ServiceModel;
+    using System.ServiceModel.DomainServices;
+    using System.ServiceModel.DomainServices.Client;
+    using System.ServiceModel.DomainServices.Client.ApplicationServices;
+    using System.ServiceModel.Web;
+    using SdtBusinessApplication.Web;
+    
+    
+    /// <summary>
+    /// The domain context corresponding to the 'NorthwindDomianService' domain service.
+    /// </summary>
+    public sealed partial class NorthwindDomianContext : DomainContext
+    {
+        
+        #region Extensibility Method Definitions
+
+        /// <summary>
+        /// This method is invoked from the constructor once initialization is complete and
+        /// can be used for further object setup.
+        /// </summary>
+        partial void OnCreated();
+
+        #endregion
+        
+        
+        /// <summary>
+        /// Initializes a new instance of the <see cref="NorthwindDomianContext"/> class.
+        /// </summary>
+        public NorthwindDomianContext() : 
+                this(new WebDomainClient<INorthwindDomianServiceContract>(new Uri("SdtBusinessApplication-Web-Services-NorthwindDomianService.svc", UriKind.Relative)))
+        {
+        }
+        
+        /// <summary>
+        /// Initializes a new instance of the <see cref="NorthwindDomianContext"/> class with the specified service URI.
+        /// </summary>
+        /// <param name="serviceUri">The NorthwindDomianService service URI.</param>
+        public NorthwindDomianContext(Uri serviceUri) : 
+                this(new WebDomainClient<INorthwindDomianServiceContract>(serviceUri))
+        {
+        }
+        
+        /// <summary>
+        /// Initializes a new instance of the <see cref="NorthwindDomianContext"/> class with the specified <paramref name="domainClient"/>.
+        /// </summary>
+        /// <param name="domainClient">The DomainClient instance to use for this domain context.</param>
+        public NorthwindDomianContext(DomainClient domainClient) : 
+                base(domainClient)
+        {
+            this.OnCreated();
+        }
+        
+        /// <summary>
+        /// Gets the set of <see cref="Customer"/> entities that have been loaded into this <see cref="NorthwindDomianContext"/> instance.
+        /// </summary>
+        public EntitySet<Customer> Customers
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<Customer>();
+            }
+        }
+        
+        /// <summary>
+        /// Gets the set of <see cref="Employee"/> entities that have been loaded into this <see cref="NorthwindDomianContext"/> instance.
+        /// </summary>
+        public EntitySet<Employee> Employees
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<Employee>();
+            }
+        }
+        
+        /// <summary>
+        /// Gets the set of <see cref="Orders"/> entities that have been loaded into this <see cref="NorthwindDomianContext"/> instance.
+        /// </summary>
+        public EntitySet<Orders> Orders
+        {
+            get
+            {
+                return base.EntityContainer.GetEntitySet<Orders>();
+            }
+        }
+        
+        /// <summary>
+        /// Gets an EntityQuery instance that can be used to load <see cref="Customer"/> entities using the 'GetCustomers' query.
+        /// </summary>
+        /// <returns>An EntityQuery that can be loaded to retrieve <see cref="Customer"/> entities.</returns>
+        public EntityQuery<Customer> GetCustomersQuery()
+        {
+            this.ValidateMethod("GetCustomersQuery", null);
+            return base.CreateQuery<Customer>("GetCustomers", null, false, true);
+        }
+        
+        /// <summary>
+        /// Gets an EntityQuery instance that can be used to load <see cref="Employee"/> entities using the 'GetEmployees' query.
+        /// </summary>
+        /// <returns>An EntityQuery that can be loaded to retrieve <see cref="Employee"/> entities.</returns>
+        public EntityQuery<Employee> GetEmployeesQuery()
+        {
+            this.ValidateMethod("GetEmployeesQuery", null);
+            return base.CreateQuery<Employee>("GetEmployees", null, false, true);
+        }
+        
+        /// <summary>
+        /// Gets an EntityQuery instance that can be used to load <see cref="Orders"/> entities using the 'GetOrders' query.
+        /// </summary>
+        /// <returns>An EntityQuery that can be loaded to retrieve <see cref="Orders"/> entities.</returns>
+        public EntityQuery<Orders> GetOrdersQuery()
+        {
+            this.ValidateMethod("GetOrdersQuery", null);
+            return base.CreateQuery<Orders>("GetOrders", null, false, true);
+        }
+        
+        /// <summary>
+        /// Creates a new entity container for this domain context's entity sets.
+        /// </summary>
+        /// <returns>A new container instance.</returns>
+        protected override EntityContainer CreateEntityContainer()
+        {
+            return new NorthwindDomianContextEntityContainer();
+        }
+        
+        /// <summary>
+        /// Service contract for the 'NorthwindDomianService' domain service.
+        /// </summary>
+        [ServiceContract()]
+        public interface INorthwindDomianServiceContract
+        {
+            
+            /// <summary>
+            /// Asynchronously invokes the 'GetCustomers' operation.
+            /// </summary>
+            /// <param name="callback">Callback to invoke on completion.</param>
+            /// <param name="asyncState">Optional state object.</param>
+            /// <returns>An IAsyncResult that can be used to monitor the request.</returns>
+            [FaultContract(typeof(DomainServiceFault), Action="http://tempuri.org/NorthwindDomianService/GetCustomersDomainServiceFault", Name="DomainServiceFault", Namespace="DomainServices")]
+            [OperationContract(AsyncPattern=true, Action="http://tempuri.org/NorthwindDomianService/GetCustomers", ReplyAction="http://tempuri.org/NorthwindDomianService/GetCustomersResponse")]
+            [WebGet()]
+            IAsyncResult BeginGetCustomers(AsyncCallback callback, object asyncState);
+            
+            /// <summary>
+            /// Completes the asynchronous operation begun by 'BeginGetCustomers'.
+            /// </summary>
+            /// <param name="result">The IAsyncResult returned from 'BeginGetCustomers'.</param>
+            /// <returns>The 'QueryResult' returned from the 'GetCustomers' operation.</returns>
+            QueryResult<Customer> EndGetCustomers(IAsyncResult result);
+            
+            /// <summary>
+            /// Asynchronously invokes the 'GetEmployees' operation.
+            /// </summary>
+            /// <param name="callback">Callback to invoke on completion.</param>
+            /// <param name="asyncState">Optional state object.</param>
+            /// <returns>An IAsyncResult that can be used to monitor the request.</returns>
+            [FaultContract(typeof(DomainServiceFault), Action="http://tempuri.org/NorthwindDomianService/GetEmployeesDomainServiceFault", Name="DomainServiceFault", Namespace="DomainServices")]
+            [OperationContract(AsyncPattern=true, Action="http://tempuri.org/NorthwindDomianService/GetEmployees", ReplyAction="http://tempuri.org/NorthwindDomianService/GetEmployeesResponse")]
+            [WebGet()]
+            IAsyncResult BeginGetEmployees(AsyncCallback callback, object asyncState);
+            
+            /// <summary>
+            /// Completes the asynchronous operation begun by 'BeginGetEmployees'.
+            /// </summary>
+            /// <param name="result">The IAsyncResult returned from 'BeginGetEmployees'.</param>
+            /// <returns>The 'QueryResult' returned from the 'GetEmployees' operation.</returns>
+            QueryResult<Employee> EndGetEmployees(IAsyncResult result);
+            
+            /// <summary>
+            /// Asynchronously invokes the 'GetOrders' operation.
+            /// </summary>
+            /// <param name="callback">Callback to invoke on completion.</param>
+            /// <param name="asyncState">Optional state object.</param>
+            /// <returns>An IAsyncResult that can be used to monitor the request.</returns>
+            [FaultContract(typeof(DomainServiceFault), Action="http://tempuri.org/NorthwindDomianService/GetOrdersDomainServiceFault", Name="DomainServiceFault", Namespace="DomainServices")]
+            [OperationContract(AsyncPattern=true, Action="http://tempuri.org/NorthwindDomianService/GetOrders", ReplyAction="http://tempuri.org/NorthwindDomianService/GetOrdersResponse")]
+            [WebGet()]
+            IAsyncResult BeginGetOrders(AsyncCallback callback, object asyncState);
+            
+            /// <summary>
+            /// Completes the asynchronous operation begun by 'BeginGetOrders'.
+            /// </summary>
+            /// <param name="result">The IAsyncResult returned from 'BeginGetOrders'.</param>
+            /// <returns>The 'QueryResult' returned from the 'GetOrders' operation.</returns>
+            QueryResult<Orders> EndGetOrders(IAsyncResult result);
+            
+            /// <summary>
+            /// Asynchronously invokes the 'SubmitChanges' operation.
+            /// </summary>
+            /// <param name="changeSet">The change-set to submit.</param>
+            /// <param name="callback">Callback to invoke on completion.</param>
+            /// <param name="asyncState">Optional state object.</param>
+            /// <returns>An IAsyncResult that can be used to monitor the request.</returns>
+            [FaultContract(typeof(DomainServiceFault), Action="http://tempuri.org/NorthwindDomianService/SubmitChangesDomainServiceFault", Name="DomainServiceFault", Namespace="DomainServices")]
+            [OperationContract(AsyncPattern=true, Action="http://tempuri.org/NorthwindDomianService/SubmitChanges", ReplyAction="http://tempuri.org/NorthwindDomianService/SubmitChangesResponse")]
+            IAsyncResult BeginSubmitChanges(IEnumerable<ChangeSetEntry> changeSet, AsyncCallback callback, object asyncState);
+            
+            /// <summary>
+            /// Completes the asynchronous operation begun by 'BeginSubmitChanges'.
+            /// </summary>
+            /// <param name="result">The IAsyncResult returned from 'BeginSubmitChanges'.</param>
+            /// <returns>The collection of change-set entry elements returned from 'SubmitChanges'.</returns>
+            IEnumerable<ChangeSetEntry> EndSubmitChanges(IAsyncResult result);
+        }
+        
+        internal sealed class NorthwindDomianContextEntityContainer : EntityContainer
+        {
+            
+            public NorthwindDomianContextEntityContainer()
+            {
+                this.CreateEntitySet<Customer>(EntitySetOperations.All);
+                this.CreateEntitySet<Employee>(EntitySetOperations.All);
+                this.CreateEntitySet<Orders>(EntitySetOperations.All);
             }
         }
     }
