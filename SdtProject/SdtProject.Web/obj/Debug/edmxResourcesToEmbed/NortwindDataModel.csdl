@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NORTHWNDModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="NORTHWNDEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="NORTHWNDModel.Customer" />
+    <EntitySet Name="Employees" EntityType="NORTHWNDModel.Employee" />
+    <EntitySet Name="Orders" EntityType="NORTHWNDModel.Orders" />
+    <AssociationSet Name="FK_Orders_Customers" Association="NORTHWNDModel.FK_Orders_Customers">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employees_Employees" Association="NORTHWNDModel.FK_Employees_Employees">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Employees1" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Employees" Association="NORTHWNDModel.FK_Orders_Employees">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="true" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ContactName" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="ContactTitle" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="Region" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="24" Unicode="true" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="24" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Orders" Relationship="NORTHWNDModel.FK_Orders_Customers" FromRole="Customers" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="TitleOfCourtesy" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="BirthDate" Type="DateTime" />
+    <Property Name="HireDate" Type="DateTime" />
+    <Property Name="Address" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="Region" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="HomePhone" Type="String" MaxLength="24" Unicode="true" FixedLength="false" />
+    <Property Name="Extension" Type="String" MaxLength="4" Unicode="true" FixedLength="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Notes" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ReportsTo" Type="Int32" />
+    <Property Name="PhotoPath" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Employees1" Relationship="NORTHWNDModel.FK_Employees_Employees" FromRole="Employees" ToRole="Employees1" />
+    <NavigationProperty Name="Employees2" Relationship="NORTHWNDModel.FK_Employees_Employees" FromRole="Employees1" ToRole="Employees" />
+    <NavigationProperty Name="Orders" Relationship="NORTHWNDModel.FK_Orders_Employees" FromRole="Employees" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerID" Type="String" MaxLength="5" Unicode="true" FixedLength="true" />
+    <Property Name="EmployeeID" Type="Int32" />
+    <Property Name="OrderDate" Type="DateTime" />
+    <Property Name="RequiredDate" Type="DateTime" />
+    <Property Name="ShippedDate" Type="DateTime" />
+    <Property Name="ShipVia" Type="Int32" />
+    <Property Name="Freight" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ShipName" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ShipAddress" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="ShipCity" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="ShipRegion" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="ShipPostalCode" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="ShipCountry" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Customers" Relationship="NORTHWNDModel.FK_Orders_Customers" FromRole="Orders" ToRole="Customers" />
+    <NavigationProperty Name="Employees" Relationship="NORTHWNDModel.FK_Orders_Employees" FromRole="Orders" ToRole="Employees" />
+  </EntityType>
+  <Association Name="FK_Orders_Customers">
+    <End Role="Customers" Type="NORTHWNDModel.Customer" Multiplicity="0..1" />
+    <End Role="Orders" Type="NORTHWNDModel.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employees_Employees">
+    <End Role="Employees" Type="NORTHWNDModel.Employee" Multiplicity="0..1" />
+    <End Role="Employees1" Type="NORTHWNDModel.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Employees1">
+        <PropertyRef Name="ReportsTo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Employees">
+    <End Role="Employees" Type="NORTHWNDModel.Employee" Multiplicity="0..1" />
+    <End Role="Orders" Type="NORTHWNDModel.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
