@@ -1,0 +1,2 @@
+c:\users\tomasz karowski\documents\visual studio 2010\Projects\SdtProject\SdtProject\Generated_Code\SdtProject.Web.g.cs
+c:\users\tomasz karowski\documents\visual studio 2010\Projects\SdtProject\SdtProject\Generated_Code\Models\Shared\User.shared.cs
