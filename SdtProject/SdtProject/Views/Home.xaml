@@ -7,19 +7,20 @@
   mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480"  
   Style="{StaticResource PageStyle}">
 
-  <Grid x:Name="LayoutRoot">
-    <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}" >
+    <Grid x:Name="LayoutRoot">
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}" >
 
-      <StackPanel x:Name="ContentStackPanel" Style="{StaticResource ContentStackPanelStyle}">
+            <StackPanel x:Name="ContentStackPanel" Style="{StaticResource ContentStackPanelStyle}">
 
-        <TextBlock x:Name="HeaderText" Style="{StaticResource HeaderTextStyle}" 
+                <!--<TextBlock x:Name="HeaderText" Style="{StaticResource HeaderTextStyle}" 
                            Text="{Binding Path=ApplicationStrings.HomePageTitle, Source={StaticResource ResourceWrapper}}"/>
         <TextBlock x:Name="ContentText" Style="{StaticResource ContentTextStyle}" 
-                           Text="Home page content"/>
+                           Text="Home page content"/>-->
+                <Image x:Name="ppLogoBW" Source="..\Views\resources\PP.jpg"></Image>
 
-      </StackPanel>
+            </StackPanel>
 
-    </ScrollViewer>
-  </Grid>
+        </ScrollViewer>
+    </Grid>
 
 </navigation:Page>
