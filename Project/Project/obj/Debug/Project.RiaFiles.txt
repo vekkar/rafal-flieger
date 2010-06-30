@@ -1,2 +1,0 @@
-c:\users\tomasz karowski\documents\visual studio 2010\Projects\Project\Project\Generated_Code\Project.Web.g.cs
-c:\users\tomasz karowski\documents\visual studio 2010\Projects\Project\Project\Generated_Code\Models\Shared\User.shared.cs
