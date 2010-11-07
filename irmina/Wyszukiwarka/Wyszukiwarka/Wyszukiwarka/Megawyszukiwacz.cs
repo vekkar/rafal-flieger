@@ -56,7 +56,8 @@ namespace Wyszukiwarka
 			foreach (var item in this.termy)
 			{
 				int ile = this.IleDokumentowZawiera(item);
-				idfv[item.TermStemming] = ile == 0 ? 0 : Math.Log10(this.dokumenty.Count / ile);
+                idfv[item.TermStemming] = ile == 0 ? 0 :
+                    Math.Log10((double)this.dokumenty.Count / (double)ile);
 			}
 			return idfv;
 		}
