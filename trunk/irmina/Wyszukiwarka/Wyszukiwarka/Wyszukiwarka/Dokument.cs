@@ -8,7 +8,7 @@ namespace Wyszukiwarka
 {
 	public class Dokument
 	{
-		public string NaglowekOryginal { get; set; }
+		public string NaglowekOryginal { get; set; } // teraz bedzie to klasa doka;
 		public string TrescOryginal { get; set; }
 		public string NaglowekStemming { get; set; }
 		public string TrescStemming { get; set; }

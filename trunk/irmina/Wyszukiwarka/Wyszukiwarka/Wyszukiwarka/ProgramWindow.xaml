@@ -60,7 +60,7 @@
             <DockPanel Grid.Row="0" Width="Auto" Height="Auto" LastChildFill="True">
                 <Label Height="27.775" Name="label1" Width="50">Znajdź:</Label>
                 <!--<TextBox Height="23.331" Name="tbZapytanie" Margin="10" BorderThickness="2">Classification, algorithms in   datamining.</TextBox>-->
-                <TextBox Height="23.331" Name="tbZapytanie" Margin="10" BorderThickness="2" KeyUp="tbZapytanie_KeyUp">information retrieval</TextBox>
+                <TextBox Height="23.331" Name="tbZapytanie" Margin="10" BorderThickness="2" KeyUp="tbZapytanie_KeyUp">anaconda animal</TextBox>
             </DockPanel>
                 <Grid Grid.Row="1">
                 <Grid.RowDefinitions>
@@ -75,7 +75,7 @@
                     <Button Grid.Column="0" Height="23.331" Name="btSzukaj" Width="100" Click="btSzukaj_Click" IsEnabled="False">Szukaj</Button>
                     <Expander ExpandDirection="Right" Grid.Column="1" Grid.ColumnSpan="3" >
                         <StackPanel Orientation="Horizontal">
-                           <Button Height="20" Margin="10 0 5 0" Name="btSzukaj2" Width="100" Click="btSzukaj2_Click" IsEnabled="True" >Szukaj 500</Button>
+                           <Button Height="20" Margin="10 0 5 0" Name="btSzukaj2" Width="100" Click="btSzukaj2_Click" IsEnabled="False" >Szukaj 500</Button>
                             <TextBlock Text="liczba dodatkowych termów :" Margin="2"/>
                             <TextBox Name="number_of_terms_Tblock" Height="21" Width="30" Margin="3 2 0 2">2</TextBox>
                             <TextBlock Text="waga termów :" Margin="2"/>
