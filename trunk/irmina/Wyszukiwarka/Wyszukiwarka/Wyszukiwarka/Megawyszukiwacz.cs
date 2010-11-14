@@ -21,56 +21,88 @@ namespace Wyszukiwarka
 			this.termy = termy.Distinct(Term.EqComparer).ToList();
 		}
 
-		/// <summary>
-		/// Robi wszystko co potrzeba żeby przyporządkować miary prawdopodobieństwa do dokumentów
-		/// </summary>
-		/// <param name="zapytanie">Zapytanie usera</param>
+        /// <summary>
+        /// Robi wszystko co potrzeba żeby przyporządkować miary prawdopodobieństwa do dokumentów
+        /// </summary>
+        private void DoStaff(Term[] termyZapytania, ProgressBar progBar)
+        {
+
+            // zapytanie traktujemy jak dokument
+            Dokument zapDok = new Dokument
+            {
+                Termy = termyZapytania.ToList()
+            };
+            zapDok.WypelnijWektory(this.termy, this.LiczIDF());
+
+            for (int i = 0; i < this.dokumenty.Count && this.dokumenty.Count > 0; i++)
+            {
+                progBar.Dispatcher.Invoke(DispatcherPriority.Render, new ThreadStart(delegate
+                {
+                    progBar.Value = ((i + 1) * 100) / this.dokumenty.Count;
+                    progBar.InvalidateVisual();
+                    progBar.UpdateLayout();
+                }));
+                this.dokumenty[i].WypelnijWektory(this.termy, zapDok, this.LiczIDF());
+            }
+            progBar.Value = 0;
+        }
+
+		
 		public void DajCzadu(string zapytanie, ProgressBar progBar)
 		{
 			progBar.Value = 0;
 			Term[] termyZapytania = PrzerobNaTermy(zapytanie);
 
-			// zapytanie traktujemy jak dokument
-			Dokument zapDok = new Dokument
-			{
-				Termy = termyZapytania.ToList()
-			};
-			zapDok.WypelnijWektory(this.termy, this.LiczIDF());
-
-			for (int i = 0; i < this.dokumenty.Count && this.dokumenty.Count > 0; i++)
-			{
-				progBar.Dispatcher.Invoke(DispatcherPriority.Render, new ThreadStart(delegate
-				{
-					progBar.Value = ((i + 1) * 100) / this.dokumenty.Count;
-					progBar.InvalidateVisual();
-					progBar.UpdateLayout();
-				}));
-				this.dokumenty[i].WypelnijWektory(this.termy, zapDok, this.LiczIDF());
-			}
-			progBar.Value = 0;
+            this.DoStaff(termyZapytania, progBar);
+			
 		}
 
-        public void DajCzadu500(string zapytanie, ProgressBar progBar)
+        public void DajCzadu500(string zapytanie, ProgressBar progBar, int numbeOfAddTerms, double termCoefficent)
         {
             progBar.Value = 0;
-            Term[] termyZapytania = PrzerobNaTermy(zapytanie);
-            this.BuildMeMatrix();
-        
+            Term[] previousZapytanie = PrzerobNaTermy(zapytanie);
+            List<Term> newZaptanie = previousZapytanie.ToList<Term>();
+            Dictionary<Term , List<CorelatedTerm>> corTerms= this.BuildMeMatrix();
+
+            foreach (Term questione in previousZapytanie)
+            {
+                Term additionalTerm;
+                //Term extra = corTerms[questione].First(); // ale urwał!!! ale nie sprawdziłem czy tak moze być a teraz już tak zostanie na zawsze:)!!!
+                List<CorelatedTerm> corelated = corTerms.First(x => x.Key.TermStemming == questione.TermStemming).Value.ToList();  // ale urwał 5000!!!!
+                do
+                {
+                    additionalTerm = corelated.First(); 
+                    corelated.Remove(additionalTerm as CorelatedTerm);
+                } while (additionalTerm != null && additionalTerm.TermStemming.Equals(questione.TermStemming));
+
+                additionalTerm.TermCoefficent = termCoefficent; // wstaw wagę!!!
+                newZaptanie.Add(additionalTerm);
+                
+                numbeOfAddTerms--;
+                if (numbeOfAddTerms == 0) break;
+            }
+
+            this.DoStaff(newZaptanie.Distinct().ToArray(),progBar);
         }
 
-        private class CorelatedTern : Term
+        private class CorelatedTerm : Term
         {
             public double Value{get; set;}
-
+            public CorelatedTerm(Term term)
+            {
+                this.TermOryginal = term.TermOryginal;
+                this.TermStemming = term.TermStemming;
+            }
         }
 
-        private void BuildMeMatrix()
+        private Dictionary<Term, List<CorelatedTerm>> BuildMeMatrix()
         {
             double[,] matrix = new double[this.termy.Count , this.dokumenty.Count];
             double[,] matrixT = new double[dokumenty.Count, termy.Count];
             double[,] matrixRet = new double[termy.Count, termy.Count];
+            
 
-            Dictionary<Term, List<Term>> corelMatrix = new Dictionary<Term, List<Term >>();
+            Dictionary<Term, List<CorelatedTerm>> corelMatrix = new Dictionary<Term, List<CorelatedTerm>>();
 
             //make sure that terms sorted;
             this.termy.Sort((x, y) => x.TermOryginal.CompareTo(y.TermOryginal));
@@ -96,13 +128,15 @@ namespace Wyszukiwarka
 
             for (int k = 0; k < termy.Count; k++)
             {
-             corelMatrix.Add(termy[k],new List<Term>());
+             corelMatrix.Add(termy[k],new List<CorelatedTerm>());
                 for (int w = 0; w < termy.Count; w++)
                 {
-                    matrixRet.
+                    corelMatrix[termy[k]].Add(new CorelatedTerm(termy[w]){Value=matrixRet[k,w]});
                 }
+                corelMatrix[termy[k]].Sort((x, y) => y.Value.CompareTo(x.Value));
             }
-        
+
+            return corelMatrix;
         }
 
         private void Normalize(double[,] matrix)
@@ -127,9 +161,6 @@ namespace Wyszukiwarka
 
         private void MultMatrix(double[,] matrix1, double[,] matrix2, double[,] matrixRet)
         {
-            //int x = matrix1.Length;
-            //int y = matrix2.Length;
-
             int x = this.termy.Count;
             int y = this.dokumenty.Count;
             

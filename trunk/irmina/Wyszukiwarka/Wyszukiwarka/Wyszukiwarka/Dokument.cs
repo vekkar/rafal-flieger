@@ -28,7 +28,7 @@ namespace Wyszukiwarka
 		/// <summary>
 		/// Wektor dla reprezentacji bag of words
 		/// </summary>
-		public Dictionary<string, int> BagOfWordsVect { get; set; }
+		public Dictionary<string, double> BagOfWordsVect { get; set; }
 
 		/// <summary>
 		/// Wektor dla reprezentacji Term Frequency
@@ -55,14 +55,14 @@ namespace Wyszukiwarka
 			// sortujemy
 			this.Termy.Sort((x, y) => x.TermStemming.CompareTo(y.TermStemming));
 
-			this.BagOfWordsVect = new Dictionary<string, int>();
+			this.BagOfWordsVect = new Dictionary<string, double>();
 			this.TermFrequencyVect = new Dictionary<string, double>();
 			this.TFIDFVect = new Dictionary<string, double>();
 
 			// Bag of words
 			foreach (Term t in wszystkieTermy)
 			{
-				this.BagOfWordsVect[t.TermStemming] = this.IleWZapytaniu(t);
+                this.BagOfWordsVect[t.TermStemming] = t.TermCoefficent * (double)this.IleWZapytaniu(t);
 			}
 
 			// TF
@@ -117,7 +117,7 @@ namespace Wyszukiwarka
 		/// <summary>
 		/// Liczy wektor TF na podstawie podanego bagofwords
 		/// </summary>
-		private Dictionary<string, double> LiczTFzBOW(Dictionary<string, int> bow)
+		private Dictionary<string, double> LiczTFzBOW(Dictionary<string, double> bow)
 		{
 			Dictionary<string, double> tfv = new Dictionary<string, double>();
 			double maks = 0;

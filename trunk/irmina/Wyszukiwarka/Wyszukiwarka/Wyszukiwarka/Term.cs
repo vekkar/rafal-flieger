@@ -30,8 +30,14 @@ namespace Wyszukiwarka
 			}
 		}
 
-		public string TermOryginal { get; set; }
+        public Term()
+        {
+            this.TermCoefficent = 1;
+        }
+        
+        public string TermOryginal { get; set; }
 		public string TermStemming { get; set; }
+        public double TermCoefficent { get; set; }
 		public static IEqualityComparer<Term> EqComparer = new TermEqComparer();
 	}
 }
