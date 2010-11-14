@@ -145,7 +145,7 @@ namespace Wyszukiwarka
 		/// <summary>
 		/// Zwraca liczbę wystąpień terma w tym dokumencie
 		/// </summary>
-		public int IleWZapytaniu(Term term)
+		private int IleWZapytaniu(Term term)
 		{
 			// można by zoptymalizować korzystając z tego że termy są posortowane ale mi się nie chce ;)
 			int ile = 0;

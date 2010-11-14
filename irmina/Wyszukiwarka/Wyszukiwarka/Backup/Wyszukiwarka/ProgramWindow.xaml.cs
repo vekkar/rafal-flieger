@@ -120,14 +120,6 @@ namespace Wyszukiwarka
 				this.btSzukaj_Click(sender, e);
 			}
 		}
-
-        private void btSzukaj2_Click(object sender, RoutedEventArgs e)
-        {
-            Megawyszukiwacz mw = new Megawyszukiwacz(ref this.dokSource.Dokumenty, this.dokSource.Termy);
-            mw.DajCzadu500(this.tbZapytanie.Text, this.progressBar);
-            this.lbWyniki.ItemsSource = this.dokSource.SortDokumentList();
-            this.lbWyniki.Items.Refresh();
-        }
 	}
 }
 

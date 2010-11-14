@@ -62,10 +62,7 @@
                 <!--<TextBox Height="23.331" Name="tbZapytanie" Margin="10" BorderThickness="2">Classification, algorithms in   datamining.</TextBox>-->
                 <TextBox Height="23.331" Name="tbZapytanie" Margin="10" BorderThickness="2" KeyUp="tbZapytanie_KeyUp">information retrieval</TextBox>
             </DockPanel>
-            <StackPanel Grid.Row="1" Orientation="Horizontal">
-                <Button Height="23.331" Name="btSzukaj" Width="100" Click="btSzukaj_Click" IsEnabled="False">Szukaj</Button>
-                <Button Height="23.331" Name="btSzukaj2" Width="100" Click="btSzukaj2_Click" IsEnabled="True">Szukaj500</Button>
-            </StackPanel>
+            <Button Grid.Row="1" Height="23.331" Name="btSzukaj" Width="100" Click="btSzukaj_Click" IsEnabled="False">Szukaj</Button>
         </Grid>
 
         <StackPanel Grid.Row="2" Background="WhiteSmoke"/>
