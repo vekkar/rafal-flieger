@@ -13,7 +13,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="22" />
-            <RowDefinition Height="70" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="10" />
             <RowDefinition Height="2" />
             <RowDefinition Height="*" />
@@ -62,10 +62,27 @@
                 <!--<TextBox Height="23.331" Name="tbZapytanie" Margin="10" BorderThickness="2">Classification, algorithms in   datamining.</TextBox>-->
                 <TextBox Height="23.331" Name="tbZapytanie" Margin="10" BorderThickness="2" KeyUp="tbZapytanie_KeyUp">information retrieval</TextBox>
             </DockPanel>
-            <StackPanel Grid.Row="1" Orientation="Horizontal">
-                <Button Height="23.331" Name="btSzukaj" Width="100" Click="btSzukaj_Click" IsEnabled="False">Szukaj</Button>
-                <Button Height="23.331" Name="btSzukaj2" Width="100" Click="btSzukaj2_Click" IsEnabled="True">Szukaj500</Button>
-            </StackPanel>
+                <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Height="23.331" Name="btSzukaj" Width="100" Click="btSzukaj_Click" IsEnabled="False">Szukaj</Button>
+                    <Expander ExpandDirection="Right" Grid.Column="1" Grid.ColumnSpan="3" >
+                        <StackPanel Orientation="Horizontal">
+                           <Button Height="20" Margin="10 0 5 0" Name="btSzukaj2" Width="100" Click="btSzukaj2_Click" IsEnabled="True" >Szukaj 500</Button>
+                            <TextBlock Text="liczba dodatkowych termów :" Margin="2"/>
+                            <TextBox Name="number_of_terms_Tblock" Height="21" Width="30" Margin="3 2 0 2">2</TextBox>
+                            <TextBlock Text="waga termów :" Margin="2"/>
+                            <TextBox Name="termCoefficent_Tblock" Height="21" Width="50" Margin="3 2 0 2">0,50</TextBox>
+                    </StackPanel>
+                     </Expander>
+                 </Grid>
         </Grid>
 
         <StackPanel Grid.Row="2" Background="WhiteSmoke"/>
