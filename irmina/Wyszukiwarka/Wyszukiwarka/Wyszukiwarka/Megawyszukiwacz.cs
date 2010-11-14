@@ -68,7 +68,11 @@ namespace Wyszukiwarka
             {
                 Term additionalTerm;
                 //Term extra = corTerms[questione].First(); // ale urwał!!! ale nie sprawdziłem czy tak moze być a teraz już tak zostanie na zawsze:)!!!
-                List<CorelatedTerm> corelated = corTerms.First(x => x.Key.TermStemming == questione.TermStemming).Value.ToList();  // ale urwał 5000!!!!
+                List<CorelatedTerm> corelated=null;
+                var xxx = corTerms.FirstOrDefault(x => x.Key.TermStemming == questione.TermStemming); // ale urwal 500!!!
+                if (xxx.Value == null)
+                    continue;
+                corelated = xxx.Value.ToList();  // ale urwał 5000!!!!
                 do
                 {
                     additionalTerm = corelated.First(); 

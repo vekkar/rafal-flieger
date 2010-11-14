@@ -32,7 +32,7 @@ namespace Wyszukiwarka
 					{
 						documents = tr.ReadToEnd();
 					}
-					string[] tmpDocs = documents.Split(new string[] { "\n\n" }, StringSplitOptions.RemoveEmptyEntries);
+					string[] tmpDocs = documents.Split(new string[] { "\r\n\r\n" }, StringSplitOptions.RemoveEmptyEntries);
 					if (tmpDocs != null && tmpDocs.Length > 0)
 					{
 						this.Dokumenty = new List<Dokument>();
@@ -52,22 +52,23 @@ namespace Wyszukiwarka
 								string naglStem = Regex.Replace(newDoc.NaglowekOryginal, "(\\p{P})", string.Empty).ToLower();
 								string trescStem = Regex.Replace(newDoc.TrescOryginal, "(\\p{P})", string.Empty).ToLower().Replace('\n', ' ');
 
-								// używamy algorytmu Portera dla nagłówka
-								string[] splitted = naglStem.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
-								naglStem = string.Empty;
-								foreach (string s in splitted)
-								{
-									string st = ps.stemTerm(s.Trim());
-									naglStem += st + " ";
-									newDoc.Termy.Add(new Term
-									{
-										TermStemming = st
-									});
-								}
-								naglStem = naglStem.Substring(0, naglStem.Length - 1);
+								///teraz nagłówek jest klasą i nie jest używany
+                                // używamy algorytmu Portera dla nagłówka
+                                //string[] splitted = naglStem.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+                                //naglStem = string.Empty;
+                                //foreach (string s in splitted)
+                                //{
+                                //    string st = ps.stemTerm(s.Trim());
+                                //    naglStem += st + " ";
+                                //    newDoc.Termy.Add(new Term
+                                //    {
+                                //        TermStemming = st
+                                //    });
+                                //}
+                                //naglStem = naglStem.Substring(0, naglStem.Length - 1);
 
 								// używamy algorytmu Portera dla treści
-								splitted = trescStem.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+								string[] splitted = trescStem.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
 								trescStem = string.Empty;
 								foreach (string s in splitted)
 								{

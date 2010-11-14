@@ -78,16 +78,19 @@ namespace Wyszukiwarka
 					if (this.dokSource.Dokumenty != null && this.dokSource.Dokumenty.Count > 0)
 					{
 						this.btSzukaj.IsEnabled = true;
+                        this.btSzukaj2.IsEnabled = true;
 					}
 					else
 					{
 						this.btSzukaj.IsEnabled = false;
+                        this.btSzukaj2.IsEnabled = false;
 					}
 				}
 				else
 				{
 					this.miWidokTer.IsEnabled = false;
 					this.btSzukaj.IsEnabled = false;
+                    this.btSzukaj2.IsEnabled = false;
 				}
 			}
 		}
