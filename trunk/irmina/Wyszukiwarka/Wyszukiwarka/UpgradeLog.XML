@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Wyszukiwarka">
+</Property><Property Name="Solution File" Value="D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Wyszukiwarka.sln">
+</Property><Property Name="User Options File" Value="D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Wyszukiwarka.suo">
+</Property><Property Name="Date" Value="7 listopada 2010">
+</Property><Property Name="Time" Value="17:43">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Wyszukiwarka.sln" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Wyszukiwarka.suo" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka.suo">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\Wyszukiwarka.csproj" Description="Project file successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\Wyszukiwarka.csproj">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\App.xaml.cs" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\ProgramWindow.xaml.cs" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\ProgramWindow.xaml.cs">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\Megawyszukiwacz.cs" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\Megawyszukiwacz.cs">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\TermyWindow.xaml.cs" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\TermyWindow.xaml.cs">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\DokumentWindow.xaml.cs" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\DokumentWindow.xaml.cs">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\Dokument.cs" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\Dokument.cs">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\DokumentSource.cs" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\DokumentSource.cs">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\PorterStemmer.cs" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\PorterStemmer.cs">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\Properties\Resources.Designer.cs" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\Properties\Settings.Designer.cs" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\Term.cs" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\Term.cs">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\Properties\Settings.settings" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\Properties\Resources.resx" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\App.xaml" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\App.xaml">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\TermyWindow.xaml" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\TermyWindow.xaml">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\DokumentWindow.xaml" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\DokumentWindow.xaml">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\styles.xaml" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\styles.xaml">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\ProgramWindow.xaml" Description="File successfully backed up as D:\My Dropbox\PP\google.repo\irmina\Wyszukiwarka\Wyszukiwarka\Backup\Wyszukiwarka\ProgramWindow.xaml">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\Wyszukiwarka.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Wyszukiwarka" Source="Wyszukiwarka\Wyszukiwarka.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Wyszukiwarka.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Wyszukiwarka.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Wyszukiwarka" Source="Wyszukiwarka\Wyszukiwarka.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
