@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<showroom>
+
+    <settings
+         thumbBgColor = "1b1b1b"
+		 thumbBgAlpha = "0.5"
+		 
+		 mainBgColor = "1b1b1b" 
+		 mainBgAlpha = "0.5"
+		 
+		 categoryDimBgColor = "1b1b1b" 
+		 categoryDimBgAlpha = "0.8"	
+		 categoryTxtBgColor = "1b1b1b" 
+		 categoryTxtBgAlpha = "0.7"	
+		 categoryTxtColor = "FFFFFF"
+		 
+		 preloaderColor = "CCFF00"
+		 preloaderAlpha = "0.3"	
+		 
+		 controlsIconColor = "FFFFFF"
+		 controlsIconAlpha = "1"
+		 controlsBgColor = "1B1B1B"
+		 controlsBgOverColor = "CCFF00"
+		 controlsBgAlpha = ".5"
+		 
+		 scrollBtnOverColor = "CCFF00"
+		 scrollBtnOverAlpha = ".5"
+		 scrollBtnColor = "FFFFFF"
+		 scrollBtnAlpha = ".5"
+		 scrollBarColor = "FFFFFF"
+		 scrollBarAlpha = ".5"
+		 
+		 youTubeVideoAspectQuality = "hd720"
+		 videoVolume=".5"
+		 videoBufferTime = "5"
+		 youTubeVideoAspectRatio = "5:3"
+		 videoControlsLoadBarColor = "CCFF00"
+		 videoControlsLoadBarAlpha = ".2"
+		 videoControlsProgressBarColor = "CCFF00"
+		 videoControlsProgressBarAlpha = ".8"
+		 volumeSlideBarColor = "CCFF00"
+		 volumeSlideBarAlpha = ".2"
+		 volumeTooltipColor = "CCFF00"
+		 volumeTooltipAlpha = ".5"
+		 
+    />
+	
+	<!-- content type for large item can be: "image", "video", "youtube" or "swf" -->
+	
+<!--
+
+Start category
+
+-->
+<category title="FASHION" catThumbnail="images/mediaGallery/catThumbnails/1.jpg" smallThumbnailsWidth = "" smallThumbnailsHeight = "200">
+    <item>
+	  <thumbnail width="313">images/mediaGallery/thumbnails/1.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/1.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="296">images/mediaGallery/thumbnails/2.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/2.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">MUSIC TO MY HEARS</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="296">images/mediaGallery/thumbnails/3.jpg</thumbnail>
+	  <large type="swf">images/mediaGallery/swf.swf</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	    <item>
+	  <thumbnail width="200">images/mediaGallery/thumbnails/4.jpg</thumbnail>
+	  <large type="image" videoHeight="400">images/mediaGallery/4.jpg</large>
+      <text><![CDATA[]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="313">images/mediaGallery/thumbnails/5.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/5.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="296">images/mediaGallery/thumbnails/6.jpg</thumbnail>
+	  <large type="image" videoHeight="350">images/mediaGallery/6.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">MUSIC TO MY HEARS</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="205">images/mediaGallery/thumbnails/7.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/7.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="200">images/mediaGallery/thumbnails/8.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/8.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="313">images/mediaGallery/thumbnails/9.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/9.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">MUSIC TO MY HEARS</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="205">images/mediaGallery/thumbnails/10.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/10.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+</category>
+
+<!--
+
+End category
+
+-->
+
+
+<!--
+
+Start category
+
+-->
+
+<category title="FLOWERS" catThumbnail="images/mediaGallery/catThumbnails/2.jpg"  smallThumbnailsWidth = "150" smallThumbnailsHeight = "120">
+    <item>
+	  <thumbnail width="">images/mediaGallery/thumbnails/11.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/11.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="">images/mediaGallery/thumbnails/12.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/12.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">MUSIC TO MY HEARS</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="">images/mediaGallery/thumbnails/13.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/13.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.]]></text>
+    </item>
+	
+	    <item>
+	  <thumbnail width="">images/mediaGallery/thumbnails/14.jpg</thumbnail>
+	  <large type="image" videoHeight="400">images/mediaGallery/14.jpg</large>
+      <text><![CDATA[]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="">images/mediaGallery/thumbnails/15.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/15.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="">images/mediaGallery/thumbnails/16.jpg</thumbnail>
+	  <large type="image" videoHeight="350">images/mediaGallery/16.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">MUSIC TO MY HEARS</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="">images/mediaGallery/thumbnails/17.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/17.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	
+</category>
+
+<!--
+
+End category
+
+-->
+
+
+<!--
+
+Start category
+
+-->
+
+<category title="MACRO" catThumbnail="images/mediaGallery/catThumbnails/3.jpg" smallThumbnailsWidth = "" smallThumbnailsHeight ="130">
+    <item>
+	  <thumbnail width="213">images/mediaGallery/thumbnails/18.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/18.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="196">images/mediaGallery/thumbnails/19.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/19.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">MUSIC TO MY HEARS</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="105">images/mediaGallery/thumbnails/20.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/20.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	    <item>
+	  <thumbnail width="150">images/mediaGallery/thumbnails/21.jpg</thumbnail>
+	  <large type="image" videoHeight="400">images/mediaGallery/21.jpg</large>
+      <text><![CDATA[]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="213">images/mediaGallery/thumbnails/22.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/22.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="196">images/mediaGallery/thumbnails/23.jpg</thumbnail>
+	  <large type="image" videoHeight="350">images/mediaGallery/23.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">MUSIC TO MY HEARS</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="105">images/mediaGallery/thumbnails/24.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/24.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="150">images/mediaGallery/thumbnails/25.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/25.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	
+</category>
+
+<!--
+
+End category
+
+-->
+
+
+<!--
+
+Start category
+
+-->
+<category title="MUSIC" catThumbnail="images/mediaGallery/catThumbnails/4.jpg" smallThumbnailsWidth = "" smallThumbnailsHeight = "200">
+    <item>
+	  <thumbnail width="313">images/mediaGallery/thumbnails/1.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/1.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="296">images/mediaGallery/thumbnails/2.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/2.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">MUSIC TO MY HEARS</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="296">images/mediaGallery/thumbnails/3.jpg</thumbnail>
+	  <large type="swf">images/mediaGallery/swf.swf</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.]]></text>
+    </item>
+	
+	    <item>
+	  <thumbnail width="200">images/mediaGallery/thumbnails/4.jpg</thumbnail>
+	  <large type="image" videoHeight="400">images/mediaGallery/4.jpg</large>
+      <text><![CDATA[]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="313">images/mediaGallery/thumbnails/5.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/5.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="296">images/mediaGallery/thumbnails/6.jpg</thumbnail>
+	  <large type="image" videoHeight="350">images/mediaGallery/6.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">MUSIC TO MY HEARS</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="205">images/mediaGallery/thumbnails/7.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/7.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="200">images/mediaGallery/thumbnails/8.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/8.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="313">images/mediaGallery/thumbnails/9.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/9.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">MUSIC TO MY HEARS</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+	<item>
+	  <thumbnail width="205">images/mediaGallery/thumbnails/10.jpg</thumbnail>
+	  <large type="image">images/mediaGallery/10.jpg</large>
+      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+    </item>
+	
+</category>
+
+<!--
+
+End category
+
+-->
+	
+	
+
+
+</showroom>

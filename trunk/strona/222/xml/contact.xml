@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<contacts>
+
+    <settings
+
+         bgColor = "1b1b1b"	  
+		 bgAlpha = ".5"	
+		 
+		 txtFieldsBgColor = "1b1b1b"	  
+		 txtFieldsBgAlpha = ".3"	
+		 
+		 controlsIconColor = "FFFFFF"
+		 controlsBgColor = "1B1B1B"
+		 controlsBgOverColor = "CCFF00"
+		 controlsBgAlpha = ".3"
+		 
+		 nameLabel = "NAME *"
+		 emailLabel = "EMAIL *"
+		 subjectLabel = "SUBJECT *"
+		 messageLabel = "MESSAGE *"
+		 sendLabel = "SEND MESSAGE"
+		 
+		 
+    />
+
+	<textBox><![CDATA[<font size="24" face="GeosansLight">YOUR COMPANY NAME</font><br><br>This is HTML formated text loaded from XML file<br><br>Just insert your company's details, your address etc..<br><br><font color="#FFFFFF">Tel:</font>  0800 888 969<br><font color="#FFFFFF">Fax:</font>  0800 888 696 <br><br><font color="#FF9900"><A href="mailto:yourEmail@yourSite.com">yourEmail@yourSite.com</a></font>]]></textBox>
+	
+	
+</contacts>

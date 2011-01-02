@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<staff>
+
+    <settings
+	
+	     thumbBgColor = "1b1b1b"
+		 thumbBgAlpha = "0.5"
+		 
+		 mainBgColor = "1b1b1b" 
+		 mainBgAlpha = "0.5"	
+		 
+		 scrollBtnOverColor = "CCFF00"
+		 scrollBtnOverAlpha = ".5"
+		 scrollBtnColor = "FFFFFF"
+		 scrollBtnAlpha = ".5"
+		 scrollBarColor = "FFFFFF"
+		 scrollBarAlpha = ".5"
+		 
+		 
+		 preloaderColor = "CCFF00"
+		 preloaderAlpha = "0.3"
+		 
+    />
+
+    <staff>
+	  <thumb>images/staff/thumbnails/1.jpg</thumb>
+	  <image>images/staff/images/1.jpg</image>
+	  <textfieldWidth>300</textfieldWidth>
+      <largeDesc><![CDATA[<font size="22" face="GeosansLight">ANNA SMITH</font><br><br>Director<br><A href="mailto:annaSmith@lglab.com">annaSmith@lglab.com</a><br><br>This is the main text area for each staff, or anything you want to do with this module.<br><br>This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <a href="http://sebastian-galazka.org.uk/blog/">external links</a>, <a href="mailto:yourEmail@mail.com">email links</a> but also links to pages of this website such as the <a href="#/services">services page</a>, all styled using CSS, embed images and swf etc... <br><br>This is a long description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus. Nunc vehicula. Vivamus egestas, leo et tincidunt egestas, diam enim semper lorem, sit amet adipiscing diam quam quis lacus. Aliquam convallis urna at leo volutpat porttitor. Phasellus rutrum sodales urna. Fusce vitae odio ac leo pharetra lacinia. Morbi non orci. Nulla nec quam nec metus auctor porta. Curabitur sollicitudin tellus. Sed commodo. Praesent dapibus vulputate pede. Suspendisse potenti. Pellentesque sagittis mauris quis magna. Aenean feugiat metus at ligula. Aliquam convallis urna at leo volutpat porttitor. Phasellus rutrum sodales urna. Fusce vitae odio ac leo pharetra lacinia. Morbi non orci. Nulla nec quam nec metus auctor porta. Curabitur sollicitudin tellus. Sed commodo. Praesent dapibus vulputate pede. Suspendisse potenti. Pellentesque sagittis mauris quis magna. Aenean feugiat metus at ligula.]]></largeDesc>
+     </staff>
+	 
+	 <staff>
+	  <thumb>images/staff/thumbnails/2.jpg</thumb>
+	  <image>images/staff/images/swf.swf</image>
+	  <textfieldWidth>400</textfieldWidth>
+      <largeDesc><![CDATA[<font size="22" face="GeosansLight">GRACE LUCCA</font><br><br>Chief Designer<br><A href="mailto:graceLucca@lglab.com">graceLucca@lglab.com</a><br><br>This is the main text area for each staff, or anything you want to do with this module.<br><br>This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <a href="http://sebastian-galazka.org.uk/blog/">external links</a>, <a href="mailto:yourEmail@mail.com">email links</a> but also links to pages of this website such as the <a href="#/services">services page</a>, all styled using CSS, embed images and swf etc... ]]></largeDesc>
+    </staff>
+	 
+	<staff>
+	  <thumb>images/staff/thumbnails/3.jpg</thumb>
+	  <image>500</image>
+	  <textfieldWidth>500</textfieldWidth>
+      <largeDesc><![CDATA[<font size="24" face="GeosansLight">MOTION FLASH DESIGNS</font><br><br>Developer:<br><a href="http://sebastian-galazka.org.uk/blog/">LGLab</a><br><br>This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <a href="http://sebastian-galazka.org.uk/blog/">external links</a>, <a href="mailto:yourEmail@mail.com">email links</a> but also links to pages of this website such as the <a href="#/staff">staff page</a>, all styled using CSS, embed images and swf etc... <br><br>This text area has scroll bar support with mouse wheel enabled including on Macs, and it will adapt to any screen resolutions.<br><br>Lorem ipsum dolor sit amet, consectetur adipis elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.<br><br><ul><li>In pretium leo vitae ipsum.</li><li>Donec sollicitudin.</li><li>Ut euismod erat sit amet leo.</li><li>Donec pellentesque dui a elit.</li></ul><br><br>Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum.<br><br>In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.<br><br>Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec pellentesque dui a elit. Donec sollicitudin.]]></largeDesc>
+    </staff>
+	
+	 <staff>
+	  <thumb>images/staff/thumbnails/4.jpg</thumb>
+	  <image>images/staff/images/4.jpg</image>
+	  <textfieldWidth>300</textfieldWidth>
+<largeDesc><![CDATA[<font size="22" face="GeosansLight">STELLA COOPER</font><br><br>Customer Services<br><A href="mailto:stellaCooper@lglab.com">stellaCooper@lglab.com</a><br><br>This is the main text area for each staff, or anything you want to do with this module.<br><br>This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <a href="http://sebastian-galazka.org.uk/blog/">external links</a>, <a href="mailto:yourEmail@mail.com">email links</a> but also links to pages of this website such as the <a href="#/services">services page</a>, all styled using CSS, embed images and swf etc... ]]></largeDesc>
+     </staff>
+	 
+	 <staff>
+	  <thumb>images/staff/thumbnails/5.jpg</thumb>
+	  <image>images/staff/images/5.jpg</image>
+	  <textfieldWidth>0</textfieldWidth>
+      <largeDesc><![CDATA[]]></largeDesc>
+    </staff>
+	 
+	<staff>
+	  <thumb>images/staff/thumbnails/6.jpg</thumb>
+	  <image>images/staff/images/6.jpg</image>
+	  <textfieldWidth>300</textfieldWidth>
+<largeDesc><![CDATA[<font size="22" face="GeosansLight">EMILY JOLLY</font><br><br>Chief Designer<br><A href="mailto:emilyJolly@lglab.com">emilyJolly@lglab.com</a><br><br>This is the main text area for each staff, or anything you want to do with this module.<br><br>This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <a href="http://sebastian-galazka.org.uk/blog/">external links</a>, <a href="mailto:yourEmail@mail.com">email links</a> but also links to pages of this website such as the <a href="#/services">services page</a>, all styled using CSS, embed images and swf etc... ]]></largeDesc>
+    </staff>
+	
+	<staff>
+	  <thumb>images/staff/thumbnails/1.jpg</thumb>
+	  <image>images/staff/images/1.jpg</image>
+	  <textfieldWidth>300</textfieldWidth>
+      <largeDesc><![CDATA[<font size="22" face="GeosansLight">ANNA SMITH</font><br><br>Director<br><A href="mailto:annaSmith@lglab.com">annaSmith@lglab.com</a><br><br>This is the main text area for each staff, or anything you want to do with this module.<br><br>This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <a href="http://sebastian-galazka.org.uk/blog/">external links</a>, <a href="mailto:yourEmail@mail.com">email links</a> but also links to pages of this website such as the <a href="#/services">services page</a>, all styled using CSS, embed images and swf etc... <br><br>This is a long description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus. Nunc vehicula. Vivamus egestas, leo et tincidunt egestas, diam enim semper lorem, sit amet adipiscing diam quam quis lacus. Aliquam convallis urna at leo volutpat porttitor. Phasellus rutrum sodales urna. Fusce vitae odio ac leo pharetra lacinia. Morbi non orci. Nulla nec quam nec metus auctor porta. Curabitur sollicitudin tellus. Sed commodo. Praesent dapibus vulputate pede. Suspendisse potenti. Pellentesque sagittis mauris quis magna. Aenean feugiat metus at ligula. Aliquam convallis urna at leo volutpat porttitor. Phasellus rutrum sodales urna. Fusce vitae odio ac leo pharetra lacinia. Morbi non orci. Nulla nec quam nec metus auctor porta. Curabitur sollicitudin tellus. Sed commodo. Praesent dapibus vulputate pede. Suspendisse potenti. Pellentesque sagittis mauris quis magna. Aenean feugiat metus at ligula.]]></largeDesc>
+     </staff>
+	 
+	<staff>
+	  <thumb>images/staff/thumbnails/2.jpg</thumb>
+	  <image>images/staff/images/swf.swf</image>
+	  <textfieldWidth>400</textfieldWidth>
+      <largeDesc><![CDATA[<font size="22" face="GeosansLight">GRACE LUCCA</font><br><br>Chief Designer<br><A href="mailto:graceLucca@lglab.com">graceLucca@lglab.com</a><br><br>This is the main text area for each staff, or anything you want to do with this module.<br><br>This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <a href="http://sebastian-galazka.org.uk/blog/">external links</a>, <a href="mailto:yourEmail@mail.com">email links</a> but also links to pages of this website such as the <a href="#/services">services page</a>, all styled using CSS, embed images and swf etc... ]]></largeDesc>
+    </staff>
+	 
+	<staff>
+	  <thumb>images/staff/thumbnails/3.jpg</thumb>
+	  <image>images/staff/images/3.jpg</image>
+	  <textfieldWidth>300</textfieldWidth>
+      <largeDesc><![CDATA[<font size="22" face="GeosansLight">LUCIA BELLA</font><br><br>Financial Manager<br><A href="mailto:luciaBella@lglab.com">luciaBella@lglab.com</a><br><br>This is the main text area for each staff, or anything you want to do with this module.<br><br>This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <a href="http://sebastian-galazka.org.uk/blog/">external links</a>, <a href="mailto:yourEmail@mail.com">email links</a> but also links to pages of this website such as the <a href="#/services">services page</a>, all styled using CSS, embed images and swf etc... <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. ]]></largeDesc>
+    </staff>
+	
+	 <staff>
+	  <thumb>images/staff/thumbnails/4.jpg</thumb>
+	  <image>images/staff/images/4.jpg</image>
+	  <textfieldWidth>300</textfieldWidth>
+<largeDesc><![CDATA[<font size="22" face="GeosansLight">STELLA COOPER</font><br><br>Customer Services<br><A href="mailto:stellaCooper@lglab.com">stellaCooper@lglab.com</a><br><br>This is the main text area for each staff, or anything you want to do with this module.<br><br>This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <a href="http://sebastian-galazka.org.uk/blog/">external links</a>, <a href="mailto:yourEmail@mail.com">email links</a> but also links to pages of this website such as the <a href="#/services">services page</a>, all styled using CSS, embed images and swf etc... ]]></largeDesc>
+     </staff>
+	 
+	 <staff>
+	  <thumb>images/staff/thumbnails/5.jpg</thumb>
+	  <image>images/staff/images/5.jpg</image>
+	  <textfieldWidth>0</textfieldWidth>
+      <largeDesc><![CDATA[]]></largeDesc>
+    </staff>
+	 
+	<staff>
+	  <thumb>images/staff/thumbnails/6.jpg</thumb>
+	  <image>images/staff/images/6.jpg</image>
+	  <textfieldWidth>300</textfieldWidth>
+<largeDesc><![CDATA[<font size="22" face="GeosansLight">EMILY JOLLY</font><br><br>Chief Designer<br><A href="mailto:emilyJolly@lglab.com">emilyJolly@lglab.com</a><br><br>This is the main text area for each staff, or anything you want to do with this module.<br><br>This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <a href="http://sebastian-galazka.org.uk/blog/">external links</a>, <a href="mailto:yourEmail@mail.com">email links</a> but also links to pages of this website such as the <a href="#/services">services page</a>, all styled using CSS, embed images and swf etc... ]]></largeDesc>
+    </staff>
+
+
+</staff>
