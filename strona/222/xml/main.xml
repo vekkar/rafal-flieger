@@ -3,17 +3,16 @@
 
         <settings 	
 			
-		  logo = "images/logo.png"
-		  songPath = "dropBack.mp3"
+		  logo = "images/TAWO.png"
 		  soundVolume = "0.75" 
-		  playMusic = "true"
+		  playMusic = "false"
 		  
 		  videoBackgrounBufferTime = "5"
 		  videoBackgroundVolume = ".5"
 		  videoBufferBgColor = "1b1b1b"
 		  videoBufferBgAlpha = ".5"
 		  
-		  BroswerPageTitle = "Liquid² "
+		  BroswerPageTitle = "TAWO Meble Labolatoryjne"
 		  menuAlignment = "middle"
 		  
 		  headerBgColor = "1B1B1B"
@@ -37,8 +36,7 @@
 		  bgPreloaderAlpha = "0.1"
 		  
 		  fullscreenTxt = "Fullscreen"
-		  soundVolumeTxt = "Music playing"
-		  soundPausedTxt = "Music paused"
+
 		  
 		  menuExternalURLWindowTarget = "_blank"
 		 
@@ -48,66 +46,73 @@
 		
 		
 		
-		   <!-- start single menu item here -->
-		   <menuItem page_title="HOME" swf="singleVideo_and_rotator.swf" xmlPath = "xml/home.xml" bgType = "image" bgFile = "images/background/1.jpg"/>
-           <!-- end single menu item here -->
+			<!-- start single menu item here -->
+			<menuItem page_title="HOME" swf="singleVideo_and_rotator.swf" xmlPath = "xml/home.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+			<!-- end single menu item here -->
 		   
-		      <!-- start 2-level menu item here -->
-              <menuItem page_title = "ABOUT US">
-			    <submenu page_title="SERVICES" swf="textContent_and_rotator.swf" xmlPath = "xml/services.xml" bgType = "image" bgFile = "images/background/7.jpg"/>
+			<!-- start 2-level menu item here -->
+			<!--
+			<menuItem page_title = "ABOUT US">
+				<submenu page_title="SERVICES" swf="textContent_and_rotator.swf" xmlPath = "xml/services.xml" bgType = "image" bgFile = "images/background/7.jpg"/>
 			    <submenu page_title="STAFF" swf="staff.swf"  xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/6.jpg"/>
                 <submenu page_title="CONTENT WINDOW" swf="textContent_and_rotator.swf"  xmlPath = "xml/contentWindow.xml" bgType = "image" bgFile = "images/background/2.jpg"/>
-		      </menuItem>
-	          <!-- end 2-level menu item here -->
-	 
-	         <menuItem page_title="SHOWROOM" swf="showroom.swf" xmlPath = "xml/showroom.xml" bgType = "youtube" bgFile = "SE1l1y5VgAM"/>
+		    </menuItem>
+	        <!-- end 2-level menu item here -->
+			
+			<!--
+	        <menuItem page_title="SHOWROOM" swf="showroom.swf" xmlPath = "xml/showroom.xml" bgType = "youtube" bgFile = "SE1l1y5VgAM"/>
+			-->
 		
-		
-	         <menuItem page_title = "PORTFOLIO">
-		        <submenu page_title="GALLERIES" swf="media_gallery.swf" xmlPath = "xml/galleries.xml" bgType = "image" bgFile = "images/background/6.jpg"/>
+			<!--
+	        <menuItem page_title = "PORTFOLIO">
+				<submenu page_title="GALLERIES" swf="media_gallery.swf" xmlPath = "xml/galleries.xml" bgType = "image" bgFile = "images/background/6.jpg"/>
 			    <submenu page_title="MIXED" swf="media_gallery.swf" xmlPath = "xml/mixedGallery.xml" bgType = "image" bgFile = "images/background/5.jpg"/>
 			    <submenu page_title="PROJECTS" swf="singleVideo_and_rotator.swf"  xmlPath = "xml/projects.xml" bgType = "image" bgFile = "images/background/4.jpg"/>
-		     </menuItem> 
+		    </menuItem> 
+		    -->
 		   
-		   
-		     <menuItem page_title = "VIDEO">
-		        <submenu page_title="GALLERY" swf="media_gallery.swf" xmlPath = "xml/videoGallery.xml" bgType = "image" bgFile = "images/background/3.jpg"/>
+		    <!--
+		    <menuItem page_title = "VIDEO">
+				<submenu page_title="GALLERY" swf="media_gallery.swf" xmlPath = "xml/videoGallery.xml" bgType = "image" bgFile = "images/background/3.jpg"/>
 				<submenu page_title="MOST VIEWED" swf="media_gallery.swf" xmlPath = "xml/mostViewed.xml" bgType = "image" bgFile = "images/background/2.jpg"/>
 			    <submenu page_title="REEL" swf="singleVideo_and_rotator.swf" xmlPath = "xml/reel.xml" bgType = "image" bgFile = "images/background/1.jpg"/>
-		     </menuItem>
+		    </menuItem>
+		    -->
 		   
-		   
-		     <menuItem page_title = "YOUR OWN SWF">
+		    <!--
+		    <menuItem page_title = "YOUR OWN SWF">
 		        <submenu page_title="SELF ALIGNED" swf="yourOwnSwf_selfAlign.swf" selfAlign = "true"  xmlPath = ""  bgType = "swf" bgSwfSelfAlign = "false" bgFile = "images/background/swf.swf"/>
 			    <submenu page_title="LAZY SWF" swf="yourOwnSwf_noAlign.swf" selfAlign="false" externalWidth="700" externalHeight="480" xmlPath = "" bgType = "image" bgFile = "images/background/7.jpg"/>
-		     </menuItem>
-			 
-			 <menuItem page_title = "BACKGROUNDS">
+		    </menuItem>
+			-->
+			
+			<!--
+			<menuItem page_title = "BACKGROUNDS">
 		        <submenu page_title="IMAGE" swf="emptySWF.swf" selfAlign = "false"  xmlPath = ""  bgType = "image" bgFile = "images/background/3.jpg"/>
 			    <submenu page_title="SWF" swf="emptySWF.swf" selfAlign="false" xmlPath = "" bgType = "swf" bgSwfSelfAlign = "false" bgFile = "images/background/swf.swf"/>
 				<submenu page_title="FLV-H.264" swf="emptySWF.swf" selfAlign = "false"  xmlPath = ""  bgType = "video"  bgFile = "videos/theShatter.flv"/>
 			    <submenu page_title="YOUTUBE" swf="emptySWF.swf" selfAlign="false"  xmlPath = "" bgType = "youtube" bgFile = "cRdxXPV9GNQ"/>
-		     </menuItem>
+		    </menuItem>
+		    -->
+		   
+			<menuItem page_title="CONTACT" swf="contact.swf" xmlPath = "xml/contact.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
 		   
 		   
-		   <menuItem page_title="CONTACT" swf="contact.swf" xmlPath = "xml/contact.xml" bgType = "image" bgFile = "images/background/1.jpg"/>
-		   
-		   
-		   <menuItem page_title="BLOG" swf="http://sebastian-galazka.org.uk/blog/" xmlPath = "" bgType = "image" bgFile = ""/>
-		   
+		   <!--<menuItem page_title="BLOG" swf="http://sebastian-galazka.org.uk/blog/" xmlPath = "" bgType = "image" bgFile = ""/>
+		   -->
 	    </menu>
 		
 		<copyright>
-		   <![CDATA[<a href="http://sebastian-galazka.org.uk/blog/">flashGiant</a> - Quality rips by flashGiant |]]>
+		   <![CDATA[<a href="http://tawo.poznan.pl">TAWO Tadeusz Flieger</a> Kompleksowe wyposarzanie laboratorów]]>
 		</copyright>
-		
+		<!--
 		<socialIcons>
 	       <icon url="http://sebastian-galazka.org.uk/blog/" tooltip = "Follow us on Twitter">images/socialIcons/twitter.png</icon>
 	       <icon url="http://sebastian-galazka.org.uk/blog/" tooltip = "Be friends on Facebook">images/socialIcons/facebook.png</icon>
 	       <icon url="http://sebastian-galazka.org.uk/blog/" tooltip = "Stay in touch on LinkedIn">images/socialIcons/linkedin.png</icon>
 	       <icon url="http://sebastian-galazka.org.uk/blog/" tooltip = "Digg this template">images/socialIcons/digg.png</icon>
 	    </socialIcons>
-		
+		-->
 		   
 </xml>
 

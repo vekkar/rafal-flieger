@@ -3,7 +3,7 @@
 
     <settings
 	
-         playIntro="true"
+         playIntro="false"
 		 showControls="false"
 		 videoPath= "videos/theShatter.flv"
 		 videoBufferTime = "8"
