@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<home>
+
+    <settings
+		 
+		 rotatorImageWidth = "780"
+		 rotatorImageHeight = "260"
+		 preloaderColor = "CCFF00"
+		 preloaderAlpha = "0.3"
+		
+		 bgColor = "1B1B1B"	  
+		 bgAlpha = ".5"	
+		 
+		 controlsIconColor = "FFFFFF"
+		 controlsIconAlpha = "1"
+		 controlsBgColor = "1B1B1B"
+		 controlsBgOverColor = "CCFF00"
+		 controlsBgAlpha = ".5"
+		 
+		 rotatorRandomTransitions = "false"
+		 
+		 
+    />
+
+    <rotator>
+	
+	 <!-- text transitions include (use the numbers) : 
+	 
+	 Blinds = 0
+	 Fade = 1 
+	 Fly = 2 
+	 Iris = 3 
+	 Photo = 4 
+	 PixelDissolve = 5 
+	 Rotate = 6 
+	 Squeeze = 7 
+	 Wipe = 8 
+	 Zoom = 9
+	 
+	 -->
+	
+	  <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "3" transition = "0">images/services/swf.swf</path>
+		<title bgColour="CCFF00" bgAlpha=".5" Ypos="10" Xpos="10"><![CDATA[<font color="#FFFFFF">LIQUID² TEMPLATE</font>]]></title>
+		<description bgColour="1b1b1b" bgAlpha=".7" txtWidth="260"><![CDATA[]]></description>
+		
+		<text transition = "5"><![CDATA[<font size="24" face="GeosansLight">MOTION FLASH DESIGNS</font><br><br>Developer:<br><a href="http://sebastian-galazka.org.uk/blog/">LGLab</a><br><br>This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <a href="http://sebastian-galazka.org.uk/blog/">external links</a>, <a href="mailto:yourEmail@mail.com">email links</a> but also links to pages of this website such as the <a href="#/staff">staff page</a>, styled using CSS, embed images and swf etc... <br><br>This text area has scroll bar support with mouse wheel enabled including on Macs, and it will adapt to any screen resolutions.<br><br><img vspace="4" hspace="6" src="images/services/small.jpg"/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br><ul><li>In pretium leo vitae ipsum.</li><li>Donec sollicitudin.</li><li>Ut euismod erat sit amet leo.</li><li>Donec pellentesque dui a elit.</li></ul><br><br>Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum.<br><br>In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.<br><br>Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus.]]></text>
+	</image>
+	<!-- End image here -->
+	
+	
+	</rotator>
+	 
+	
+</home>
