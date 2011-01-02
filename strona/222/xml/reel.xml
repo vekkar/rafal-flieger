@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<home>
+
+    <settings
+	
+         playIntro="true"
+		 showControls="true"
+		 videoPath= "Rs_wKkXCwDw"
+		 videoBufferTime = "5"
+		 videoHeight="350"
+		 videoVolume=".5"
+		 skipIntroButton = "true"
+		 skipIntroText = "SKIP INTRO"
+		 videoControlsLoadBarColor = "CCFF00"
+		 videoControlsLoadBarAlpha = ".2"
+		 videoControlsProgressBarColor = "CCFF00"
+		 videoControlsProgressBarAlpha = ".8"
+		 volumeSlideBarColor = "CCFF00"
+		 volumeSlideBarAlpha = ".2"
+		 volumeTooltipColor = "CCFF00"
+		 volumeTooltipAlpha = ".5"
+		 youTubeVideoAspectRatio = "5:3"
+		 youTubeVideoAspectQuality = "hd720"
+		 
+		 playRotator="false"
+		 rotatorImageWidth = "650"
+		 rotatorImageHeight = "350"
+		 preloaderColor = "CCFF00"
+		 preloaderAlpha = "0.3"
+		
+		 bgColor = "1B1B1B"	  
+		 bgAlpha = ".5"	
+		 
+		 controlsIconColor = "FFFFFF"
+		 controlsIconAlpha = "1"
+		 controlsBgColor = "1B1B1B"
+		 controlsBgOverColor = "CCFF00"
+		 controlsBgAlpha = ".5"
+		 
+		 
+    />
+
+    <rotator>
+	
+
+	<image>
+		<path slideShowDelay = "3">images/home/1.jpg</path>
+		<title bgColour="CCFF00" bgAlpha=".5" Ypos="10"><![CDATA[<font color="#FFFFFF">LIQUID TEMPLATE</font>]]></title>
+		<description bgColour="21211F" bgAlpha=".7" txtWidth="260"><![CDATA[<font color="#f5f5f5"><b>Welcome to my new template!</b><br><br>Includes a <b>2 level menu</b>, <b>deep linking</b> and <b>9 reusable modules</b>.<br><br>Each module comes with its own <b>liquid transitions</b> and can be duplicated easily from the xml file.</font>]]></description>
+	</image>
+	<!-- End image here -->
+	
+    <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "6">images/home/swf.swf</path>
+		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="10"><![CDATA[<font color="#CCFF00">DEEP LINKING</font>]]></title>
+		<description bgColour="21211F" bgAlpha=".55" txtWidth="200"><![CDATA[<font color="#ffffff"><b>Lorem ipsum dolor sit amet</b><br><br>Curabitur in urna augue, id dignissim nisl. Morbi eleifend feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.<br><br>Quisque :<A href="http://sebastian-galazka.org.uk/blog/"> lorem@ipsum.com</a></font>]]></description>
+	</image>
+	<!-- End image here -->
+	
+	 <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "7">images/home/3.jpg</path>
+		<title bgColour="21211F" bgAlpha=".75" Ypos="10"><![CDATA[<font color="#FFFFFF">FLUID PAGE TRANSITIONS</font>]]></title>
+		<description bgColour="1b1b1b" bgAlpha=".65" txtWidth="220"><![CDATA[<font color="#CCFF00"><b>Lorem ipsum dolor sit amet et ultrices</b><br><br>Curabitur in urna augue, id dignissim nisl. Morbi eleifend feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.]]></description>
+		<transition>2</transition>
+	</image>
+	<!-- End image here -->
+	
+    <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "5">images/home/4.jpg</path>
+		<title bgColour="1C3844" bgAlpha=".7" Ypos="10"><![CDATA[<font color="#99FF00">FULLY XML DRIVEN</font>]]></title>
+		<description bgColour="21211F" bgAlpha=".95" txtWidth="200"><![CDATA[<font color="#ffffff"><b>Lorem ipsum dolor sit amet</b><br><br>Curabitur in urna augue, id dignissim nisl. Morbi eleifend feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.<br><br>Quisque :<A href="http://sebastian-galazka.org.uk/blog/"> lorem@ipsum.com</a></font>]]></description>
+		<transition>3</transition>
+	</image>
+	<!-- End image here -->
+	
+	 <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "5">images/home/5.jpg</path>
+		<title bgColour="1C3844" bgAlpha=".75" Ypos="10"><![CDATA[<font color="#FFFFFF">2 LEVEL MENU</font>]]></title>
+		<description bgColour="21211F" bgAlpha=".75" txtWidth="200"><![CDATA[<font color="#ffffff"><b>Lorem ipsum dolor sit amet</b><br><br>Curabitur in urna augue, id dignissim nisl. Morbi eleifend feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.<br><br>Quisque :<A href="http://sebastian-galazka.org.uk/blog/"> lorem@ipsum.com</a></font>]]></description>
+		<transition>4</transition>
+	</image>
+	<!-- End image here -->
+	
+    <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "5">images/home/6.jpg</path>
+		<title bgColour="21211F" bgAlpha=".75" Ypos="10"><![CDATA[<font color="#FFFFFF">REUSABLE MODULES</font>]]></title>
+		<description bgColour="21211F" bgAlpha=".75" txtWidth="200"><![CDATA[<font color="#ffffff"><b>Lorem ipsum dolor sit amet</b><br><br>Curabitur in urna augue, id dignissim nisl. Morbi eleifend feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.<br><br>Quisque :<A href="http://sebastian-galazka.org.uk/blog/"> lorem@ipsum.com</a></font>]]></description>
+		<transition>5</transition>
+	</image>
+	<!-- End image here -->
+	
+	</rotator>
+	 
+	
+</home>

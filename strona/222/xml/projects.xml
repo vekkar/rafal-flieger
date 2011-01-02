@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<home>
+
+    <settings
+	
+         playIntro="false"
+		 showControls="true"
+		 videoPath= "0UjsXo9l6I8"
+		 videoBufferTime = "5"
+		 videoHeight="350"
+		 videoVolume=".5"
+		 skipIntroButton = "true"
+		 skipIntroText = "SKIP INTRO"
+		 videoControlsLoadBarColor = "CCFF00"
+		 videoControlsLoadBarAlpha = ".2"
+		 videoControlsProgressBarColor = "CCFF00"
+		 videoControlsProgressBarAlpha = ".8"
+		 volumeSlideBarColor = "CCFF00"
+		 volumeSlideBarAlpha = ".2"
+		 youTubeVideoAspectRatio = "5:3"
+		 youTubeVideoAspectQuality = "hd720"
+		 
+		 playRotator="true"
+		 rotatorImageWidth = "700"
+		 rotatorImageHeight = "350"
+		 preloaderColor = "CCFF00"
+		 preloaderAlpha = "0.3"
+		
+		 bgColor = "1B1B1B"	  
+		 bgAlpha = ".5"	
+		 
+		 controlsIconColor = "FFFFFF"
+		 controlsIconAlpha = "1"
+		 controlsBgColor = "1B1B1B"
+		 controlsBgOverColor = "CCFF00"
+		 controlsBgAlpha = ".5"
+		 
+		 
+    />
+
+    <rotator>
+	
+	  <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "6">images/home/1.jpg</path>
+		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="10" Xpos="375"><![CDATA[<font color="#CCFF00">LIQUID² - AS3 XML TEMPLATE</font>]]></title>
+		<description bgColour="21211F" bgAlpha="0" txtWidth="260"><![CDATA[<font face="GeosansLight" color="#ffffff" size="16">Welcome to my new template!</font><br><br><font color="#ffffff">Includes a <b>2 level menu</b>, <b>deep linking</b> and <b>9 reusable modules</b>.<br><br>Each module comes with its own <b>liquid transitions</b>  and can be duplicated easily from the xml file.</font>]]></description>
+	</image>
+	<!-- End image here -->
+	
+    <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "6">images/home/2.jpg</path>
+		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="80" Xpos="420"><![CDATA[<font color="#CCFF00">DEEP LINKING</font>]]></title>
+		<description bgColour="21211F" bgAlpha=".55" txtWidth="250"><![CDATA[<font color="#ffffff">Internal links: <a href="#/services">Check it out!</a><br><br><b>Lorem ipsum dolor sit amet</b><br><br>Curabitur in urna augue, id dignissim nisl. Morbi eleifend feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</font>]]></description>
+	</image>
+	<!-- End image here -->
+	
+	 <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "7">images/home/swf.swf</path>
+		<title bgColour="21211F" bgAlpha="0" Ypos="10" Xpos="410"><![CDATA[<font color="#FFFFFF">FLUID PAGE TRANSITIONS</font>]]></title>
+		<description bgColour="FAC4DE" bgAlpha=".1" txtWidth="220"><![CDATA[<font color="#D74C9F"><b>Lorem ipsum dolor sit amet et ultrices</b><br><br>Curabitur in urna augue, id dignissim nisl. Morbi eleifend feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.]]></description>
+		<transition>2</transition>
+	</image>
+	<!-- End image here -->
+	
+    <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "5">images/home/3.jpg</path>
+		<title bgColour="1b1b1b" bgAlpha=".9" Ypos="150" Xpos="220"><![CDATA[<font color="#CCFF00">ANY WAY YOU WANT IT</font>]]></title>
+		<description bgColour="1b1b1b" bgAlpha=".55" txtWidth="200"><![CDATA[]]></description>
+		<transition>3</transition>
+	</image>
+	<!-- End image here -->
+	
+	 <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "5">images/home/4.jpg</path>
+		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="10" Xpos="370"><![CDATA[<font color="#CCFF00">2 LEVEL MENU</font>]]></title>
+		<description bgColour="21211F" bgAlpha=".75" txtWidth="200"><![CDATA[<font face="GeosansLight" color="#ffffff" size="16">Lorem ipsum dolor sit amet.</font>]]></description>
+		<transition>4</transition>
+	</image>
+	<!-- End image here -->
+	
+    <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "5">images/home/5.jpg</path>
+		<title bgColour="1b1b1b" bgAlpha=".75" Ypos="10" Xpos="350"><![CDATA[<font color="#FFFFFF">REUSABLE MODULES</font>]]></title>
+		<description bgColour="1b1b1b" bgAlpha=".75" txtWidth="270"><![CDATA[<font color="#ffffff">You can duplicate modules as many times as you like simply by duplicating the XML files.</font>]]></description>
+		<transition>5</transition>
+	</image>
+	<!-- End image here -->
+	
+	    <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "5">images/home/6.jpg</path>
+		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="90" Xpos="410"><![CDATA[<font color="#CCFF00">BACKGROUNDS</font>]]></title>
+		<description bgColour="1b1b1b" bgAlpha="0" txtWidth="400"><![CDATA[<font face="GeosansLight" color="#ffffff" size="16">Support Images, SWF, Video and YouTube</font>]]></description>
+		<transition>5</transition>
+	</image>
+	<!-- End image here -->
+	
+	</rotator>
+	 
+	
+</home>
