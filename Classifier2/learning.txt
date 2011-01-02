@@ -1,4 +1,0 @@
-temperature=warm,climate=sunny,humidity=big,wind=weak,decision=foul
-temperature=moderate,climate=sunny,humidity=big,wind=strong,decision=foul
-climate=cloudy,temperature=moderate,humidity=big,wind=strong,decision=fine
-climate=sunny,temperature=moderate,humidity=big,wind=weak,decision=fine

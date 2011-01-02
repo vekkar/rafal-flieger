@@ -1,2 +1,0 @@
-C:\Users\Tomasz Karowski\Documents\Visual Studio 2010\Projects\code.google\rafal-flieger\SdtProject\SdtProject\Generated_Code\SdtProject.Web.g.cs
-C:\Users\Tomasz Karowski\Documents\Visual Studio 2010\Projects\code.google\rafal-flieger\SdtProject\SdtProject\Generated_Code\Models\Shared\User.shared.cs

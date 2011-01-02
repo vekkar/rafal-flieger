@@ -1,7 +1,0 @@
-﻿<OutOfBrowserSettings ShortName="SdtProject Application" EnableGPUAcceleration="False" ShowInstallMenuItem="True">
-  <OutOfBrowserSettings.Blurb>SdtProject Application on your desktop; at home, at work or on the go.</OutOfBrowserSettings.Blurb>
-  <OutOfBrowserSettings.WindowSettings>
-    <WindowSettings Title="SdtProject Application" />
-  </OutOfBrowserSettings.WindowSettings>
-  <OutOfBrowserSettings.Icons />
-</OutOfBrowserSettings>
