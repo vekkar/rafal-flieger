@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Documentation - Part 1</title>
+<style type="text/css">
+<!--
+.style4 {color: #000000; }
+.style5 {color: #FF0000}
+.style7 {color: #0000FF}
+.style18 {color: #000000; font-weight: bold; }
+-->
+</style>
+</head><body>
+<h1>Documentation for Liquid² - Part 1</h1>
+<p>First of all thank you for purchasing our product. I will cover each 
+part of the template in help files, each module will have its own help 
+file, so you can get quickly to the point. Hopefully I will try and 
+answer every possible question, but if you wanted to change something 
+and can't find how, then do not hesitate to contact me <a href="http://marketplace.envato.com/user/LGLab">via my profile page on activeden.</a></p>
+<p>This template is XML driven, which means most of the data is imported dynamically, making the update process very simple.</p>
+<h1>Content</h1>
+<p><strong>1) What is XML?</strong></p>
+<p><strong>2) Where are the xml files - How does it work?</strong></p>
+<p><strong>3) How do I update the menu and background content?</strong></p>
+<p><strong>4) How do I add my own logo + copyright text?</strong></p>
+<p><strong>5) How do I update the MP3 music file with my own?</strong></p>
+<p><strong>6) How do I add my own social icons?</strong></p>
+<p><span class="style18">7) How do I embed special characters?</span></p>
+<p><span class="style18">8) How do I link to an external HTML page instead of loading a swf file?</span></p>
+<p class="style4"><strong>9) How do I change the colors and the transparency of the menu, header etc..?</strong></p>
+<p><strong>10) How can I used the same module multiple times?</strong></p>
+<p><strong>11) Can I load other SWF files in this template?</strong></p>
+<p><strong>12) What files do I need to upload to my server?</strong></p>
+<p><strong>13) Can I change the alignment of the menu?</strong></p>
+<p><strong>14) How do I change the main page title for the site?</strong></p>
+<p><strong>15) Video background settings.</strong></p>
+<p><strong>16) SWFFit settings.</strong></p>
+<p><strong>17) Where can I find the images of the girls dancing in the preview?</strong></p>
+<p>&nbsp;</p>
+<h2>1) What is XML?</h2>
+<p>XML files are text files that can store information and this 
+information is structured using "tags" in a similar way to HTML tags. 
+Tags are defined using brakets, and there is always an "opening" tag and
+ a "closing" tag as follows:</p>
+<p><strong>&lt;tag&gt;</strong>Some data here<strong>&lt;/tag&gt;</strong></p>
+<p><strong>&lt;tag&gt;</strong> is the opening tag and<strong> &lt;/tag&gt;</strong> is the closing tag. Everything in between belongs to that tag.</p>
+<p>So, to update your application with your information, you will need 
+to open the files called "someName.xml", which are stored in the xml 
+folder provided in your download. You can open xml files with any text 
+editor such as notepad, although using text editors such as wordpad, 
+notepad++ or dreamweaver will render the xml content with colors and 
+make the updating even easier.</p>
+<h2>2) Where are the xml files - How does it work?</h2>
+<p>All the xml files are located in a single folder called "xml". Each 
+module of that template has its own XML file, simply go into the XML 
+folder and update the relevant xml file.</p>
+<p>Please refer to each module's help file for more details.</p>
+<h2>3) How do I update the menu <strong> and background content</strong>?</h2>
+<p>To update the content of the menu, open the "main.xml" file in the 
+xml folder using your favourite text editor. There are 2 types of menu 
+items, single menu items, and menu items with sub-menus.</p>
+<p><strong>a) Single menu items:</strong></p>
+<p>Single menu items look like this:</p>
+<p><span class="style7">&lt;!-- start single menu item here --&gt;</span><br>
+  <span class="style5">&lt;menuItem page_title="HOME" 
+swf="singleVideo_and_rotator.swf" xmlPath = "xml/home.xml" bgType = 
+"image" bgFile = "images/background/1.jpg"/&gt;</span><br>
+  <span class="style7">&lt;!-- end single menu item here --&gt;</span></p>
+<p>Update menu items parameters as follows:</p>
+<p><span class="style7">page_title</span> = The name of the menu item 
+that will display on the site. This also what will be added to the 
+browser URL for deep linking. You can use lower case or capital letters,
+ those will be displayed as is in the site, and the template will 
+automatically set all menu names to lowercase for the browser URL deep 
+linking for SEO purposes.</p>
+<p><span class="style7">swf</span> = This is the path to the swf file to
+ load for that menu item. If you want a menu item to get an external URL
+ rather than load a swf file, simply add a full HTTP url instead of the 
+swf file path, as in the "Blog" example:</p>
+<p class="style5">&lt;menuItem page_title="BLOG" swf="<span class="style7">http://marketplace.envato.com/user/LGLab</span>" xmlPath = "" bgImage = ""/&gt;</p>
+<p class="style7">xmlPath = <span class="style4">This is the path to the xml file to be loaded by the swf.</span></p>
+<p><span class="style7">bgType <span class="style4">= Here you can choose which file type to load as a background, including: </span><span class="style5">"image", "swf", "video" and "youtube"</span><span class="style4">.</span> </span>If you want to use a YouTube background, just put the YouTube video ID, not the URL to the youTube page.</p>
+<p><span class="style7">bgSwfSelfAlign = </span>This is an extra 
+parameter if you use a SWF file as background. Some SWF files are coded 
+to align themselves to the screen, in that case set this parameter to <span class="style5">"true"</span>, otherwise set it to <span class="style5">"false"</span></p>
+<p class="style7"><span class="style7">bgImage</span> <span class="style4">=
+ This is the path to the background image to be loaded for the menu 
+item. If you leave this field empty, it will stick to the previous 
+image.</span></p>
+<p class="style4"><strong>b) Sub-menu  items:</strong></p>
+<p class="style4">Sub menu items look like this:</p>
+<p class="style4"> <span class="style7">&lt;!-- start 2-level menu item here --&gt;</span><br>
+  <span class="style5">&lt;menuItem page_title = "ABOUT US"&gt;<br>
+&lt;submenu page_title="SERVICES" swf="textContent_and_rotator.swf" 
+xmlPath = "xml/services.xml" bgType = "image" bgFile = 
+"images/background/4.jpg"/&gt;<br>
+&lt;submenu page_title="STAFF" swf="staff.swf"  xmlPath = 
+"xml/staff.xml" bgType = "image" bgFile = "images/background/3.jpg"/&gt;<br>
+  &lt;submenu page_title="CONTENT WINDOW" 
+swf="textContent_and_rotator.swf"  xmlPath = "xml/contentWindow.xml" 
+bgType = "image" bgFile = "images/background/2.jpg"/&gt;<br>
+&lt;/menuItem&gt;</span><br>
+<span class="style7">&lt;!-- end 2-level menu item here --&gt;</span></p>
+<p class="style4">The first menuItem is the main menu item name, then update each submenus the same descibed for single menu items</p>
+<p class="style4"><strong>c) Add/Remove menu items:</strong></p>
+<p>To add or remove menu items or submenu items, simply copy  a menu 
+item section as above and paste it where you want it, or delete a menu 
+item section to remove it from the site.</p>
+<h2>4) How do I add my own logo + copyright text?</h2>
+<p>At the top of the main.xml files, you can find various settings, you can change the logo at the top:</p>
+<p>
+  logo = <span class="style7">"images/logo2.png"</span> //Update the path to your logo here</p>
+<p>At the bottom of the main.xml file, you will find the 
+&lt;copyright&gt; node as follows, update the content highlighted in 
+blue, this can be HTML formatted:</p>
+<p>&lt;copyright&gt;<br>
+&lt;![CDATA[<span class="style7">2009 © &lt;a href="http://marketplace.envato.com/user/LGLab"&gt;LGLab&lt;/a&gt; - All Rights Reserved |</span>]]&gt;<br>
+&lt;/copyright&gt;</p>
+<h2>5) How do I update the MP3 music file with my own?</h2>
+<p>At the top of the menu.xml file, you can find the following settings:</p>
+<p>songPath = "<span class="style7">dropBack.mp3</span>" //Update the path to your music file here<br>
+soundVolume = ".<span class="style7">75</span>" //Change the default volume level for your sound here from 0 to 1</p>
+<p>playMusic = "<span class="style7">true</span>" //Set the music to play or not, if not set this parameter to <span class="style7">false</span>.</p>
+<p>You can also change the text that appears in the music button in the footer, in the settings as follows:</p>
+<p>soundVolumeTxt = "<span class="style7">Music playing</span>"<br>
+soundPausedTxt = "<span class="style7">Music paused</span>"</p>
+<h2>6) <strong>How do I add my own social icons?</strong></h2>
+<p>At the bottom of the main.xml, you will find the &lt;socialIcons&gt; node as follows:</p>
+<p class="style5">&lt;socialIcons&gt;<br>
+&lt;icon url="http://marketplace.envato.com/user/LGLab" tooltip = 
+"Follow us on Twitter"&gt;images/socialIcons/twitter.png&lt;/icon&gt;<br>
+&lt;icon url="http://marketplace.envato.com/user/LGLab" tooltip = "Be 
+friends on Facebook"&gt;images/socialIcons/facebook.png&lt;/icon&gt;<br>
+&lt;icon url="http://marketplace.envato.com/user/LGLab" tooltip = "Stay 
+in touch on LinkedIn"&gt;images/socialIcons/linkedin.png&lt;/icon&gt;<br>
+&lt;icon url="http://marketplace.envato.com/user/LGLab" tooltip = "Digg 
+this template"&gt;images/socialIcons/digg.png&lt;/icon&gt;<br>
+&lt;/socialIcons&gt;</p>
+<p>You can add as many or few icons as you like, just delete or duplicate &lt;icon&gt; nodes, and update as follows:</p>
+<p><span class="style7">url</span> = the URL to navigate to when the icon is clicked.</p>
+<p><span class="style7">tooltip</span> = the text content for the tooltip that appears when hovering over the icon.</p>
+<p><span class="style7">images/socialIcons/twitter.png</span> = the path to the icon to load.</p>
+<p>The icons used in the template are the 16x16 icons from the following
+ site, if you wish to use different icons, just go and download the ones
+ you want: 
+http://www.komodomedia.com/blog/2009/06/social-network-icon-pack/#icons</p>
+<h2 class="style4">7) How do I embed special characters?</h2>
+<p>For your peace of mind, the following special characters are already 
+embedded in the template, so you can use them in the XML files by 
+default: 
+À,Á,Â,Ã,Ä,Å,Æ,Ç,È,É,Ê,Ë,Ì,Í,Ð,Ñ,Ò,Ó,Ô,Õ,Ö,Ø,Ù,Ú,Û,Ü,Ý,Þ,ß,à,á,â,ã,ä,å,æ,ç,è,é,ê,ë,ì,í,î,ï,ð,ñ,ò,ó,ô,õ,ö,÷,ø,ù,ú,û,ü,ý,þ,ÿ,ą,ę,ć,ó,ż,ź,ł</p>
+<p class="style4">If you need to use special characters that are not 
+included in the above list, then you will need to embed them in the FLA 
+files. Let's take the example of the main file, the liquidTemplate.fla, 
+open this file in Flash, in the library, locate the movieclip called 
+"fontEmbedding" and double click it. This will open it on stage, you 
+will see 5 different textfields used to embed the 3 verdana fonts 
+(regular, bold and italic) and the 2 geoSans fonts (regular and italic),
+ select the top one (verdana regular), in the properties panel click the
+ "Character Embedding" button, you will see a field at the bottom called
+ "Include these characters" with some characters already added, add the 
+extra characters you want to use and click OK. Do the same with the 
+remaining 4 textfields. You now need to recompile the SWF file by 
+pressing CTRL+ENTER on your keyboard. You can now use these special 
+characters in the xml files. Note you will need to repeat the above 
+process for each module you want to add these special characters to.</p>
+<h2 class="style4">8) How do I link to an external HTML page instead of loading a swf file?</h2>
+<p>In the main.xml file, each menu item has a swf path parameter:</p>
+<p><span class="style7">&lt;!-- start single menu item here --&gt;</span><br>
+    <span class="style4">&lt;menuItem page_title="HOME" <span class="style5">swf="<span class="style7">home.swf</span>"</span> xmlPath = "xml/home.xml" bgImage = "images/background/1.jpg"<span class="style4">/&gt;</span></span><br>
+    <span class="style7">&lt;!-- end single menu item here --&gt;</span></p>
+<p>However, you can point to an external url instead, by just including a absolute url instead of a swf path, like so;</p>
+<p><span class="style5">&lt;menuItem page_title="BLOG" swf="<span class="style7">http://marketplace.envato.com/user/LGLab</span>" xmlPath = "" bgImage = ""/&gt;</span></p>
+<p>You can also set the window target for the external URL in the settings at the top of the main.xml as follows:</p>
+<p>menuExternalURLWindowTarget = "<span class="style7">_blank</span>"</p>
+<h2 class="style4"><strong>9) How do I change the colors and the transparency of the menu, header etc..?</strong></h2>
+<p class="style4">At the top of the xml file, you will find the following parameters, update the content highlighted in red as described below:</p>
+<p class="style4">headerBgColor = "1B1B1B"<span class="style7"> //Color for the header</span><br>
+headerBgAlpha = "0.5"<span class="style7"> //Transparency for the header</span><br>
+footerBgColor = "1B1B1B"<span class="style7"> //Color for the footer</span><br>
+footerBgAlpha = "0.5"<span class="style7"> //Transparency for the footer</span><br>
+<br>
+menuButtonsTextColor = "FFFFFF<span class="style7"> //Color of the menu text</span><br>
+menuButtonsBgColor = "1B1B1B"<span class="style7"> //Color for the menu background</span><br>
+menuButtonsBgAlpha = "0"<span class="style7"> //Transparency for the menu background</span><br>
+menuButtonsBgOverColor = "CCFF00"<span class="style7"> //Color for the menu background when over</span><br>
+menuButtonsBgOverAlpha = "0.55"<span class="style7"> //Transparency for the menu background when over</span><br>
+<br>
+submenuButtonsTextColor = "FFFFFF"<span class="style7"> //Color of the submenu text</span><br>
+submenuButtonsBgColor = "1B1B1B"<span class="style7"> //Color for the submenu background</span><br>
+submenuButtonsBgAlpha = "0.5"<span class="style7"> //Transparency for the submenu background</span><br>
+submenuButtonsBgOverColor = "CCFF00"<span class="style7"> //Color for the submenu background when over</span><br>
+submenuButtonsBgOverAlpha = "0.5"<span class="style7"> //Transparency for the submenu background when over</span><br>
+<br>
+bgPreloaderColor = "CCFF00"<span class="style7"> //Color of the background preloader</span><br>
+bgPreloaderAlpha = "0.1"<span class="style7"> //Transparency of the background preloader</span></p>
+<h2 class="style4"><strong>10) How can I used the same module multiple times?</strong></h2>
+<p class="style4">You can easily use multiple instances of each modue 
+without having to actually duplicate the flash file itself. Simply add a
+ new menu item, point to the same swf file, and add a different xml 
+path, as follows:</p>
+<p class="style4">&lt;menuItem page_title="<span class="style7">HOME</span>" swf="<span class="style5">singleVideo_and_rotator.swf</span>" xmlPath = "<span class="style7">xml/home.xml</span>" bgImage = "images/background/1.jpg"/&gt;</p>
+<p class="style4">&lt;menuItem page_title="<span class="style7">HOME2</span>" swf="<span class="style5">singleVideo_and_rotator.swf</span>" xmlPath = "<span class="style7">xml/home2.xml</span>" bgImage = "images/background/1.jpg"/&gt;</p>
+<p class="style4">This can be done with any module.</p>
+<h2 class="style4"><strong>11) Can I load other SWF files in this template?</strong></h2>
+<p class="style4">Sure you can, the template preview includes "test" SWF files, under the SWF menu item.</p>
+<p class="style7">&lt;menuItem page_title = "YOUR OWN SWF"&gt;<br>
+&lt;submenu page_title="SELF CENTERED" swf="yourOwnSwf_topLeft.swf"<span class="style5"> selfAlign = "true"</span>  xmlPath = ""  bgType = "swf" bgSwfSelfAlign = "false" bgFile = "images/background/swf.swf"/&gt;<br>
+&lt;submenu page_title="LAZY SWF" swf="yourOwnSwf_center.swf" <span class="style5">selfAlign="false"</span> <span class="style5">externalWidth="700" externalHeight="480"</span> xmlPath = "" bgType = "image" bgFile = "images/background/1.jpg"/&gt;<br>
+&lt;/menuItem&gt;</p>
+<p class="style4">Note that 2 types of external SWFs are supported, 
+"self-aligned SWFs" or SWFs that expect the template holder to align 
+them. You may or may not know, but some SWF files are coded to align 
+themselves when resizing the browser window, and others don't, which 
+could be a problem with this template.</p>
+<p class="style4">However, you can set parameters to deal with both situations.</p>
+<p class="style18">a) Self-aligned</p>
+<p class="style4">By definition, you don't need to do anything with 
+those, as they will center themselves which is fine. You will still need
+ to set the <span class="style5">selfAlign </span>parameter to <span class="style5">true</span> in that case as in this example:</p>
+<p class="style4"><span class="style7">&lt;submenu page_title="SELF CENTERED" swf="yourOwnSwf_topLeft.swf"<span class="style5"> selfAlign = "true"</span> xmlPath = ""  bgType = "swf" bgSwfSelfAlign = "false" bgFile = "images/background/swf.swf"/&gt;</span></p>
+<p class="style4">Note that unless it is programmed so, you do not need 
+to add an xml path, as most modules will have the xml path hard coded in
+ the actionscript.</p>
+<p class="style18">b) non-centered SWF files</p>
+<p class="style4">Those are the ones that would expect my template to do the centering for them, in that case, you will need to set the <span class="style5">selfAlign</span> parameter to <span class="style5">false</span>, as well as the dimensions of that swf file, as follows:</p>
+<p class="style4"><span class="style7">&lt;submenu page_title="LAZY SWF" swf="yourOwnSwf_center.swf" <span class="style5">selfAlign="false"</span> </span><span class="style5">externalWidth="700"</span> <span class="style5">externalHeight="480"</span><span class="style7"> xmlPath = "" bgType = "image" bgFile = "images/background/1.jpg"/&gt;</span></p>
+<h2 class="style4"><strong>12) What files do I need to upload to my server?</strong></h2>
+<p class="style4">You basically need to upload everything single file, exactly the way it is in the download file you got from ActiveDen, <strong>except for the FLA files</strong>.</p>
+<h2><strong>13) Can I change the alignment of the menu?</strong></h2>
+<p>In the main.xml file in the settings at the top you will find the 
+following parameter, which you can set to "left", "middle" or "right":</p>
+<p>menuAlignment = "<span class="style5">middle</span>"</p>
+<h2><strong>14) How do I change the main page title for the site?</strong></h2>
+<p>In the main.xml file in the settings at the top you will find the following parameter, change it to what you want:</p>
+<p>BroswerPageTitle = "<span class="style5">Liquid² </span>"</p>
+<h2><strong>15) Video background settings.</strong></h2>
+<p class="style4">At the top of the main.xml you will find the following parameters, update accordingly:</p>
+<p class="style5"> videoBackgrounBufferTime = "5"<span class="style7"> //The buffer time is seconds for the video</span><br>
+videoBackgroundVolume = ".5"<span class="style7"> //The default volume leel for the video background</span><br>
+videoBufferBgColor = "1b1b1b"<span class="style7"> //The color for the video buffer movieclip</span><br>
+videoBufferBgAlpha = ".5"<span class="style7"> //The transparency for the video buffer movieclip between 0 and 1</span></p>
+<h2><strong>16) SWFFit settings.</strong></h2>
+<p>swffit is a javascript code that will set a minimum height for your 
+flash website until the natural browser scroll bars appear. This 
+template was built to fit most screen resolution, but you may still want
+ to show browser scroll bars when reaching a low resolution.</p>
+<p>To do so, open the index.html file in your favourite text editor and locate the following line of code:</p>
+<p><span class="style7">swffit.fit("flash",900,600);</span> //Update this line with your own values (Minimum width, minimum height)</p>
+<p>You can trurn swffit off all together by "commenting out" the above 
+line by adding 2 forward slashes (//) in front of the line like so:</p>
+<p><span class="style5">//swffit.fit("flash",900,600);</span></p>
+<p>&nbsp;</p>
+<h2><strong>17) Where can I find the images of the girls dancing in the preview?</strong></h2>
+<p class="style4">You can find those images at the following links:</p>
+<p class="style4">http://www.fotolia.com/id/21175632<br>
+  http://www.fotolia.com/id/13803605<br>
+  http://www.fotolia.com/id/17454067<br>
+  http://www.fotolia.com/id/21175632<br>
+  http://www.fotolia.com/id/16143191<br>
+  http://www.fotolia.com/id/20803897<br>
+  http://www.fotolia.com/id/13858499<br>
+  http://www.fotolia.com/id/16651727<br>
+  http://www.fotolia.com/id/21517963<br>
+http://www.fotolia.com/id/20665060</p>
+<p class="style4">&nbsp;</p>
+<h2 class="style4">That's it for the main part of the site. For 
+instructions about updating each module's content, refer to the relevant
+ help file in the help folder.</h2>
+<h2 class="style4">Enjoy it! If there is anything that you need help with, please do not hesitate to contact me via my <a href="http://marketplace.envato.com/user/LGLab" target="_blank">ActiveDen account</a></h2>
+</body></html>

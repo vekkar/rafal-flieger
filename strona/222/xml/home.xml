@@ -60,6 +60,7 @@
 	<!-- End image here -->
 	
 	 <!-- Begin image here -->
+	<!--
 	<image>
 		<path slideShowDelay = "7">images/home/swf.swf</path>
 		<title bgColour="21211F" bgAlpha="0" Ypos="10" Xpos="410"><![CDATA[<font color="#FFFFFF">FLUID PAGE TRANSITIONS</font>]]></title>
