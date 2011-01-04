@@ -1,0 +1,23 @@
+<flash_project name="contact.swf.flp" version="1">
+    <project_folder name="caurina" expanded="false">
+        <project_folder name="transitions" expanded="false">
+            <project_folder name="properties" expanded="false">
+                <project_file path=".\contact.swf_as\caurina\transitions\properties\ColorShortcuts.as" filetype="as" />
+                <project_file path=".\contact.swf_as\caurina\transitions\properties\CurveModifiers.as" filetype="as" />
+            </project_folder>
+            <project_file path=".\contact.swf_as\caurina\transitions\AuxFunctions.as" filetype="as" />
+            <project_file path=".\contact.swf_as\caurina\transitions\Equations.as" filetype="as" />
+            <project_file path=".\contact.swf_as\caurina\transitions\PropertyInfoObj.as" filetype="as" />
+            <project_file path=".\contact.swf_as\caurina\transitions\SpecialProperty.as" filetype="as" />
+            <project_file path=".\contact.swf_as\caurina\transitions\SpecialPropertyModifier.as" filetype="as" />
+            <project_file path=".\contact.swf_as\caurina\transitions\SpecialPropertySplitter.as" filetype="as" />
+            <project_file path=".\contact.swf_as\caurina\transitions\TweenListObj.as" filetype="as" />
+            <project_file path=".\contact.swf_as\caurina\transitions\Tweener.as" filetype="as" />
+        </project_folder>
+    </project_folder>
+    <project_folder name="contact_fla" expanded="false">
+        <project_file path=".\contact.swf_as\contact_fla\MainTimeline.as" filetype="as" />
+    </project_folder>
+    <project_file path=".\contact.swf_as\buttonMc.as" filetype="as" />
+    <project_file path="./contact.swf.fla" filetype="fla" profile="" def_file="true" />
+</flash_project>

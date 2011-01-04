@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Documentation - Part 1</title>
+<style type="text/css">
+<!--
+.style4 {color: #000000; }
+.style5 {color: #FF0000}
+.style7 {color: #0000FF}
+.style18 {color: #000000; font-weight: bold; }
+-->
+</style>
+</head><body>
+<h1>Documentation for textContent_and_rotator.swf</h1>
+<p>This module is made of 2 main components: a banner rotator and a main
+ text area with scroll bar. You can use this module in a number of ways 
+by either having the rotator with multiple images/swf and multiple main 
+text content, or multiple images and single text content, or even a 
+single rotaor image/swf and single text content....or in fact any 
+combination of both, meaning you could have multiple images/swf in the 
+rotator and only have the main text content on some of those images/swf.</p>
+<h1>Content</h1>
+<p><strong>1) General rotator settings</strong></p>
+<p><strong>2) General colour settings</strong></p>
+<p><strong>3) The banner rotator set-up</strong></p>
+<p><strong>4) The main text content</strong></p>
+<p>&nbsp;</p>
+<h2>1)<strong> General rotator settings</strong></h2>
+<p>Let's take the example of the SERVICES page, open the services.xml 
+file, at the top in the settings area you will find the following 
+parameters for the rotator:</p>
+<p><span class="style7">rotatorImageWidth = "780" </span>//Here you set 
+the width of the image you want, it can be any size but keep in mind 
+different internet users have different screen resolutions so don't go 
+too big.<span class="style7"><br>
+rotatorImageHeight = "260" </span>//Here you set the height of the image
+ you want, it can be any size but keep in mind different internet users 
+have different screen resolutions so don't go too big.<span class="style7"><br>
+preloaderColor = "CCFF00" </span>//The color for the preloader/rotation delay movieclip<span class="style7"><br>
+preloaderAlpha = "0.2" </span>//The transparency for the preloader/rotation delay movieclip</p>
+<h2><strong>2) General colour settings</strong></h2>
+<p>At the top of the xml file in the settings, you will find the following general colour settings:</p>
+<p><span class="style7">bgColor = "1B1B1B" </span>//The main color for all backgrounds including the video controls background color and rotator controls background color.<span class="style7"><br>
+bgAlpha = ".5"  </span>//The transparency for all backgrounds including the video controls background color and rotator controls background color.<span class="style7"><br>
+<br>
+controlsIconColor = "FFFFFF" </span>//The  color for all icons including the video controls background color and rotator controls background color.<span class="style7"><br>
+controlsIconAlpha = "1" </span>//The  transparency for all icons including the video controls background color and rotator controls background color.<span class="style7"><br>
+controlsBgColor = "1B1B1B" </span>//The  color for the icons backgrounds including the video controls background color and rotator controls background color.<span class="style7"><br>
+controlsBgOverColor = "CCFF00" </span>//The  color for the icons 
+backgrounds when over, including the video controls background color and
+ rotator controls background color.<span class="style7"><br>
+controlsBgAlpha = ".5" </span>//The  transparency for the icons 
+backgrounds including the video controls background color and rotator 
+controls background color.</p>
+<h2><strong>3) The banner rotator set-up</strong></h2>
+<p><strong>a - Individual settings for each image/swf</strong></p>
+<p>The banner rotator supports any image format such as jpg, png or gif,
+ as well as SWF files. Each image/swf is defined in the xml file by the 
+&lt;image&gt; node as follows:</p>
+<p> &lt;!-- Begin image here --&gt;<br>
+  <span class="style7">&lt;image&gt;<br>
+&lt;path slideShowDelay = "6"&gt;images/home/1.jpg&lt;/path&gt;<br>
+&lt;title bgColour="1b1b1b" bgAlpha=".6" Ypos="10" 
+Xpos="375"&gt;&lt;![CDATA[&lt;font color="#CCFF00"&gt;LIQUID² - AS3 XML 
+TEMPLATE&lt;/font&gt;]]&gt;&lt;/title&gt;<br>
+&lt;description bgColour="21211F" bgAlpha="0" 
+txtWidth="260"&gt;&lt;![CDATA[&lt;font face="GeosansLight" 
+color="#ffffff" size="16"&gt;Welcome to my new 
+template!&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font 
+color="#ffffff"&gt;Includes a &lt;b&gt;2 level menu&lt;/b&gt;, 
+&lt;b&gt;deep linking&lt;/b&gt; and &lt;b&gt;9 reusable 
+modules&lt;/b&gt;.&lt;br&gt;&lt;br&gt;Each module comes with its own 
+&lt;b&gt;liquid transitions&lt;/b&gt;  and can be duplicated easily from
+ the xml file.&lt;/font&gt;]]&gt;&lt;/description&gt;<br>
+&lt;/image&gt;</span><br>
+&lt;!-- End image here --&gt;</p>
+<p>You can add as many items as you want, simply delete/duplicate the above node.</p>
+<p>Each image/swf has a number of options which you can update as follows:</p>
+<p><span class="style7">&lt;path slideShowDelay = "6"&gt;images/home/1.jpg&lt;/path&gt;</span> // the path to the image or swf, and the delay before the next rotation.</p>
+<p>&lt;title bgColour="1b1b1b" bgAlpha=".6" Ypos="10" Xpos="375"&gt;&lt;![CDATA[<span class="style7">&lt;font color="#CCFF00"&gt;LIQUID² - AS3 XML TEMPLATE&lt;/font&gt;</span>]]&gt;&lt;/title&gt; // the text content for the  title box, this can be HTML formatted</p>
+<p><span class="style7">bgColour="1b1b1b"</span> //The color for the title background<br>
+  <span class="style7">bgAlpha=".6" </span>//The transparency for the title background<br>
+  <span class="style7">Ypos="10"</span> //The vertical position of the 
+title in pixels starting from the top of the image, the description will
+ be set 5 pixels below the title.<br>
+<span class="style7">Xpos="375"</span> //The horizontal position of the 
+title starting from the left of the image, the description will be set 
+at the same X value as the title.</p>
+<p>&lt;description bgColour="21211F" bgAlpha="0" txtWidth="260"&gt;&lt;![CDATA[<span class="style7">&lt;font
+ face="GeosansLight" color="#ffffff" size="16"&gt;Welcome to my new 
+template!&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font 
+color="#ffffff"&gt;Includes a &lt;b&gt;2 level menu&lt;/b&gt;, 
+&lt;b&gt;deep linking&lt;/b&gt; and &lt;b&gt;9 reusable 
+modules&lt;/b&gt;.&lt;br&gt;&lt;br&gt;Each module comes with its own 
+&lt;b&gt;liquid transitions&lt;/b&gt;  and can be duplicated easily from
+ the xml file.&lt;/font&gt;</span>]]&gt;&lt;/description&gt; // the text
+ content for the description box, this can be HTML formatted. You can 
+leave this empty if you don't want any descirption.</p>
+<p> <span class="style7">bgColour="21211F"</span> //The color for the description background<br>
+  <span class="style7">bgAlpha="0"</span> //The transparency for the description background<br>
+<span class="style7">txtWidth="260"</span> //The width for the description text field, the height will be calculated depending on the amount of text.</p>
+<h2><strong>4) The main text content</strong></h2>
+<p>Within each &lt;image&gt; node you have an inner &lt;text&gt; node as follows:</p>
+<p>&lt;text <span class="style5">transition = "0"</span>&gt;&lt;![CDATA[<span class="style7">&lt;font
+ size="24" face="GeosansLight"&gt;MOTION FLASH 
+DESIGNS&lt;/font&gt;&lt;br&gt;&lt;br&gt;Developer:&lt;br&gt;&lt;a 
+href="http://marketplace.envato.com/user/LGLab"&gt;LGLab&lt;/a&gt;&lt;br&gt;&lt;br&gt;This
+ text is &lt;b&gt;HTML formated&lt;/b&gt; and imported dynamically from 
+XML. &lt;br&gt;&lt;br&gt;You can easlily insert &lt;a 
+href="http://marketplace.envato.com/user/LGLab"&gt;external 
+links&lt;/a&gt;, &lt;a href="mailto:yourEmail@mail.com"&gt;email 
+links&lt;/a&gt; but also links to pages of this website such as the 
+&lt;a href="#/staff"&gt;staff page&lt;/a&gt;, all styled using CSS, 
+embed images and swf etc... &lt;br&gt;&lt;br&gt;This text area has 
+scroll bar support with mouse wheel enabled including on Macs, and it 
+will adapt to any screen resolutions.&lt;br&gt;&lt;br&gt;&lt;img 
+vspace="4" hspace="6" src="images/services/small.jpg"/&gt;Lorem ipsum 
+dolor sit amet, consectetur adipiscing elit. In vehicula libero vel 
+tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, 
+nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit.&lt;br&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;In 
+pretium leo vitae ipsum.&lt;/li&gt;&lt;li&gt;Donec 
+sollicitudin.&lt;/li&gt;&lt;li&gt;Ut euismod erat sit amet 
+leo.&lt;/li&gt;&lt;li&gt;Donec pellentesque dui a 
+elit.&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;&lt;br&gt;Donec eu nisl sit amet 
+lectus gravida luctus. In pretium leo vitae ipsum.&lt;br&gt;&lt;br&gt;In
+ pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at 
+libero. Integer scelerisque imperdiet risus.Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi 
+dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi 
+ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit.&lt;br&gt;Donec pellentesque dui a elit. Donec 
+sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium 
+leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer
+ scelerisque imperdiet risus.&lt;br&gt;Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi 
+dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi 
+ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit.&lt;br&gt;Donec pellentesque dui a elit. Donec 
+sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium 
+leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer
+ scelerisque imperdiet risus.&lt;br&gt;&lt;br&gt;Nam nisi dolor, 
+faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper 
+ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit.&lt;br&gt;Donec pellentesque dui a elit. Donec sollicitudin. Donec 
+eu nisl sit amet lectus gravida luctus.</span>]]&gt;&lt;/text&gt;<br>
+  <br>
+</p>
+<p>Each text content can have a specific transitions when being revealed
+ as highlighted in red above, you can choose from a number of 
+transitions, please refer to the xml file for the list of transitions, 
+and use the numbers corresponding for each transition.</p>
+<p>You can leave the text content empty (only delete the actual text 
+content as highlighted in blue above), so that the rotator rotates the 
+image/swf but the main text will remain the one used in the previews 
+rotation node. Any &lt;image&gt; node can have text or no text.</p>
+<p>&nbsp;</p>
+<h2 class="style4">If there is anything that you need help with, please do not hesitate to contact me via my <a href="http://marketplace.envato.com/user/LGLab" target="_blank">ActiveDen account</a></h2>
+</body></html>

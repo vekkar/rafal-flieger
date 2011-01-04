@@ -45,7 +45,7 @@
 		   
     <!-- start Meble laboratoryjne menu item here -->	
     <menuItem page_title = "MEBLE LABOLATORYJNE">   
-      <submenu page_title="Dygestoria" swf="textContent_and_rotator.swf" xmlPath = "xml/services.xml" 
+      <submenu page_title="Dygestoria" swf="textContent_and_rotator.swf" xmlPath = "xml/dydestoria.xml" 
                bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="Stoły laboratoryjne" swf="textContent_and_rotator.swf"  xmlPath = "xml/contentWindow.xml" 
                bgType = "image" bgFile = "images/background/pulpit.jpg"/>
