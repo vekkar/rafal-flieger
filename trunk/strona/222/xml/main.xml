@@ -13,16 +13,16 @@
     BroswerPageTitle = "TAWO Meble Labolatoryjne"
     menuAlignment = "middle"
 		  
-    headerBgColor = "1B1B1B"
-    headerBgAlpha = "0.5"
+    headerBgColor = "c8e64e"
+    headerBgAlpha = "0.8"
     footerBgColor = "1B1B1B"
     footerBgAlpha = "0.5"
 		  
-    menuButtonsTextColor = "FFFFFF"
-    menuButtonsBgColor = "1B1B1B"
+    menuButtonsTextColor = "000000"
+    menuButtonsBgColor = "FFFFF00"
     menuButtonsBgAlpha = "0"
-    menuButtonsBgOverColor = "CCFF00"
-    menuButtonsBgOverAlpha = "0.55"
+    menuButtonsBgOverColor = "01ff02"
+    menuButtonsBgOverAlpha = "1"
 		  
     submenuButtonsTextColor = "FFFFFF"
     submenuButtonsBgColor = "1B1B1B"
@@ -40,7 +40,7 @@
   />
   <menu>		
     <!-- start single menu item here -->
-    <menuItem page_title="HOME" swf="singleVideo_and_rotator.swf" xmlPath = "xml/home.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+    <menuItem page_title="HOME" swf="singleVideo_and_rotator.swf" xmlPath = "xml/home.xml" bgType = "image" bgFile = "images/background/z.jpg"/>
     <!-- end single menu item here -->
 		   
     <!-- start Meble laboratoryjne menu item here -->	
@@ -65,18 +65,29 @@
       -->
 	  </menuItem>
 	  
-    <!-- end REFERENCJE menu item here -->	
-    <!--
-	  <menuItem page_title="SHOWROOM" swf="showroom.swf" xmlPath = "xml/showroom.xml" bgType = "youtube" bgFile = "SE1l1y5VgAM"/>
-    -->
+    <!-- end REFERENCJE menu item here -->
+
+    <menuItem page_title="O FIRMIE">
+      <submenu page_title="info" swf="textContent_and_rotator.swf"  xmlPath = "xml/contentWindow.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="referencje" swf="showroom.swf" xmlPath = "xml/referencje.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="certyfiakty" swf="showroom.swf" xmlPath = "xml/certyfiakty.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      
+      <submenu page_title="certyfiakty2" swf="media_gallery.swf" xmlPath = "" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="referencje2" swf="media_gallery.swf" xmlPath = "xml/referencje2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+
+    </menuItem>
+    <!--<menuItem page_title="REFERENCJE" swf="showroom.swf" xmlPath = "xml/referencje.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
+
+    <!--<menuItem page_title="CERTYFIKATY" swf="showroom.swf" xmlPath = "xml/certyfikaty.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
+    
 		
-    <!--
+    
 	  <menuItem page_title = "PORTFOLIO">
 	    <submenu page_title="GALLERIES" swf="media_gallery.swf" xmlPath = "xml/galleries.xml" bgType = "image" bgFile = "images/background/6.jpg"/>
 		  <submenu page_title="MIXED" swf="media_gallery.swf" xmlPath = "xml/mixedGallery.xml" bgType = "image" bgFile = "images/background/5.jpg"/>
 		  <submenu page_title="PROJECTS" swf="singleVideo_and_rotator.swf"  xmlPath = "xml/projects.xml" bgType = "image" bgFile = "images/background/4.jpg"/>
 	  </menuItem> 
-	   -->
+	   
 		   
 	  <!--
 	  <menuItem page_title = "VIDEO">
