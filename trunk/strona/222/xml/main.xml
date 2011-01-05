@@ -40,7 +40,7 @@
   />
   <menu>		
     <!-- start single menu item here -->
-    <menuItem page_title="HOME" swf="singleVideo_and_rotator.swf" xmlPath = "xml/home.xml" bgType = "image" bgFile = "images/background/z.jpg"/>
+    <menuItem page_title="HOME" swf="singleVideo_and_rotator.swf" xmlPath = "xml/home.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
     <!-- end single menu item here -->
 		   
     <!-- start Meble laboratoryjne menu item here -->	
