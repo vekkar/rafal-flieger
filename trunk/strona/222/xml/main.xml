@@ -72,9 +72,16 @@
       <submenu page_title="referencje" swf="showroom.swf" xmlPath = "xml/referencje.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="certyfiakty" swf="showroom.swf" xmlPath = "xml/certyfiakty.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       
-      <submenu page_title="certyfiakty2" swf="media_gallery.swf" xmlPath = "" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="certyfiakty2" swf="media_gallery.swf" xmlPath = "xml/certyfikaty2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="referencje2" swf="media_gallery.swf" xmlPath = "xml/referencje2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
 
+    </menuItem>
+
+    <menuItem page_title="BEZPIECZEŃSTWO">
+      <submenu page_title="szafy na chemikalia" swf="staff.swf" xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="szafy na ognioochronne" swf="staff.swf" xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="oczomyjki" swf="sraff.swf" xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="prysznice BHP" swf="staff.swf" xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
     </menuItem>
     <!--<menuItem page_title="REFERENCJE" swf="showroom.swf" xmlPath = "xml/referencje.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
 
@@ -82,11 +89,11 @@
     
 		
     
-	  <menuItem page_title = "PORTFOLIO">
+	  <!--<menuItem page_title = "PORTFOLIO">
 	    <submenu page_title="GALLERIES" swf="media_gallery.swf" xmlPath = "xml/galleries.xml" bgType = "image" bgFile = "images/background/6.jpg"/>
 		  <submenu page_title="MIXED" swf="media_gallery.swf" xmlPath = "xml/mixedGallery.xml" bgType = "image" bgFile = "images/background/5.jpg"/>
 		  <submenu page_title="PROJECTS" swf="singleVideo_and_rotator.swf"  xmlPath = "xml/projects.xml" bgType = "image" bgFile = "images/background/4.jpg"/>
-	  </menuItem> 
+	  </menuItem>--> 
 	   
 		   
 	  <!--
