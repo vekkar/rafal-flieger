@@ -13,16 +13,16 @@
     BroswerPageTitle = "TAWO Meble Labolatoryjne"
     menuAlignment = "middle"
 		  
-    headerBgColor = "c8e64e"
+    headerBgColor = "1B1B1B"
     headerBgAlpha = "0.8"
     footerBgColor = "1B1B1B"
     footerBgAlpha = "0.5"
 		  
-    menuButtonsTextColor = "000000"
-    menuButtonsBgColor = "FFFFF00"
-    menuButtonsBgAlpha = "0"
-    menuButtonsBgOverColor = "01ff02"
-    menuButtonsBgOverAlpha = "1"
+    menuButtonsTextColor = "ffffff"
+    menuButtonsBgColor = "1b1b1b"
+    menuButtonsBgAlpha = "0.0"
+    menuButtonsBgOverColor = "ccff00"
+    menuButtonsBgOverAlpha = "0.55"
 		  
     submenuButtonsTextColor = "FFFFFF"
     submenuButtonsBgColor = "1B1B1B"
@@ -42,7 +42,17 @@
     <!-- start single menu item here -->
     <menuItem page_title="HOME" swf="singleVideo_and_rotator.swf" xmlPath = "xml/home.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
     <!-- end single menu item here -->
-		   
+
+    <menuItem page_title="O FIRMIE">
+      <submenu page_title="info" swf="textContent_and_rotator.swf"  xmlPath = "xml/companyInfo.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="referencje" swf="showroom.swf" xmlPath = "xml/referencje.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="certyfiakty" swf="showroom.swf" xmlPath = "xml/certyfiakty.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+
+      <submenu page_title="certyfiakty2" swf="media_gallery.swf" xmlPath = "xml/certyfikaty2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="referencje2" swf="media_gallery.swf" xmlPath = "xml/referencje2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+
+    </menuItem>
+
     <!-- start Meble laboratoryjne menu item here -->	
     <menuItem page_title = "MEBLE LABOLATORYJNE">   
       <submenu page_title="Dygestoria" swf="textContent_and_rotator.swf" xmlPath = "xml/dydestoria.xml" 
@@ -67,21 +77,12 @@
 	  
     <!-- end REFERENCJE menu item here -->
 
-    <menuItem page_title="O FIRMIE">
-      <submenu page_title="info" swf="textContent_and_rotator.swf"  xmlPath = "xml/contentWindow.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-      <submenu page_title="referencje" swf="showroom.swf" xmlPath = "xml/referencje.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-      <submenu page_title="certyfiakty" swf="showroom.swf" xmlPath = "xml/certyfiakty.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-      
-      <submenu page_title="certyfiakty2" swf="media_gallery.swf" xmlPath = "xml/certyfikaty2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-      <submenu page_title="referencje2" swf="media_gallery.swf" xmlPath = "xml/referencje2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-
-    </menuItem>
 
     <menuItem page_title="BEZPIECZEŃSTWO">
-      <submenu page_title="szafy na chemikalia" swf="staff.swf" xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-      <submenu page_title="szafy na ognioochronne" swf="staff.swf" xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="szafy ognioochronne" swf="staff.swf" xmlPath = "xml/ogniowe.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <!--<submenu page_title="szafy na chemikalia" swf="staff.swf" xmlPath = "xml/ogniowe.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="oczomyjki" swf="sraff.swf" xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-      <submenu page_title="prysznice BHP" swf="staff.swf" xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="prysznice BHP" swf="staff.swf" xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
     </menuItem>
     <!--<menuItem page_title="REFERENCJE" swf="showroom.swf" xmlPath = "xml/referencje.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
 
