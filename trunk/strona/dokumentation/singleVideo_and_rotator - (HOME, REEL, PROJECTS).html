@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Documentation - Part 1</title>
+<style type="text/css">
+<!--
+.style4 {color: #000000; }
+.style5 {color: #FF0000}
+.style7 {color: #0000FF}
+.style18 {color: #000000; font-weight: bold; }
+-->
+</style>
+</head><body>
+<h1>Documentation for singleVideo_and_rotator.swf</h1>
+<p>This Module can be used in 3 different ways, either the video player 
+on its own (REEL), or the image rotator on its own (PROJECTS), or both 
+at the same time (HOME).</p>
+<h1>Content</h1>
+<p><strong>1) How do I set this module so it only plays the video, the rotator or both?</strong></p>
+<p><strong>2) General colour settings</strong></p>
+<p><strong>3) The video player</strong></p>
+<p><strong>4) The banner rotator</strong></p>
+<p>&nbsp;</p>
+<h2>1) <strong>How do I set this module so it only plays the video, the rotator or both?</strong></h2>
+<p>Let's take the example of the HOME page, in the xml folder, open the <span class="style5">home.xml</span> in your favourite text editor. At the top in the settings, you will find the 2 following parameters:</p>
+<p><span class="style7">playIntro = "true"</span> //Set this to "true" 
+if you want the video player to launch first, set it to "false" if you 
+only want the image rotator as in the PROJECTS page example.</p>
+<p><span class="style7">playRotator = "true"</span> //Set this to "true"
+ if you want the image rotator to launch , set it to "false" if you only
+ want the video player as in the REEL page example.</p>
+<p>If both are set to true, the video player will launch first, and the 
+rotator will launch once the video is finished or if the user clicks on 
+the "SKIP INTRO" button. The "SKIP INTRO" button will not show if the 
+"playRotator" parameter is set to false.</p>
+<h2><strong>2) General colour settings</strong></h2>
+<p>At the top of the xml file in the settings, you will find the following general colour settings:</p>
+<p><span class="style7">bgColor = "1B1B1B" </span>//The main color for all backgrounds including the video controls background color and rotator controls background color.<span class="style7"><br>
+bgAlpha = ".5"  </span>//The transparency for all backgrounds including the video controls background color and rotator controls background color.<span class="style7"><br>
+<br>
+controlsIconColor = "FFFFFF" </span>//The  color for all icons including the video controls background color and rotator controls background color.<span class="style7"><br>
+controlsIconAlpha = "1" </span>//The  transparency for all icons including the video controls background color and rotator controls background color.<span class="style7"><br>
+controlsBgColor = "1B1B1B" </span>//The  color for the icons backgrounds including the video controls background color and rotator controls background color.<span class="style7"><br>
+controlsBgOverColor = "CCFF00" </span>//The  color for the icons 
+backgrounds when over, including the video controls background color and
+ rotator controls background color.<span class="style7"><br>
+controlsBgAlpha = ".5" </span>//The  transparency for the icons 
+backgrounds including the video controls background color and rotator 
+controls background color.</p>
+<h2><strong>3) The video player.</strong></h2>
+<p><strong>a - The video controls</strong></p>
+<p>You can choose whether or not to show the video controls by updating the following parameter:</p>
+<p><span class="style7">showControls="true"</span> //Set it to false to not show the controls.</p>
+<p>You can adjust the colors for the video controls as follows:</p>
+<p><span class="style7">videoControlsLoadBarColor = "CCFF00"</span> //The color for the bar used to display the current amount of video that is downloaded.<span class="style7"><br>
+  videoControlsLoadBarAlpha = ".2"</span> //The transparency for the bar used to display the current amount of video that is downloaded from 0 to 1<span class="style7"><br>
+videoControlsProgressBarColor = "CCFF00" </span>//The color for the bar used to display the current amount of video played so far.<span class="style7"><br>
+videoControlsProgressBarAlpha = ".8" </span>//The transparency for the bar used to display the current amount of video played so far.<span class="style7"><br>
+volumeSlideBarColor = "CCFF00" </span>//The color of the slide bar for the volume controls<span class="style7"><br>
+volumeSlideBarAlpha = ".2" </span>//The transparency of the slide bar for the volume controls<span class="style7"><br>
+volumeTooltipColor = "CCFF00" </span>//The color of the tooltip for the volume controls<span class="style7"><br>
+volumeTooltipAlpha = ".5"</span> //The transparency of the tooltip for the volume controls</p>
+<p><strong>b - Skip intro button</strong></p>
+<p>You can change the text used in the skip intro button in the following parameter:</p>
+<p class="style7">skipIntroText = "SKIP INTRO"</p>
+<p><strong>c - Video formats</strong></p>
+<p>The video player supports FLV format, as well as all H.264 encoded 
+video formats such as MP4 and MOV. It also supports YouTube videos, 
+simply update the following parameter with the path to your video:</p>
+<p class="style7">videoPath= "videos/pieces.flv"</p>
+<p>For YouTube videos, use the video ID instead as follows:</p>
+<p class="style7">videoPath= "Rs_wKkXCwDw"</p>
+<p><strong>d - Video settings</strong></p>
+<p>You can find various settings for the video at the top of the xml file as follows:</p>
+<p><span class="style7">videoBufferTime = "5" </span>//Video buffer time in seconds<span class="style7"><br>
+videoHeight="350" </span>//The default video height you want for the 
+video. For FLV/H.264 videos, the width will be calculated depending on 
+the original video ratio to avoid distortions. For youtube video you can
+ choose the video ratio, see below.<span class="style7"><br>
+videoVolume=".5"</span>//Default video volume</p>
+<p><span class="style7">youTubeVideoAspectRatio = "5:3" </span>//The video ratio for the youtube video<span class="style7"><br>
+youTubeVideoAspectQuality = "hd720"</span> //The quality level for the youtube video, including: "small", "medium", "large", "hd720", "hd1080", "highres" and "default"</p>
+<h2><strong>4) The banner rotator</strong></h2>
+<p><strong>a - The main settings</strong></p>
+<p>You will find the main settings for the banner rotator at the top of the xml file as follows:</p>
+<p><span class="style7">playRotator="true" </span>//Set this to true if you want the rotator to show.<span class="style7"><br>
+rotatorImageWidth = "700" </span>//Here you set the width of the image 
+you want, it can be any size but keep in mind different internet users 
+have different screen resolutions so don't go too big.<span class="style7"><br>
+rotatorImageHeight = "350" </span>//Here you set the height of the image
+ you want, it can be any size but keep in mind different internet users 
+have different screen resolutions so don't go too big.<span class="style7"><br>
+preloaderColor = "CCFF00" </span>//The color for the preloader/rotation delay movieclip<span class="style7"><br>
+preloaderAlpha = "0.2" </span>//The transparency for the preloader/rotation delay movieclip</p>
+<p><strong>b - Individual settings for each image/swf</strong></p>
+<p>The banner rotator supporst any image format such as jpg, png or gif,
+ as well as SWF files. Each image/swf is defined in the xml file by the 
+&lt;image&gt; node as follows:</p>
+<p> &lt;!-- Begin image here --&gt;<br>
+  <span class="style7">&lt;image&gt;<br>
+&lt;path slideShowDelay = "6"&gt;images/home/1.jpg&lt;/path&gt;<br>
+&lt;title bgColour="1b1b1b" bgAlpha=".6" Ypos="10" 
+Xpos="375"&gt;&lt;![CDATA[&lt;font color="#CCFF00"&gt;LIQUID² - AS3 XML 
+TEMPLATE&lt;/font&gt;]]&gt;&lt;/title&gt;<br>
+&lt;description bgColour="21211F" bgAlpha="0" 
+txtWidth="260"&gt;&lt;![CDATA[&lt;font face="GeosansLight" 
+color="#ffffff" size="16"&gt;Welcome to my new 
+template!&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font 
+color="#ffffff"&gt;Includes a &lt;b&gt;2 level menu&lt;/b&gt;, 
+&lt;b&gt;deep linking&lt;/b&gt; and &lt;b&gt;9 reusable 
+modules&lt;/b&gt;.&lt;br&gt;&lt;br&gt;Each module comes with its own 
+&lt;b&gt;liquid transitions&lt;/b&gt;  and can be duplicated easily from
+ the xml file.&lt;/font&gt;]]&gt;&lt;/description&gt;<br>
+&lt;/image&gt;</span><br>
+&lt;!-- End image here --&gt;</p>
+<p>You can add as many items as you want, simply delete/duplicate the above node.</p>
+<p>Each image/swf has a number of options which you can update as follows:</p>
+<p><span class="style7">&lt;path slideShowDelay = "6"&gt;images/home/1.jpg&lt;/path&gt;</span> // the path to the image or swf, and the delay before the next rotation.</p>
+<p>&lt;title bgColour="1b1b1b" bgAlpha=".6" Ypos="10" Xpos="375"&gt;&lt;![CDATA[<span class="style7">&lt;font color="#CCFF00"&gt;LIQUID² - AS3 XML TEMPLATE&lt;/font&gt;</span>]]&gt;&lt;/title&gt; // the text content for the  title box, this can be HTML formatted</p>
+<p><span class="style7">bgColour="1b1b1b"</span> //The color for the title background<br>
+  <span class="style7">bgAlpha=".6" </span>//The transparency for the title background<br>
+  <span class="style7">Ypos="10"</span> //The vertical position of the 
+title in pixels starting from the top of the image, the description will
+ be set 5 pixels below the title.<br>
+<span class="style7">Xpos="375"</span> //The horizontal position of the 
+title starting from the left of the image, the description will be set 
+at the same X value as the title.</p>
+<p>&lt;description bgColour="21211F" bgAlpha="0" txtWidth="260"&gt;&lt;![CDATA[<span class="style7">&lt;font
+ face="GeosansLight" color="#ffffff" size="16"&gt;Welcome to my new 
+template!&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font 
+color="#ffffff"&gt;Includes a &lt;b&gt;2 level menu&lt;/b&gt;, 
+&lt;b&gt;deep linking&lt;/b&gt; and &lt;b&gt;9 reusable 
+modules&lt;/b&gt;.&lt;br&gt;&lt;br&gt;Each module comes with its own 
+&lt;b&gt;liquid transitions&lt;/b&gt;  and can be duplicated easily from
+ the xml file.&lt;/font&gt;</span>]]&gt;&lt;/description&gt; // the text
+ content for the description box, this can be HTML formatted. You can 
+leave this empty if you don't want any descirption.</p>
+<p> <span class="style7">bgColour="21211F"</span> //The color for the description background<br>
+  <span class="style7">bgAlpha="0"</span> //The transparency for the description background<br>
+  <span class="style7">txtWidth="260"</span> //The width for the description text field, the height will be calculated depending on the amount of text.<br>
+  <br>
+</p>
+<p>&nbsp;</p>
+<h2 class="style4">If there is anything that you need help with, please do not hesitate to contact me via my <a href="http://marketplace.envato.com/user/LGLab" target="_blank">ActiveDen account</a></h2>
+</body></html>

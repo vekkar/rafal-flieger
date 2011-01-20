@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Documentation - Part 1</title>
+<style type="text/css">
+<!--
+.style4 {color: #000000; }
+.style5 {color: #FF0000}
+.style7 {color: #0000FF}
+.style18 {color: #000000; font-weight: bold; }
+-->
+</style>
+</head><body>
+<h1>Documentation for mediaGallery.swf</h1>
+<p>This module supports any image formats such as JPG, PNG, GIF, but 
+also SWF files as well as FLV/H.264 video and YouTube video. You can use
+ this module to create a single gallery, or a gallery with multiple 
+categories. You can mix images, SWF, custom videos and youtube videos in
+ a single category.</p>
+<h1>Content</h1>
+<p><strong>1) General colour settings</strong></p>
+<p><strong>2) The video player</strong></p>
+<p><strong>3) The gallery set-up</strong></p>
+<p>&nbsp;</p>
+<h2><strong>1) General colour settings</strong></h2>
+<p>At the top of the xml file in the settings, you will find the following general colour settings:</p>
+<p><span class="style7"> thumbBgColor = "1b1b1b" </span>//The color for the horizontal thumbnails background <span class="style7"><br>
+thumbBgAlpha = "0.5" </span>//The alpha for the horizontal thumbnails background <span class="style7"><br>
+<br>
+mainBgColor = "1b1b1b"</span>  //The color for the main content background <span class="style7"><br>
+mainBgAlpha = "0.5"</span>  //The alpha for the main content background <span class="style7"><br>
+<br>
+categoryDimBgColor = "1b1b1b" </span>//The color for the background covering the module when the categories are visible<span class="style7"><br>
+categoryDimBgAlpha = "0.8"  </span>//The alpha for the background covering the module when the categories are visible<span class="style7"><br>
+categoryTxtBgColor = "1b1b1b"</span> //The color for the category name background<span class="style7"><br>
+categoryTxtBgAlpha = "0.7" </span>//The alpha for the category name background<span class="style7"><br>
+categoryTxtColor = "FFFFFF" </span>//The color for the category name text<span class="style7"><br>
+<br>
+preloaderColor = "CCFF00" </span>//The color of the main content preloader<span class="style7"><br>
+preloaderAlpha = "0.3"  </span>//The alpha of the main content preloader<span class="style7"><br>
+<br>
+controlsIconColor = "FFFFFF" </span>//The icon color for the main content controls<span class="style7"><br>
+controlsIconAlpha = "1" </span>//The icon alpha for the main content controls<span class="style7"><br>
+controlsBgColor = "1B1B1B"</span> //The color for the controls background<span class="style7"><br>
+controlsBgOverColor = "CCFF00" </span>//the color for the controls background when over<span class="style7"><br>
+controlsBgAlpha = ".5"</span> //the alpha for the controls background when over</p>
+<p><span class="style7">scrollBtnOverColor = "CCFF00"</span> //Color for the scroll button when mouse over<span class="style7"><br>
+scrollBtnOverAlpha = ".5" </span>//transparency for the scroll button when mouse over<span class="style7"><br>
+scrollBtnColor = "FFFFFF"</span> //Color for the scroll button in normal state<span class="style7"><br>
+scrollBtnAlpha = ".5"</span> //transparency for the scroll button in normal state<span class="style7"><br>
+scrollBarColor = "FFFFFF"</span> //Color for the scroll bar<span class="style7"><br>
+scrollBarAlpha = ".5"</span> //transparency for the scroll bar</p>
+<h2><strong>2) The video player.</strong></h2>
+<p><strong>a - The video controls</strong></p>
+<p>You can adjust the colors for the video controls as follows:</p>
+<p><span class="style7">videoControlsLoadBarColor = "CCFF00"</span> //The color for the bar used to display the current amount of video that is downloaded.<span class="style7"><br>
+  videoControlsLoadBarAlpha = ".2"</span> //The transparency for the bar used to display the current amount of video that is downloaded from 0 to 1<span class="style7"><br>
+videoControlsProgressBarColor = "CCFF00" </span>//The color for the bar used to display the current amount of video played so far.<span class="style7"><br>
+videoControlsProgressBarAlpha = ".8" </span>//The transparency for the bar used to display the current amount of video played so far.<span class="style7"><br>
+volumeSlideBarColor = "CCFF00" </span>//The color of the slide bar for the volume controls<span class="style7"><br>
+volumeSlideBarAlpha = ".2" </span>//The transparency of the slide bar for the volume controls<span class="style7"><br>
+volumeTooltipColor = "CCFF00" </span>//The color of the tooltip for the volume controls<span class="style7"><br>
+volumeTooltipAlpha = ".5"</span> //The transparency of the tooltip for the volume controls</p>
+<p><strong>b - Video formats</strong></p>
+<p>The video player supports FLV format, as well as all H.264 encoded 
+video formats such as MP4 and MOV. It also supports YouTube videos, 
+simply update the following parameter with the path to your video:</p>
+<p class="style7">videoPath= "videos/pieces.flv"</p>
+<p>For YouTube videos, use the video ID instead as follows:</p>
+<p class="style7">videoPath= "Rs_wKkXCwDw"</p>
+<p><strong>c - Video settings</strong></p>
+<p>You can find various settings for the video at the top of the xml file as follows:</p>
+<p><span class="style7">videoBufferTime = "5" </span>//Video buffer time in seconds<span class="style7"><br>
+videoVolume=".5"</span>//Default video volume</p>
+<p><span class="style7">youTubeVideoAspectRatio = "5:3" </span>//The video ratio for the youtube video<span class="style7"><br>
+youTubeVideoAspectQuality = "hd720"</span> //The quality level for the youtube video, including: "small", "medium", "large", "hd720", "hd1080", "highres" and "default"</p>
+<h2><strong>3) The gallery set-up</strong></h2>
+<p><strong>a - The categories</strong></p>
+<p><strong>- Single category</strong></p>
+<p>Let's take the example of the mixed gallery, open the 
+mixedGallery.xml. The mixedGallery shows you how to have a gallery with 
+only one category, the category is defined by the &lt;category&gt; tags 
+as follows:</p>
+<p class="style5">&lt;category title="" catThumbnail="" smallThumbnailsWidth = "" smallThumbnailsHeight = "200"&gt;</p>
+<p class="style7">category content</p>
+<p class="style5">&lt;/category&gt;</p>
+<p><strong>- Multiple categories</strong></p>
+<p>If you decide to have multiple categories, you will need to set the 
+category name as well as the path to the category thumbnail (200x100), 
+as follows:</p>
+<p>&lt;category <span class="style7">title="FASHION"</span> <span class="style7">catThumbnail="images/mediaGallery/catThumbnails/1.jpg"</span> smallThumbnailsWidth = "" smallThumbnailsHeight = "200"&gt;</p>
+<p>You can have as many categories as you want, simply delete or duplicate the whole &lt;category&gt; node.</p>
+<p><strong>b - The items</strong></p>
+<p>Within each category, each item is defined by the &lt;item&gt; tags as follows:</p>
+<p> <span class="style5">&lt;item&gt;</span><br>
+  &lt;thumbnail width="313"&gt;<span class="style7">images/mediaGallery/thumbnails/1.jpg</span>&lt;/thumbnail&gt; <span class="style5">//The path to the thumbnail</span><br>
+&lt;large type="image"&gt;<span class="style7">images/mediaGallery/1.jpg</span>&lt;/large&gt; <span class="style5">//The path to the main content</span><br>
+&lt;text&gt;&lt;![CDATA[<span class="style7">&lt;font size="24" 
+face="GeosansLight"&gt;CLUB 
+HOUSE&lt;/font&gt;&lt;br&gt;&lt;br&gt;Photographer:&lt;br&gt;&lt;A 
+href="http://flashden.net/user/LGLab"&gt;John 
+Doe&lt;/a&gt;&lt;br&gt;&lt;br&gt;This is the main news area for each 
+news. This text is &lt;b&gt;HTML formated&lt;/b&gt; and imported 
+dynamically from XML. &lt;br&gt;You can easlily insert &lt;A 
+href="http://flashden.net/user/LGLab"&gt;links&lt;/a&gt;, &lt;A 
+href="mailto:yourEmail@mail.com"&gt;email links&lt;/a&gt; styled using 
+CSS, images etc... &lt;br&gt;&lt;br&gt;This is a short description. The 
+scroll bar will appear automaticaly if needed.&lt;br&gt;Lorem ipsum 
+dolor sit amet, consectetur adipiscing elit. In vehicula libero vel 
+tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, 
+nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit.&lt;br&gt;Donec pellentesque dui a elit. 
+Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In 
+pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero.
+ Integer scelerisque imperdiet risus.</span>]]&gt;&lt;/text&gt; <span class="style5">//The text content for the item if any</span><br>
+<span class="style5">&lt;/item&gt;</span></p>
+<p>You can have as many or few items as you like, simply delete or 
+duplicate the whole &lt;item&gt; node as highlighted above including the
+ &lt;item&gt; tags.</p>
+<p>&nbsp;</p>
+<p><strong>c - Thumbnails height</strong></p>
+<p>You can have thumbnails of any height, however all thumbnails within 
+the same category must have the same height. You can have different 
+heights in different categories though. You must set the height of the 
+thumbnail that you are going to use in the category parameters as 
+follow:</p>
+<p>&lt;category title="FASHION" catThumbnail="images/mediaGallery/catThumbnails/1.jpg" smallThumbnailsWidth = "" <span class="style7">smallThumbnailsHeight = "200"</span>&gt;</p>
+<p><strong>d - Thumbnails width</strong></p>
+<p>You can have any thumbnail width even within the same category, to do
+ this you will need to set the width of the thumbnail you are going to 
+use individually for each item as follows:</p>
+<p> &lt;item&gt;<br>
+&lt;thumbnail <span class="style7">width="313"</span>&gt;images/mediaGallery/thumbnails/1.jpg&lt;/thumbnail&gt;<br>
+&lt;large type="image"&gt;images/mediaGallery/1.jpg&lt;/large&gt;<br>
+&lt;text&gt;&lt;![CDATA[&lt;font size="24" face="GeosansLight"&gt;CLUB 
+HOUSE&lt;/font&gt;&lt;br&gt;&lt;br&gt;Photographer:&lt;br&gt;&lt;A 
+href="http://flashden.net/user/LGLab"&gt;John 
+Doe&lt;/a&gt;&lt;br&gt;&lt;br&gt;This is the main news area for each 
+news. This text is &lt;b&gt;HTML formated&lt;/b&gt; and imported 
+dynamically from XML. &lt;br&gt;You can easlily insert &lt;A 
+href="http://flashden.net/user/LGLab"&gt;links&lt;/a&gt;, &lt;A 
+href="mailto:yourEmail@mail.com"&gt;email links&lt;/a&gt; styled using 
+CSS, images etc... &lt;br&gt;&lt;br&gt;This is a short description. The 
+scroll bar will appear automaticaly if needed.&lt;br&gt;Lorem ipsum 
+dolor sit amet, consectetur adipiscing elit. In vehicula libero vel 
+tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, 
+nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit.&lt;br&gt;Donec pellentesque dui a elit. 
+Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In 
+pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero.
+ Integer scelerisque imperdiet risus.]]&gt;&lt;/text&gt;<br>
+&lt;/item&gt;</p>
+<p>However, if you choose to use the same width for all thumbnail within
+ the same category, you can set that width a single time in the category
+ parameters as follow:</p>
+<p>&lt;category title="FASHION" catThumbnail="images/mediaGallery/catThumbnails/1.jpg" <span class="style7">smallThumbnailsWidth = "250"</span> smallThumbnailsHeight = "200"&gt;</p>
+<p>If you are going to have different width for each thumbnail, make sure you leave the above <span class="style7">smallThumbnailsWidth</span> parameter empty.<br>
+  <br>
+</p>
+<p><strong>e - The main content</strong></p>
+<p>As stated at the beginning of this page, the media gallery supports 
+any image formats such as JPG, PNG, GIF, but also SWF files as well as 
+FLV/H.264 video and YouTube video. The main content for each item is 
+defined by the &lt;large&gt; tags as follows:</p>
+<p> &lt;item&gt;<br>
+&lt;thumbnail width="313"&gt;images/mediaGallery/thumbnails/1.jpg&lt;/thumbnail&gt;<br>
+<span class="style7">&lt;large type="image"&gt;images/mediaGallery/1.jpg&lt;/large&gt;</span><br>
+&lt;text&gt;&lt;![CDATA[&lt;font size="24" face="GeosansLight"&gt;CLUB 
+HOUSE&lt;/font&gt;&lt;br&gt;&lt;br&gt;Photographer:&lt;br&gt;&lt;A 
+href="http://flashden.net/user/LGLab"&gt;John 
+Doe&lt;/a&gt;&lt;br&gt;&lt;br&gt;This is the main news area for each 
+news. This text is &lt;b&gt;HTML formated&lt;/b&gt; and imported 
+dynamically from XML. &lt;br&gt;You can easlily insert &lt;A 
+href="http://flashden.net/user/LGLab"&gt;links&lt;/a&gt;, &lt;A 
+href="mailto:yourEmail@mail.com"&gt;email links&lt;/a&gt; styled using 
+CSS, images etc... &lt;br&gt;&lt;br&gt;This is a short description. The 
+scroll bar will appear automaticaly if needed.&lt;br&gt;Lorem ipsum 
+dolor sit amet, consectetur adipiscing elit. In vehicula libero vel 
+tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, 
+nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit.&lt;br&gt;Donec pellentesque dui a elit. 
+Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In 
+pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero.
+ Integer scelerisque imperdiet risus.]]&gt;&lt;/text&gt;<br>
+&lt;/item&gt;</p>
+<p>Update your content for each file format as follows:</p>
+<p><strong>- Image</strong></p>
+<p>&lt;large<span class="style5"> type="image"</span>&gt;<span class="style7">images/mediaGallery/1.jpg</span>&lt;/large&gt;</p>
+<p><strong>- SWF</strong></p>
+<p> &lt;large <span class="style5">type="swf"</span>&gt;<span class="style7">images/mediaGallery/swf.swf</span>&lt;/large&gt;</p>
+<p><strong>- Video FLV/H.264</strong></p>
+<p>&lt;large <span class="style5">type="video" videoHeight="350"</span>&gt;<span class="style7">videos/abyss.flv</span>&lt;/large&gt;   <span class="style5">//BE CAREFULL WITH VIDEOS TO SET YOUR DESIRED VIDEO HEIGHT</span></p>
+<p><strong>- YouTube videos</strong></p>
+<p>&lt;large <span class="style5">type="youtube" videoHeight="400"</span>&gt;<span class="style7">0UjsXo9l6I8</span>&lt;/large&gt;</p>
+<p>&nbsp;</p>
+<p><strong>f - Text info</strong></p>
+<p>Each item has its own text info content defined by the &lt;text&gt; tags as follows:</p>
+<p>&lt;item&gt;<br>
+&lt;thumbnail width="296"&gt;images/mediaGallery/thumbnails/3.jpg&lt;/thumbnail&gt;<br>
+&lt;large type="swf"&gt;images/mediaGallery/swf.swf&lt;/large&gt;<br>
+&lt;text&gt;&lt;![CDATA[<span class="style7">&lt;font size="24" 
+face="GeosansLight"&gt;SWF 
+FILE&lt;/font&gt;&lt;br&gt;&lt;br&gt;Photographer:&lt;br&gt;&lt;A 
+href="http://flashden.net/user/LGLab"&gt;John 
+Doe&lt;/a&gt;&lt;br&gt;&lt;br&gt;This is the main news area for each 
+news. This text is &lt;b&gt;HTML formated&lt;/b&gt; and imported 
+dynamically from XML. &lt;br&gt;&lt;br&gt;You can easlily insert &lt;A 
+href="http://flashden.net/user/LGLab"&gt;links&lt;/a&gt;, &lt;A 
+href="mailto:yourEmail@mail.com"&gt;email links&lt;/a&gt; styled using 
+CSS, images etc... &lt;br&gt;&lt;br&gt;This is a short description. The 
+scroll bar will appear automaticaly if needed.&lt;br&gt;Lorem ipsum 
+dolor sit amet, consectetur adipiscing elit. In vehicula libero vel 
+tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, 
+nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit.&lt;br&gt;Donec pellentesque dui a elit. 
+Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In 
+pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero.
+ Integer scelerisque imperdiet risus.&lt;br&gt;Lorem ipsum dolor sit 
+amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam 
+nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh.</span>]]&gt;&lt;/text&gt;<br>
+&lt;/item&gt;</p>
+<p>This text can be HTML formatted. You can however not have any text 
+for a specific item, simply leave the &lt;text&gt; node empty as 
+follows:</p>
+<p> &lt;item&gt;<br>
+&lt;thumbnail width="200"&gt;images/mediaGallery/thumbnails/jayz.jpg&lt;/thumbnail&gt;<br>
+&lt;large type="youtube" videoHeight="400"&gt;0UjsXo9l6I8&lt;/large&gt;<br>
+<span class="style7">&lt;text&gt;&lt;![CDATA[]]&gt;&lt;/text&gt;</span><br>
+&lt;/item&gt;</p>
+<p>&nbsp;</p>
+<h2 class="style4">If there is anything that you need help with, please do not hesitate to contact me via my <a href="http://marketplace.envato.com/user/LGLab" target="_blank">ActiveDen account</a></h2>
+</body></html>
