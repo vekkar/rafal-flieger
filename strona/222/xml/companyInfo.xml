@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<home>
+
+  <settings
+		 
+   rotatorImageWidth = "780"
+   rotatorImageHeight = "260"
+   preloaderColor = "CCFF00"
+   preloaderAlpha = "0.3"
+		
+   bgColor = "1B1B1B"
+   bgAlpha = ".5"
+		 
+   controlsIconColor = "FFFFFF"
+   controlsIconAlpha = "1"
+   controlsBgColor = "1B1B1B"
+   controlsBgOverColor = "CCFF00"
+   controlsBgAlpha = ".5"
+		 
+   rotatorRandomTransitions = "false"
+		 
+		 
+    />
+
+  <rotator>
+
+    <!-- text transitions include (use the numbers) : 
+	 
+	 Blinds = 0
+	 Fade = 1 
+	 Fly = 2 
+	 Iris = 3 
+	 Photo = 4 
+	 PixelDissolve = 5 
+	 Rotate = 6 
+	 Squeeze = 7 
+	 Wipe = 8 
+	 Zoom = 9
+	 
+	 -->
+
+    <!-- Begin image here -->
+    <image>
+      <path slideShowDelay = "3" transition = "0">images/services/swf.swf</path>
+      <title bgColour="CCFF00" bgAlpha=".5" Ypos="10" Xpos="10"><![CDATA[<font color="#FFFFFF">TAWO</font>]]></title>
+      <description bgColour="1b1b1b" bgAlpha=".7" txtWidth="260"><![CDATA[<font size="30" color="#FFFFFF">Kim jesteśmy?...</font>]]></description>
+
+      <text transition = "5"><![CDATA[<font size="13"><p><b>Firma TAWO jest producentem mebli laboratoryjnych. W naszej ofercie znajduje się wszytko co jest potrzebne do kompleksowego wyposażenia laboratorium. Nasze dygestoria, stoły i szafy spełniają najwyższe  europejskie normy jakości i są certyfikowane przez akredytowane instytucje. Aby zagwarantować  jakość i nie zawodność każdego naszego produktu wdrożyliśmy system zarządzania jakością ISO9001:2008 i ciągle pracujemy nad jego udoskonaleniem.</b></p><br><p>Jako producent przyjmujemy też inne zadania.  Uczestniczymy we wszystkich stadiach projektu gwarantując profesjonalną <b>obsługę całego procesu tworzenia laboratorium</b> zaczynając od analizy środowiska pracy i zbieraniu wymagań, poprzez projektowanie, budowę, produkcję specjalistycznych mebli, montaż i wdrożenie oraz wyposażenie w aparaturę i osprzęt.</p><br><p>Naszą maksymą jest głęboka świadomość potrzeb klienta. Dlatego twoje laboratorium jest dokładnie takie jak potrzebujesz, dostosowane do twoich potrzeb i wymagań. </p>Nasze aranżacje obejmują:<ul><li>dygestoria</li><li>stoły wyspowe i przyścienne</li><li>meble specjalistyczne i antywibracyjne</li><li>szafy, szafki, regały</li><li>szafy na chemikalia i ognioochronne</li><li>oczomyjki ,  prysznice BHP</li><li>armatura laboratoryjna</li><li>ceramika laboratoryjna wielkogabarytowa i monolityczna</li><li>inne</li></ul><br><p>Stawiane nam wymagania sprawiają, że jesteśmy w czołówce w dziedzinie innowacji, jakości oraz optymalizacji czasu i kosztów poniesionych przez klienta. Efekty naszej pracy, wysoką jakość i parametry zostały docenione przez klientów oraz  potwierdzone długą <b>lista certyfikatów i referencji.</b></p><br><p>Postawione nam cele osiągamy dzięki wdrożonym systemom zażądania jakością, oraz ciągłemu rozwijania swoich umiejętności i technologii. Jesteśmy przedstawicielem takich firm jak <b>Agrob Buchtal, Labor Security System, TOF-Industrie, czy Kereaplan</b> oraz partnerem wielu innych co pozwala nam korzystać z wiedzy i doświadczeń specjalistów z całego świata.</p></font>]]></text>
+      <!--<text transition = "5"><![CDATA[]]></text>-->
+    </image>
+      <!-- End image here -->
+
+
+  </rotator>
+
+
+</home>

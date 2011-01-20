@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Documentation - Part 1</title>
+<style type="text/css">
+<!--
+.style4 {color: #000000; }
+.style5 {color: #FF0000}
+.style7 {color: #0000FF}
+.style18 {color: #000000; font-weight: bold; }
+-->
+</style>
+</head><body>
+<h1>Documentation for staff.swf</h1>
+<p>While this module was set-up as a STAFF module for the preview, I 
+leave it to your imagination to come up with any use for it, such as a 
+NEWS module for example. This module indeed allows for various usage as 
+each thumbnail can launch a window with either an image/swf on its own, 
+text on its own, or both at the same time.</p>
+<h1>Content</h1>
+<p><strong>1) General colour settings</strong></p>
+<p><strong>2) Updating each thumbnail and its content</strong></p>
+<p>&nbsp;</p>
+<h2><strong>1) General colour settings</strong></h2>
+<p>At the top of the staff.xml file in the settings, you will find the following general colour settings:</p>
+<p><span class="style7">thumbBgColor = "1b1b1b"</span> //Background color for the thumbnails<span class="style7"><br>
+thumbBgAlpha = "0.5" </span>//Background transparency for the thumbnails from 0 to 1<span class="style7"><br>
+<br>
+mainBgColor = "1b1b1b"</span>  //Background color for animated backgrounds<span class="style7"><br>
+mainBgAlpha = "0.5" </span>//Background transparency for animated backgrounds<br>
+<span class="style7"><br>
+scrollBtnOverColor = "CCFF00" </span>//Color for the scroll button when mouse over<span class="style7"><br>
+scrollBtnOverAlpha = ".5" </span>//transparency for the scroll button when mouse over<span class="style7"><br>
+scrollBtnColor = "FFFFFF" </span>//Color for the scroll button in normal state<span class="style7"><br>
+scrollBtnAlpha = ".5" </span>//transparency for the scroll button in normal state<span class="style7"><br>
+scrollBarColor = "FFFFFF" </span>//Color for the scroll bar<span class="style7"><br>
+scrollBarAlpha = ".5" </span>//transparency for the scroll bar<span class="style7"><br>
+<br>
+<br>
+preloaderColor = "CCFF00"<br>
+preloaderAlpha = "0.3"</span></p>
+<h2><strong>2) Updating each thumbnail and its content</strong></h2>
+<p>Below the main settings in the staff.xml, each thumbnail and its content is defined by the &lt;staff&gt; node as follows:</p>
+<p> <span class="style5">&lt;staff&gt;</span><br>
+&lt;thumb&gt;<span class="style7">images/staff/thumbnails/1.jpg</span>&lt;/thumb&gt; //The path to your thumbnail image, <span class="style5">the thumbnails must be 120x90 in size</span>.<br>
+&lt;image&gt;<span class="style7">images/staff/images/1.jpg</span>&lt;/image&gt; //The path to your main content asset, this can be any image format or SWF file.<br>
+&lt;textfieldWidth&gt;<span class="style7">300</span>&lt;/textfieldWidth&gt; //The width desired for the textfield area.<br>
+&lt;largeDesc&gt;&lt;![CDATA[<span class="style7">&lt;font size="22" 
+face="GeosansLight"&gt;ANNA 
+SMITH&lt;/font&gt;&lt;br&gt;&lt;br&gt;Director&lt;br&gt;&lt;A 
+href="mailto:annaSmith@lglab.com"&gt;annaSmith@lglab.com&lt;/a&gt;&lt;br&gt;&lt;br&gt;This
+ is the main text area for each staff, or anything you want to do with 
+this module.&lt;br&gt;&lt;br&gt;This text is &lt;b&gt;HTML 
+formated&lt;/b&gt; and imported dynamically from XML. 
+&lt;br&gt;&lt;br&gt;You can easlily insert &lt;a 
+href="http://marketplace.envato.com/user/LGLab"&gt;external 
+links&lt;/a&gt;, &lt;a href="mailto:yourEmail@mail.com"&gt;email 
+links&lt;/a&gt; but also links to pages of this website such as the 
+&lt;a href="#/services"&gt;services page&lt;/a&gt;, all styled using 
+CSS, embed images and swf etc... &lt;br&gt;&lt;br&gt;This is a long 
+description. The scroll bar will appear automaticaly if 
+needed.&lt;br&gt;Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, 
+ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet 
+nibh.Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit.&lt;br&gt;Donec pellentesque dui a elit. Donec sollicitudin. Donec 
+eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut 
+euismod erat sit amet leo. Mauris at libero. Integer scelerisque 
+imperdiet risus. Nunc vehicula. Vivamus egestas, leo et tincidunt 
+egestas, diam enim semper lorem, sit amet adipiscing diam quam quis 
+lacus. Aliquam convallis urna at leo volutpat porttitor. Phasellus 
+rutrum sodales urna. Fusce vitae odio ac leo pharetra lacinia. Morbi non
+ orci. Nulla nec quam nec metus auctor porta. Curabitur sollicitudin 
+tellus. Sed commodo. Praesent dapibus vulputate pede. Suspendisse 
+potenti. Pellentesque sagittis mauris quis magna. Aenean feugiat metus 
+at ligula. Aliquam convallis urna at leo volutpat porttitor. Phasellus 
+rutrum sodales urna. Fusce vitae odio ac leo pharetra lacinia. Morbi non
+ orci. Nulla nec quam nec metus auctor porta. Curabitur sollicitudin 
+tellus. Sed commodo. Praesent dapibus vulputate pede. Suspendisse 
+potenti. Pellentesque sagittis mauris quis magna. Aenean feugiat metus 
+at ligula.</span>]]&gt;&lt;/largeDesc&gt; //The main text for that staff item.<br>
+<span class="style5">&lt;/staff&gt;</span><br>
+</p>
+<p><strong>a - The height of the main content</strong></p>
+<p>The height of the main content will be set by the height of the 
+image/swf you are using, you can then adjust the textfield width as 
+detailed above to arrange the main content as you like.</p>
+<p><strong>a - Using image or SWF only (no text)</strong></p>
+<p>To do this, fill the image path as normal, <span class="style5">set the &lt;textfieldWidth&gt; to 0</span>, and <span class="style5">leave the &lt;largeDesc&gt; content empty</span>, like this:</p>
+<p> &lt;staff&gt;<br>
+&lt;thumb&gt;images/staff/thumbnails/5.jpg&lt;/thumb&gt;<br>
+&lt;image&gt;images/staff/images/5.jpg&lt;/image&gt;<br>
+<span class="style5">&lt;textfieldWidth&gt;0&lt;/textfieldWidth&gt;<br>
+&lt;largeDesc&gt;&lt;![CDATA[]]&gt;&lt;/largeDesc&gt;</span><br>
+&lt;/staff&gt;<br>
+</p>
+<p><strong>a - Using  text only (no image or SWF)</strong></p>
+<p>To do this, we still need to define some height for the main content 
+as it is normally set by the image height, so instead of an image path 
+in the &lt;image&gt; node, set the desired height for the main content 
+as follows:</p>
+<p> &lt;staff&gt;<br>
+&lt;thumb&gt;images/staff/thumbnails/3.jpg&lt;/thumb&gt;<br>
+<span class="style5">&lt;image&gt;500&lt;/image&gt;</span><br>
+&lt;textfieldWidth&gt;500&lt;/textfieldWidth&gt;<br>
+&lt;largeDesc&gt;&lt;![CDATA[&lt;font size="24" 
+face="GeosansLight"&gt;MOTION FLASH 
+DESIGNS&lt;/font&gt;&lt;br&gt;&lt;br&gt;Developer:&lt;br&gt;&lt;a 
+href="http://marketplace.envato.com/user/LGLab"&gt;LGLab&lt;/a&gt;&lt;br&gt;&lt;br&gt;This
+ text is &lt;b&gt;HTML formated&lt;/b&gt; and imported dynamically from 
+XML. &lt;br&gt;&lt;br&gt;You can easlily insert &lt;a 
+href="http://marketplace.envato.com/user/LGLab"&gt;external 
+links&lt;/a&gt;, &lt;a href="mailto:yourEmail@mail.com"&gt;email 
+links&lt;/a&gt; but also links to pages of this website such as the 
+&lt;a href="#/staff"&gt;staff page&lt;/a&gt;, all styled using CSS, 
+embed images and swf etc... &lt;br&gt;&lt;br&gt;This text area has 
+scroll bar support with mouse wheel enabled including on Macs, and it 
+will adapt to any screen resolutions.&lt;br&gt;&lt;br&gt;Lorem ipsum 
+dolor sit amet, consectetur adipis elit. In vehicula libero vel tortor. 
+Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. 
+Morbi ullamcorper ante sit amet 
+nibh.&lt;br&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;In pretium leo vitae 
+ipsum.&lt;/li&gt;&lt;li&gt;Donec sollicitudin.&lt;/li&gt;&lt;li&gt;Ut 
+euismod erat sit amet leo.&lt;/li&gt;&lt;li&gt;Donec pellentesque dui a 
+elit.&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;&lt;br&gt;Donec eu nisl sit amet 
+lectus gravida luctus. In pretium leo vitae ipsum.&lt;br&gt;&lt;br&gt;In
+ pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at 
+libero. Integer scelerisque imperdiet risus.Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi 
+dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi 
+ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit.&lt;br&gt;Donec pellentesque dui a elit. Donec 
+sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium 
+leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer
+ scelerisque imperdiet risus.&lt;br&gt;Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi 
+dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi 
+ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit.&lt;br&gt;Donec pellentesque dui a elit. Donec 
+sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium 
+leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer
+ scelerisque imperdiet risus.&lt;br&gt;&lt;br&gt;Nam nisi dolor, 
+faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper 
+ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit.Donec pellentesque dui a elit. Donec 
+sollicitudin.]]&gt;&lt;/largeDesc&gt;<br>
+&lt;/staff&gt;</p>
+<p>&nbsp;</p>
+<h2 class="style4">If there is anything that you need help with, please do not hesitate to contact me via my <a href="http://marketplace.envato.com/user/LGLab" target="_blank">ActiveDen account</a></h2>
+</body></html>
