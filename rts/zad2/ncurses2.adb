@@ -84,25 +84,6 @@ procedure Ncurses2 is
       end Write;
    end Writable_Object;
 
-   function Get_Whole_Line return Ada.Strings.Unbounded.Unbounded_String is
-     BufferSize : constant := 2000;
-     Retval     : Ada.Strings.Unbounded.Unbounded_String := Ada.Strings.Unbounded.Null_Unbounded_String;
-     Item       : String (1 .. BufferSize);
-     Last       : Natural;
-   begin
-      Set_Cursor (True);
-      Goto_XY(X => 1,Y => 24);
-     Get_Whole_Line :
-        loop
-           Ada.Text_IO.Get_Line (Item => Item, Last => Last);
-
-           Ada.Strings.Unbounded.Append (Source => Retval, New_Item => Item (1 .. Last));
-
-           exit Get_Whole_Line when Last < Item'Last;
-        end loop Get_Whole_Line;
-        return Retval;
-  end Get_Whole_Line;
-
    task body test1 is
    begin
       Next := Clock + Interval;
