@@ -124,7 +124,7 @@ procedure Ncurses2 is
          Get_Immediate(Item => Key, Available => Ava);
          if Ava and Key = '1' then -- appending
             declare
-               --temp : String(1..1);
+               temp : String(1..1);
                S : Ada.Strings.Unbounded.Unbounded_String := Ada.Strings.Unbounded.Null_Unbounded_String;
                T : Ada.Strings.Trim_End := Ada.Strings.Right;
             begin
@@ -140,8 +140,8 @@ procedure Ncurses2 is
                            Text := Edited_Text;
                         end;
                      elsif Key /= ASCII.BS and Ada.Strings.Unbounded.Length(Edited_Text) < 78 then
-                  	--temp(1) := Key;
-                  	S := Ada.Strings.Unbounded.To_Unbounded_String(Source => Key);
+                  	temp(1) := Key;
+                  	S := Ada.Strings.Unbounded.To_Unbounded_String(Source => temp);
                   	Ada.Strings.Unbounded.Append(Source => Text, New_Item =>S);
                   	Ada.Strings.Unbounded.Append(Source => Edited_Text, New_Item =>S);
                      end if;
@@ -168,7 +168,7 @@ procedure Ncurses2 is
                         begin
                            Edited_Text := Ada.Strings.Unbounded.To_Unbounded_String(St1(St1'First..St1'Last-1));
                         end;
-                     elsif Ada.Strings.Unbounded.Length(Edited_Text) < 2 then
+                     else
                      	temp(1) := Key;
                         Ada.Strings.Unbounded.Append(Source => Edited_Text,New_Item => temp);
                      end if;
@@ -192,7 +192,6 @@ procedure Ncurses2 is
                temp : String(1..1);
                i : Float;
                f : Duration;
-               n : Natural := 0;
             begin
                Edited_Text := Ada.Strings.Unbounded.Null_Unbounded_String;
                while Key /= ASCII.CR loop
@@ -204,7 +203,7 @@ procedure Ncurses2 is
                         begin
                            Edited_Text := Ada.Strings.Unbounded.To_Unbounded_String(St1(St1'First..St1'Last-1));
                            end;
-                        elsif Ada.Strings.Unbounded.Length(Edited_Text) < 5 then
+                        else
                            temp(1) := Key;
                            Ada.Strings.Unbounded.Append(Source => Edited_Text,New_Item => temp);
                      end if;
@@ -212,23 +211,18 @@ procedure Ncurses2 is
                   end if;
                end loop;
                if Ada.Strings.Unbounded.Length(Edited_Text) > 0 then
-                  n := Ada.Strings.Unbounded.Count(Source => Edited_Text, Pattern => ".");
-                  if n = 0 or (n = 1 and Ada.Strings.Unbounded.Length(Edited_Text) > 1) then
-                     i := Float'Value(Ada.Strings.Unbounded.To_String(Edited_Text));
-                     if i < 65000.0 then
-               		f := Duration(Float(i));
-               		Interval := f;
-                        --Show_Text(changePosition => True);
-                     end if;
-                  end if;
+                   i := Float'Value(Ada.Strings.Unbounded.To_String(Edited_Text));
+               	   f := Duration(Float(i));
+                   Interval := f;
+                   Show_Text(changePosition => True);
                end if;
               Edited_Text := Ada.Strings.Unbounded.Null_Unbounded_String;
               --Show_Edited(edited => Edited_Text);
             exception
                when Standard.Constraint_Error =>
                   Show_Edited(Ada.Strings.Unbounded.To_Unbounded_String("Improper value"));
-               when C_Ex: others =>
-                  Show_Edited(Ada.Strings.Unbounded.To_Unbounded_String(Ada.Exceptions.Exception_Name(C_Ex)));
+               when Ex: others =>
+                  Show_Edited(Ada.Strings.Unbounded.To_Unbounded_String(Ada.Exceptions.Exception_Name(Ex)));
                   Terminate_Program := True;
             end;
          elsif Key = ASCII.ESC then

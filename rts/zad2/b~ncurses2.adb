@@ -239,10 +239,10 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Documents and Settings\Administrator\Pulpit\ada\ncurses2\ansi_term.o
-   --   C:\Documents and Settings\Administrator\Pulpit\ada\ncurses2\nt_console.o
-   --   C:\Documents and Settings\Administrator\Pulpit\ada\ncurses2\ncurses2.o
-   --   -LC:\Documents and Settings\Administrator\Pulpit\ada\ncurses2\
+   --   C:\Documents and Settings\Administrator\Pulpit\RTS\zad2\ansi_term.o
+   --   C:\Documents and Settings\Administrator\Pulpit\RTS\zad2\nt_console.o
+   --   C:\Documents and Settings\Administrator\Pulpit\RTS\zad2\ncurses2.o
+   --   -LC:\Documents and Settings\Administrator\Pulpit\RTS\zad2\
    --   -LC:/GNAT/2010/lib/gcc/i686-pc-mingw32/4.3.6/adalib/
    --   -luser32
    --   -static
