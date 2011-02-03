@@ -1,0 +1,15 @@
+project Ncurses2 is
+
+   for Source_Dirs use (".\**");
+   for Main use ("ncurses2.adb");
+
+   package Builder is
+      for Default_Switches ("ada") use ("-g");
+   end Builder;
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-g");
+   end Compiler;
+
+end Ncurses2;
+

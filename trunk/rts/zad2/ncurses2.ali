@@ -1,0 +1,250 @@
+V "GNAT Lib v2010"
+M P W=b
+A -g
+A -g
+A -gnatA
+P SS ZX
+R nnnnnvvvnnnnnnnvvnvnvvvnnnnnvnvvnvnnnnvnnvnnnnvnvnnnnnnvnnvnnvnnnnnnnnv1+nnnv1+nn
+
+U ncurses2%b		ncurses2.adb		2bb89ae3 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.calendar.formatting%s  a-calfor.adb	a-calfor.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+W ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.finalization.list_controller%s  a-filico.adb  a-filico.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.io_exceptions%s	a-ioexce.ads		a-ioexce.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ansi_term%s		ansi_term.adb		ansi_term.ali
+W nt_console%s		nt_console.adb		nt_console.ali
+W system%s		system.ads		system.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W system.val_int%s	s-valint.adb		s-valint.ali
+W system.val_real%s	s-valrea.adb		s-valrea.ali
+
+D ada.ads		20100603062030 9c7dd3ea
+D a-calend.ads		20100603061912 19486c30
+D a-caldel.ads		20100603061912 c565f6eb
+D a-calfor.ads		20100603061912 e9a1e10c
+D a-catizo.ads		20100603061912 5e5912b4
+D a-charac.ads		20100603061914 506ce725
+D a-chahan.ads		20100603061914 dcb15e96
+D a-chlat1.ads		20100603061914 e9ee6d0a
+D a-comlin.ads		20100603061918 6b7df106
+D a-except.ads		20100603061924 34786013
+D a-finali.ads		20100603061928 bfd2ca79
+D a-filico.ads		20100603061928 4ff02a40
+D a-inteio.ads		20100603061928 03bc737c
+D a-ioexce.ads		20100603061930 2504b9d2
+D a-reatim.ads		20100603061938 7c462ab4
+D a-stream.ads		20100603061946 34aca5be
+D a-string.ads		20100603061946 87b4230b
+D a-strfix.ads		20100603061946 253a46ca
+D a-strmap.ads		20100603061948 5253a637
+D a-strunb.ads		20100603061950 f0549c04
+D a-tags.ads		20100603062002 bfa07446
+D a-textio.ads		20100603062004 7065b2f2
+D a-tiinio.ads		20100603062008 949a7272
+D a-unccon.ads		20100603062010 51e09df2
+D ansi_term.ads		20101225113116 5f3dc344
+D interfac.ads		20100603062246 a69cad5c
+D i-c.ads		20100603062234 bc3ef662
+D i-cstrin.ads		20100603062238 d0370103
+D i-cstrea.ads		20100603062238 e1e064a9
+D ncurses2.adb		20110203194720 5513e660
+D nt_console.ads	19990608105022 36f89425
+D system.ads		20100603062800 0e6ea6c5
+D s-atacco.ads		20100603062340 60789a20
+D s-crtl.ads		20100603062404 1dba5d50
+D s-exctab.ads		20100603062408 4b7fd51d
+D s-ficobl.ads		20100603062414 c05c3205
+D s-finimp.ads		20100603062416 90fd9896
+D s-finroo.ads		20100603062418 1408f9d1
+D s-osinte.ads		20100603062454 e19b549f
+D s-parame.ads		20100603062544 6cdeed25
+D s-secsta.ads		20100603062554 d2c357fb
+D s-soflin.ads		20100603062558 61e5c9e8
+D s-stache.ads		20100603062602 481f9e9d
+D s-stausa.ads		20100603062604 146a8ff1
+D s-stalib.ads		20100603062604 9cbc334a
+D s-stoele.ads		20100603062606 a4d57c26
+D s-stoele.adb		20100603062606 d9d7e80e
+D s-stratt.ads		20100603062608 fef7c1da
+D s-tasinf.ads		20100603062624 ff3904e8
+D s-taspri.ads		20100603062630 f6de4d95
+D s-taprop.ads		20100603062620 25a7965c
+D s-taskin.ads		20100603062628 82b6bc5d
+D s-taprob.ads		20100603062616 5e00115c
+D s-tassta.ads		20100603062634 71d2b71d
+D s-traent.ads		20100603062648 a66ef260
+D s-unstyp.ads		20100603062650 c0f9fae5
+D s-valint.ads		20100603062654 d23209d2
+D s-valrea.ads		20100603062656 e4c63a53
+D s-wchcon.ads		20100603062708 30c48dc1
+D s-win32.ads		20100603062714 4b10300f
+X 1 ada.ads
+16K9*Ada 19e8 30|2r6 2r35 3r6 3r35 4r6 4r35 5r6 5r35 6r6 6r35 7r6 9r6 9r37
+. 10r6 11r6 12r6 13r6 17r19 18r9 19r11 19r53 25r18 25r60 40r7 42r7 44r7 44r31
+. 47r38 50r7 50r31 63r30 70r7 70r31 81r35 83r19 83r61 91r12 93r12 103r10
+. 104r10 128r20 128r62 129r20 129r44 135r44 137r44 139r43 142r48 144r30 145r25
+. 146r25 152r31 157r20 157r62 161r31 165r44 167r44 169r43 171r28 173r25 178r19
+. 179r45 184r31 191r20 191r62 197r31 201r44 203r44 205r43 207r31 209r28 214r19
+. 215r24 216r42 217r39 225r30 229r31 231r31 231r73
+X 2 a-calend.ads
+39K13*Calendar 361e17 30|9w10 9r41 10r10
+41I9*Time 30|21r11
+55V13*Clock{41I9} 30|102r15
+97V13*"+"{41I9} 30|102r21 110r26
+X 4 a-calfor.ads
+24K22*Formatting 215e28 30|10w19
+X 6 a-charac.ads
+16K13*Characters 18e19 30|4r10 4r39 6r10 6r39
+X 7 a-chahan.ads
+39K24*Handling 153e28 30|4w21 4r50
+X 8 a-chlat1.ads
+20K24*Latin_1 298e27 30|6w21 6r50
+X 9 a-comlin.ads
+41K13*Command_Line 142e21 30|7w10
+X 10 a-except.ads
+58K13*Exceptions 373e19 30|12w10 231r77
+80V13*Exception_Name{string} 30|231r88
+X 13 a-inteio.ads
+18K13*Integer_Text_IO[23|48] 30|5w10 5r39
+X 14 a-ioexce.ads
+18K13*IO_Exceptions 30e22 30|13w10
+X 17 a-string.ads
+16K13*Strings 35e16 30|3r10 3r39 11r10 17r23 18r13 19r15 19r57 25r22 25r64
+. 44r35 47r42 50r35 63r34 70r35 81r39 83r23 83r65 93r16 103r14 104r14 128r24
+. 128r66 129r24 129r48 135r48 137r48 139r47 142r52 144r34 145r29 146r29 152r35
+. 157r24 157r66 161r35 165r48 167r48 169r47 171r32 173r29 178r23 179r49 184r35
+. 191r24 191r66 197r35 201r48 203r48 205r47 207r35 209r32 214r23 215r28 216r46
+. 217r43 225r34 229r35 231r35
+33E9*Trim_End 33e42 30|129r32
+33n30*Right{33E9} 30|129r56
+X 18 a-strfix.ads
+18K21*Fixed 242e22 30|3w18 3r47
+X 20 a-strunb.ads
+42K21*Unbounded 431e26 30|11w18 17r31 18r21 19r23 19r65 25r30 25r72 44r43
+. 47r50 50r43 63r42 70r43 81r47 83r31 83r73 93r24 103r22 104r22 128r32 128r74
+. 135r56 137r56 139r55 142r60 144r42 145r37 146r37 152r43 157r32 157r74 161r43
+. 165r56 167r56 169r55 171r40 173r37 178r31 179r57 184r43 191r32 191r74 197r43
+. 201r56 203r56 205r55 207r43 209r40 214r31 215r36 216r54 217r51 225r42 229r43
+. 231r43
+45R9*Unbounded_String 398e14 30|17r41 19r33 25r40 47r60 81r57 83r41 128r42
+. 157r42 191r42
+48r4*Null_Unbounded_String{45R9} 30|19r75 25r82 83r83 128r84 152r53 157r84
+. 161r53 184r53 191r84 197r53 225r52
+50V13*Length{natural} 30|63r52 103r32 135r66 142r70 165r66 171r50 178r41
+. 201r66 207r53 214r41 216r64
+50r21 Source{45R9} 30|63r59 103r39
+60V13*To_Unbounded_String{45R9} 30|18r31 139r65 144r52 169r65 205r65 229r53
+. 231r53
+61s7 Source{string} 30|18r51 144r72
+66V13*To_String{string} 30|44r53 50r53 70r53 137r66 167r66 179r67 203r66
+. 217r61
+66r24 Source{45R9} 30|44r63 50r63 70r63 137r76 167r76 203r76
+73U14*Append 30|104r32 145r47 146r47
+74r7 Source{45R9} 30|104r39 145r54 146r54
+75r7 New_Item{45R9} 30|104r55 145r70 146r77
+77U14*Append 30|93r34 173r47 209r50
+78r7 Source{45R9} 30|93r42 173r54 209r57
+79s7 New_Item{string} 30|93r60 173r76 209r79
+248V13*Count{natural} 30|215r46
+249r7 Source{45R9} 30|215r52
+250s7 Pattern{string} 30|215r75
+X 22 a-textio.ads
+52K13*Text_IO 475e16 30|2w10 2r39 40r11 42r11 44r11 50r11 70r11 91r16
+235U14*Get_Immediate 30|124r10 133r19 163r19 199r19
+236e7 Item{character} 30|124r24 133r33 163r33 199r33
+237b7 Available{boolean} 30|124r37 133r46 163r46 199r46
+246U14*Put 30|40r19 42r19 44r19 50r19 70r19
+246s19 Item{string} 30|40r23 42r23 44r23 50r23 70r23
+253U14*Get_Line 30|91r24
+254s7 Item{string} 30|91r34
+255i7 Last{natural} 30|91r48
+X 25 ansi_term.ads
+1K10*ANSI_Term 91e14 30|8w6
+X 30 ncurses2.adb
+16U11*Ncurses2 16b11 244l5 244t13
+17r4 Default_Text{20|45R9} 104r67
+19r4 Text{20|45R9} 63r69 70r73 103r49 104m49 131r31 140m28 145m64
+20i4 Default_Line{positive} 69r24 181m22
+21i4 Next{2|41I9} 102m7 109r29 110m13 110r21
+22o4 Interval{duration} 102r23 110r28 220m25
+23i4 Position{natural} 62r10 63m13 65m10 65r22 69r15
+24b4 Terminate_Program{boolean} 107r17 123r38 187m34 232m19 236m16
+25r4 Edited_Text{20|45R9} 44r73 131m16 135r73 137r86 139m28 140r36 142r77
+. 146m64 152m16 161m16 165r73 167r86 169m28 171r57 173m64 178r48 179r77 184m16
+. 197m16 201r73 203r86 205m28 207r60 209m67 214r48 215r62 216r71 217r71 225m15
+27t9 test1 100b14 115l8 115t13
+28t9 test3 118b14 240l8 240t13
+30W19 Writable_Object 32l8 32e23 34r9 74b19 79l8 79t23
+31U17 Write 75b17 78l11 78t16 108r20
+34w4 WO{30W19} 108r17
+37U14 Show_Menu 37b14 45l8 45t17 71r7
+47U14 Show_Edited 47b14 47>26 51l8 51t19 229r19 231r19
+47r26 edited{20|45R9} 50r73
+53U14 Show_Text 53b14 53>24 72l8 72t17 77r14
+53b24 changePosition{boolean} 60r10 77r24
+81V13 Get_Whole_Line{20|45R9} 81b13 98l7 98t21
+82N6 BufferSize 84r32
+83r6 Retval{20|45R9} 93m52 97r16
+84a6 Item{string} 91m42 93r72 95r44
+85i6 Last{natural} 91m56 93r83 95r37
+89l6 Get_Whole_Line 95r17 96l18 96e32
+119e7 Key{character} 123r13 124m32 125r21 132r22 133m41 134r32 134r47 134r62
+. 134r81 134r96 135r25 142r28 143r36 155r16 162r22 163m41 164r22 164r44 164r59
+. 164r74 165r25 172r36 189r16 198r22 199m41 200r22 200r44 200r59 200r74 200r87
+. 201r25 208r39 234r16
+120a7 ar(character)
+121b7 Ava{boolean} 124m50 125r13 133m59 134r22 163m59 199m59
+127a16 temp{string} 143m25 144r82
+128r16 S{20|45R9} 144m25 145r81 146r88
+129e16 T{17|33E9}
+137a28 St1{string} 139r85 139r89 139r100
+157r16 S{20|45R9}
+158a16 temp{string} 172m25 173r88
+159i16 Temp_Int{natural} 179m19 180r22 180r39 181r38
+167a28 St1{string} 169r85 169r89 169r100
+191r16 S{20|45R9}
+192a16 temp{string} 208m28 209r91
+193f16 i{float} 217m22 218r25 219r45
+194o16 f{duration} 219m25 220r37
+195i16 n{natural} 215m19 216r22 216r32
+203a28 St1{string} 205r85 205r89 205r100
+230r21 C_Ex{10|71R9} 231r103
+X 31 nt_console.ads
+25K9*NT_Console 30|1w6 1r35 31|228e15
+31I12*X_Pos{natural}
+32I12*Y_Pos{natural}
+35n14*Blue{34E9} 30|56r20 57r22
+37n22*Yellow{34E9} 30|58r22
+191U14*Set_Cursor 30|55r7 87r7
+196U14*Goto_XY 30|39r7 41r7 43r7 49r7 69r7 88r7
+197i7 X{31I12} 30|88r15
+198i7 Y{32I12} 30|88r22
+207U14*Set_Foreground 30|57r7
+208U14*Set_Background 30|58r7
+214U14*Clear_Screen 30|56r7
+X 32 system.ads
+40K9*System 30|14w6 32|200e11
+
