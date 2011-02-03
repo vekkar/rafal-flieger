@@ -59,9 +59,9 @@ procedure Ncurses2 is
    procedure Show_Text(changePosition : in Boolean) is
    begin
       Set_Cursor (False);
-      Clear_Screen(Blue);
-      Set_Foreground(Blue);
-      Set_Background(Yellow);
+      Clear_Screen(Black);
+      Set_Foreground(Yellow);
+      Set_Background(Black);
 
       if changePosition then
 
