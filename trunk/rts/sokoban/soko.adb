@@ -34,7 +34,7 @@ procedure soko is
    Max_Width : Natural := 70;
    Max_Height : Natural := 24;
    Initial_Player_Position : Point;
-   Readed_Board : Board (1 .. Max_Width, 1 .. Max_Height);
+   Game_Board : Board (1 .. Max_Width, 1 .. Max_Height);
    Readed_Width : Natural;
    Readed_Height : Natural;
    Key    	: Character := 'X';
@@ -61,7 +61,7 @@ procedure soko is
       for I in 1..Readed_Width loop
          for J in 1..Readed_Height loop
             Goto_XY(I, J);
-            Put(Readed_Board(I,J));
+            Put(Game_Board(I,J));
          end loop;
       end loop;
       Set_Foreground(Red);
@@ -164,7 +164,7 @@ procedure soko is
 
       for I in Vector'Range(1) loop
          for J in Vector'Range(2) loop
-            Readed_Board(I,J) := Vector(I, J);
+            Game_Board(I,J) := Vector(I, J);
          end loop;
       end loop;
 
@@ -174,9 +174,9 @@ procedure soko is
 
    procedure Clean_Main_Board is
    begin
-      for I in Readed_Board'Range(1) loop
-         for J in Readed_Board'Range(2) loop
-            Readed_Board(I,J) := ' ';
+      for I in Game_Board'Range(1) loop
+         for J in Game_Board'Range(2) loop
+            Game_Board(I,J) := ' ';
          end loop;
       end loop;
    end Clean_Main_Board;
@@ -196,15 +196,15 @@ procedure soko is
    end Set_Redraw_Board;
 
    procedure Make_Move_Up(boxes : in out Points; targets : in out Targets_Set) is
-      obj : Character := Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y-1);
+      obj : Character := Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-1);
    begin
       if obj = ' ' then
          Actual_Player_Position.Y := Actual_Player_Position.Y - 1;
          Set_Redraw_Board(redraw => True);
       elsif obj = 'b' then
-            if Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y-2) = ' ' then
-               Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y-1) := ' ';
-               Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y-2) := 'b';
+            if Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-2) = ' ' then
+               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-1) := ' ';
+               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-2) := 'b';
                for Int in boxes'Range loop
                   if boxes(Int).X = Actual_Player_Position.X and boxes(Int).Y = Actual_Player_Position.Y-1 then
                      boxes(Int).Y := Actual_Player_Position.Y-2;
@@ -212,9 +212,9 @@ procedure soko is
                end loop;
             	Actual_Player_Position.Y := Actual_Player_Position.Y - 1;
             	Set_Redraw_Board(redraw => True);
-            elsif Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y-2) = 'p' then
-               Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y-1) := ' ';
-               Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y-2) := 'X';
+            elsif Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-2) = 'p' then
+               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-1) := ' ';
+               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-2) := 'X';
 
                Boxes_Loop:
                for Int in boxes'Range loop
@@ -242,15 +242,15 @@ procedure soko is
    end Make_Move_Up;
 
    procedure Make_Move_Down(boxes : in out Points; targets : in out Targets_Set) is
-      obj : Character := Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y+1);
+      obj : Character := Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+1);
    begin
       if obj = ' ' then
          Actual_Player_Position.Y := Actual_Player_Position.Y + 1;
          Set_Redraw_Board(redraw => True);
       elsif obj = 'b' then
-            if Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y+2) = ' ' then
-               Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y+1) := ' ';
-               Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y+2) := 'b';
+            if Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+2) = ' ' then
+               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+1) := ' ';
+               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+2) := 'b';
                for Int in boxes'Range loop
                   if boxes(Int).X = Actual_Player_Position.X and boxes(Int).Y = Actual_Player_Position.Y+1 then
                      boxes(Int).Y := Actual_Player_Position.Y+2;
@@ -258,9 +258,9 @@ procedure soko is
                end loop;
             	Actual_Player_Position.Y := Actual_Player_Position.Y + 1;
             	Set_Redraw_Board(redraw => True);
-            elsif Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y+2) = 'p' then
-               Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y+1) := ' ';
-               Readed_Board(Actual_Player_Position.X, Actual_Player_Position.Y+2) := 'X';
+            elsif Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+2) = 'p' then
+               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+1) := ' ';
+               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+2) := 'X';
 
                Boxes_Loop:
                for Int in boxes'Range loop
@@ -288,15 +288,15 @@ procedure soko is
    end Make_Move_Down;
 
    procedure Make_Move_Left(boxes : in out Points; targets : in out Targets_Set) is
-      obj : Character := Readed_Board(Actual_Player_Position.X-1, Actual_Player_Position.Y);
+      obj : Character := Game_Board(Actual_Player_Position.X-1, Actual_Player_Position.Y);
    begin
       if obj = ' ' then
          Actual_Player_Position.X := Actual_Player_Position.X - 1;
          Set_Redraw_Board(redraw => True);
          elsif obj = 'b' then
-            if Readed_Board(Actual_Player_Position.X-2, Actual_Player_Position.Y) = ' ' then
-               Readed_Board(Actual_Player_Position.X-1, Actual_Player_Position.Y) := ' ';
-               Readed_Board(Actual_Player_Position.X-2, Actual_Player_Position.Y) := 'b';
+            if Game_Board(Actual_Player_Position.X-2, Actual_Player_Position.Y) = ' ' then
+               Game_Board(Actual_Player_Position.X-1, Actual_Player_Position.Y) := ' ';
+               Game_Board(Actual_Player_Position.X-2, Actual_Player_Position.Y) := 'b';
                for Int in boxes'Range loop
                   if boxes(Int).X = Actual_Player_Position.X-1 and boxes(Int).Y = Actual_Player_Position.Y then
                      boxes(Int).X := Actual_Player_Position.X-2;
@@ -304,9 +304,9 @@ procedure soko is
                end loop;
             Actual_Player_Position.X := Actual_Player_Position.X - 1;
             Set_Redraw_Board(redraw => True);
-            elsif Readed_Board(Actual_Player_Position.X-2, Actual_Player_Position.Y) = 'p' then
-               Readed_Board(Actual_Player_Position.X-1, Actual_Player_Position.Y) := ' ';
-               Readed_Board(Actual_Player_Position.X-2, Actual_Player_Position.Y) := 'X';
+            elsif Game_Board(Actual_Player_Position.X-2, Actual_Player_Position.Y) = 'p' then
+               Game_Board(Actual_Player_Position.X-1, Actual_Player_Position.Y) := ' ';
+               Game_Board(Actual_Player_Position.X-2, Actual_Player_Position.Y) := 'X';
 
                Boxes_Loop:
                for Int in boxes'Range loop
@@ -334,15 +334,15 @@ procedure soko is
    end Make_Move_Left;
 
    procedure Make_Move_Right(boxes : in out Points; targets : in out Targets_Set) is
-      obj : Character := Readed_Board(Actual_Player_Position.X+1, Actual_Player_Position.Y);
+      obj : Character := Game_Board(Actual_Player_Position.X+1, Actual_Player_Position.Y);
    begin
       if obj = ' ' then
          Actual_Player_Position.X := Actual_Player_Position.X + 1;
          Set_Redraw_Board(redraw => True);
          elsif obj = 'b' then
-            if Readed_Board(Actual_Player_Position.X+2, Actual_Player_Position.Y) = ' ' then
-               Readed_Board(Actual_Player_Position.X+1, Actual_Player_Position.Y) := ' ';
-               Readed_Board(Actual_Player_Position.X+2, Actual_Player_Position.Y) := 'b';
+            if Game_Board(Actual_Player_Position.X+2, Actual_Player_Position.Y) = ' ' then
+               Game_Board(Actual_Player_Position.X+1, Actual_Player_Position.Y) := ' ';
+               Game_Board(Actual_Player_Position.X+2, Actual_Player_Position.Y) := 'b';
                for Int in boxes'Range loop
                   if boxes(Int).X = Actual_Player_Position.X+1 and boxes(Int).Y = Actual_Player_Position.Y then
                      boxes(Int).X := Actual_Player_Position.X+2;
@@ -350,9 +350,9 @@ procedure soko is
                end loop;
             Actual_Player_Position.X := Actual_Player_Position.X + 1;
             Set_Redraw_Board(redraw => True);
-            elsif Readed_Board(Actual_Player_Position.X+2, Actual_Player_Position.Y) = 'p' then
-               Readed_Board(Actual_Player_Position.X+1, Actual_Player_Position.Y) := ' ';
-               Readed_Board(Actual_Player_Position.X+2, Actual_Player_Position.Y) := 'X';
+            elsif Game_Board(Actual_Player_Position.X+2, Actual_Player_Position.Y) = 'p' then
+               Game_Board(Actual_Player_Position.X+1, Actual_Player_Position.Y) := ' ';
+               Game_Board(Actual_Player_Position.X+2, Actual_Player_Position.Y) := 'X';
 
                Boxes_Loop:
                for Int in boxes'Range loop
@@ -398,13 +398,13 @@ procedure soko is
       box_temp : Natural := 1;
       target_temp : Natural := 1;
    begin
-      for I in Readed_Board'Range(1) loop
-         for J in Readed_Board'Range(2) loop
-            if Readed_Board(I,J) = 'b' then
+      for I in Game_Board'Range(1) loop
+         for J in Game_Board'Range(2) loop
+            if Game_Board(I,J) = 'b' then
                point_temp := (I,J);
                boxes(box_temp) := point_temp;
                box_temp := box_temp + 1;
-            elsif Readed_Board(I,J) = 'p' then
+            elsif Game_Board(I,J) = 'p' then
                tar_temp := ((I,J), False);
                targets(target_temp) := tar_temp;
                target_temp := target_temp + 1;
@@ -456,15 +456,15 @@ procedure soko is
       else
          Counter := 0;
          I_Loop:
-         for I in Readed_Board'Range(1) loop
+         for I in Game_Board'Range(1) loop
             J_Loop:
-       	    for J in Readed_Board'Range(2) loop
-               if Readed_Board(I,J) = 'b' then
+       	    for J in Game_Board'Range(2) loop
+               if Game_Board(I,J) = 'b' then
                   Counter := 0;
-                  if Readed_Board(I-1,J) = '|' or Readed_Board(I+1,J) = '|' then
+                  if Game_Board(I-1,J) = '|' or Game_Board(I+1,J) = '|' then
                      Counter := Counter + 1;
                   end if;
-                  if Readed_Board(I,J-1) = '-' or Readed_Board(I,J+1) = '-' then
+                  if Game_Board(I,J-1) = '-' or Game_Board(I,J+1) = '-' then
                      Counter := Counter + 1;
                   end if;
                   if Counter = 2 then
