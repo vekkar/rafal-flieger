@@ -1,0 +1,105 @@
+V "GNAT Lib v2010"
+A -g
+A -g
+A -gnatA
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnn
+
+U ansi_term%b		ansi_term.adb		67bbfe55 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U ansi_term%s		ansi_term.ads		5f3dc344 EE NE OO PK
+
+D ada.ads		20100603062030 9c7dd3ea
+D a-charac.ads		20100603061914 506ce725
+D a-chlat1.ads		20100603061914 e9ee6d0a
+D a-except.ads		20100603061924 34786013
+D a-finali.ads		20100603061928 bfd2ca79
+D a-filico.ads		20100603061928 4ff02a40
+D a-inteio.ads		20100603061928 03bc737c
+D a-ioexce.ads		20100603061930 2504b9d2
+D a-stream.ads		20100603061946 34aca5be
+D a-tags.ads		20100603062002 bfa07446
+D a-textio.ads		20100603062004 7065b2f2
+D a-tiinio.ads		20100603062008 949a7272
+D a-unccon.ads		20100603062010 51e09df2
+D ansi_term.ads		20101225113116 5f3dc344
+D ansi_term.adb		20101225113108 a2b19195
+D interfac.ads		20100603062246 a69cad5c
+D i-cstrea.ads		20100603062238 e1e064a9
+D system.ads		20100603062800 0e6ea6c5
+D s-crtl.ads		20100603062404 1dba5d50
+D s-exctab.ads		20100603062408 4b7fd51d
+D s-ficobl.ads		20100603062414 c05c3205
+D s-finimp.ads		20100603062416 90fd9896
+D s-finroo.ads		20100603062418 1408f9d1
+D s-parame.ads		20100603062544 6cdeed25
+D s-secsta.ads		20100603062554 d2c357fb
+D s-soflin.ads		20100603062558 61e5c9e8
+D s-stache.ads		20100603062602 481f9e9d
+D s-stalib.ads		20100603062604 9cbc334a
+D s-stoele.ads		20100603062606 a4d57c26
+D s-stoele.adb		20100603062606 d9d7e80e
+D s-stratt.ads		20100603062608 fef7c1da
+D s-traent.ads		20100603062648 a66ef260
+D s-unstyp.ads		20100603062650 c0f9fae5
+D s-wchcon.ads		20100603062708 30c48dc1
+X 1 ada.ads
+16K9*Ada 19e8 15|1r6 1r19 1r40 2r6 2r19 2r40
+X 2 a-charac.ads
+16K13*Characters 18e19 15|1r44 2r44
+X 3 a-chlat1.ads
+20K24*Latin_1 298e27 15|1w55 2r55
+34e4*BEL{character} 15|10r8
+55e4*ESC{character} 15|16r7 21r7 27r7 36r7 43r7 50r7 57r7 64r7 69r7 75r7
+. 80r7 89r7 94r7 100r7 105r7 110r7 116r7 121r7 126r7 131r7 136r7 141r7 148r7
+X 7 a-inteio.ads
+18K13*Integer_Text_IO[12|48] 15|1w23 2r23
+X 11 a-textio.ads
+52K13*Text_IO 475e16 15|1w10 2r10
+212U14*Put 15|10r3 29r3 31r3 38r3 45r3 52r3 59r3 82r3 84r3 150r3
+246U14*Put 15|16r3 21r3 27r3 36r3 43r3 50r3 57r3 64r3 69r3 75r3 80r3 89r3
+. 94r3 100r3 105r3 110r3 116r3 121r3 126r3 131r3 136r3 141r3 148r3
+X 12 a-tiinio.ads
+68U14*Put 15|28r3[7|18] 30r3[7|18] 37r3[7|18] 44r3[7|18] 51r3[7|18] 58r3[7|18]
+. 81r3[7|18] 83r3[7|18] 149r3[7|18]
+X 14 ansi_term.ads
+1K10*ANSI_Term 91l5 91e14 15|4b14 153l5 153t14
+5U11*Bell 15|8b11 11l5 11t9
+9U11*Enable_Line_Wrap 15|14b11 17l5 17t21
+11U11*Disable_Line_Wrap 15|19b11 22l5 22t22
+15U11*Cursor_Home 15>23 15>28 15|25b11 32l5 32t16
+15i23 Row{positive} 15|25b23 28r7
+15i28 Column{positive} 15|25b28 30r7
+17U11*Cursor_Up 17>21 15|34b11 39l5 39t14
+17i21 Rows{positive} 15|34b21 37r7
+19U11*Cursor_Down 19>23 15|41b11 46l5 46t16
+19i23 Rows{positive} 15|41b23 44r7
+21U11*Cursor_Forward 21>26 15|48b11 53l5 53t19
+21i26 Columns{positive} 15|48b26 51r7
+23U11*Cursor_Backward 23>27 15|55b11 60l5 60t20
+23i27 Columns{positive} 15|55b27 58r7
+25U11*Save_Cursor 15|62b11 65l5 65t16
+27U11*Unsave_Cursor 15|67b11 70l5 70t18
+31U11*Scroll_Screen 15|73b11 76l5 76t18
+33U11*Scroll_Screen 33>25 33>32 15|78b11 85l5 85t18
+33i25 Start{positive} 15|78b25 81r7
+33i32 The_End{positive} 15|78b32 83r7
+35U11*Scroll_Down 15|87b11 90l5 90t16
+37U11*Scroll_Up 15|92b11 95l5 95t14
+42U11*Set_Tab 15|98b11 101l5 101t12
+44U11*Clear_Tab 15|103b11 106l5 106t14
+46U11*Clear_All_Tabs 15|108b11 111l5 111t19
+50U11*Erase_End_Of_Line 15|114b11 117l5 117t22
+51U11*Erase_Start_Of_Line 15|119b11 122l5 122t24
+52U11*Erase_Line 15|124b11 127l5 127t15
+53U11*Erase_Down 15|129b11 132l5 132t15
+54U11*Erase_Up 15|134b11 137l5 137t13
+55U11*Erase_Screen 15|139b11 142l5 142t17
+58U11*Display_Attribute 58>29 15|146b11 151l5 151t22
+58i29 Attr{natural} 15|146b29 149r7
+
