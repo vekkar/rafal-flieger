@@ -36,10 +36,16 @@ procedure Ncurses2 is
 
    procedure Show_Menu is
    begin
-      Goto_XY(0,21);
+      Goto_XY(0,18);
       Ada.Text_IO.Put(Item => "Menu:");
+      Goto_XY(0,19);
+      Ada.Text_IO.Put(Item => "[ 1 ] Zmiana testu");
+      Goto_XY(0,20);
+      Ada.Text_IO.Put(Item => "[ 2 ] Zmiana lini");
+      Goto_XY(0,21);
+      Ada.Text_IO.Put(Item => "[ 3 ] Zawies wyswietlanie tekstu");
       Goto_XY(0,22);
-      Ada.Text_IO.Put(Item => "(1) Tekst  || (2) Linia || (3) Szybkosc || (Esc) Wyjscie");
+      Ada.Text_IO.Put(Item => "[Esc] Wyjscie");
       Goto_XY(0,23);
       Ada.Text_IO.Put(Item => Ada.Strings.Unbounded.To_String(Source => Edited_Text));
    end Show_Menu;
@@ -117,7 +123,6 @@ procedure Ncurses2 is
 
    task body test3 is
       Key    	: Character := 'X';
-      ar : array(1..3) of Character := ('0','1','2');
       Ava : Boolean := True;
    begin
       while Key /= ASCII.ESC and not Terminate_Program loop
@@ -177,7 +182,7 @@ procedure Ncurses2 is
                end loop;
                if Ada.Strings.Unbounded.Length(Edited_Text) > 0 then
                   Temp_Int := Integer'Value(Ada.Strings.Unbounded.To_String(Edited_Text));
-                  if Temp_Int > 0 and Temp_Int < 20 then
+                  if Temp_Int > 0 and Temp_Int < 17 then
                      Default_Line := Temp_Int;
                   end if;
                end if;
