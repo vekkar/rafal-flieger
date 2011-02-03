@@ -39,7 +39,7 @@ procedure soko is
    Readed_Height : Natural;
    Key    	: Character := 'X';
    Key_Avaliable : Boolean := False;
-   Actual_Player_Position : Point;
+   Current_Player_Position : Point;
    Readed_Boxes : Natural := 0;
    Readed_Targets : Natural := 0;
    Player_Moves : Natural := 0;
@@ -66,7 +66,7 @@ procedure soko is
       end loop;
       Set_Foreground(Red);
       Set_Background(Yellow);
-      Goto_XY(Actual_Player_Position.X, Actual_Player_Position.Y);
+      Goto_XY(Current_Player_Position.X, Current_Player_Position.Y);
       Put('i');
 
       Set_Foreground(Gray);
@@ -160,7 +160,7 @@ procedure soko is
       Readed_Width := P_1(1);
       Readed_Height := P_1(2);
       Initial_Player_Position := (P_1(3)+1, P_1(4)+1);
-      Actual_Player_Position := (P_1(3)+1, P_1(4)+1);
+      Current_Player_Position := (P_1(3)+1, P_1(4)+1);
 
       for I in Vector'Range(1) loop
          for J in Vector'Range(2) loop
@@ -181,14 +181,14 @@ procedure soko is
       end loop;
    end Clean_Main_Board;
 
-   procedure Check_Avaliability(key : in Character; key_avaliable : in out Boolean) is
+   procedure If_Keys_Propper(key : in Character; key_avaliable : in out Boolean) is
    begin
       if key = 'W' or key = 'A' or key = 'S' or key = 'D' then
          key_avaliable := True;
       else
          key_avaliable := False;
       end if;
-   end Check_Avaliability;
+   end If_Keys_Propper;
 
    procedure Set_Redraw_Board(redraw : in Boolean) is
    begin
@@ -196,42 +196,42 @@ procedure soko is
    end Set_Redraw_Board;
 
    procedure Make_Move_Up(boxes : in out Points; targets : in out Targets_Set) is
-      obj : Character := Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-1);
+      obj : Character := Game_Board(Current_Player_Position.X, Current_Player_Position.Y-1);
    begin
       if obj = ' ' then
-         Actual_Player_Position.Y := Actual_Player_Position.Y - 1;
+         Current_Player_Position.Y := Current_Player_Position.Y - 1;
          Set_Redraw_Board(redraw => True);
       elsif obj = 'b' then
-            if Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-2) = ' ' then
-               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-1) := ' ';
-               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-2) := 'b';
+            if Game_Board(Current_Player_Position.X, Current_Player_Position.Y-2) = ' ' then
+               Game_Board(Current_Player_Position.X, Current_Player_Position.Y-1) := ' ';
+               Game_Board(Current_Player_Position.X, Current_Player_Position.Y-2) := 'b';
                for Int in boxes'Range loop
-                  if boxes(Int).X = Actual_Player_Position.X and boxes(Int).Y = Actual_Player_Position.Y-1 then
-                     boxes(Int).Y := Actual_Player_Position.Y-2;
+                  if boxes(Int).X = Current_Player_Position.X and boxes(Int).Y = Current_Player_Position.Y-1 then
+                     boxes(Int).Y := Current_Player_Position.Y-2;
                   end if;
                end loop;
-            	Actual_Player_Position.Y := Actual_Player_Position.Y - 1;
+            	Current_Player_Position.Y := Current_Player_Position.Y - 1;
             	Set_Redraw_Board(redraw => True);
-            elsif Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-2) = 'p' then
-               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-1) := ' ';
-               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y-2) := 'X';
+            elsif Game_Board(Current_Player_Position.X, Current_Player_Position.Y-2) = 'p' then
+               Game_Board(Current_Player_Position.X, Current_Player_Position.Y-1) := ' ';
+               Game_Board(Current_Player_Position.X, Current_Player_Position.Y-2) := 'X';
 
                Boxes_Loop:
                for Int in boxes'Range loop
-                  if boxes(Int).X = Actual_Player_Position.X and boxes(Int).Y = Actual_Player_Position.Y-1 then
-                     boxes(Int).Y := Actual_Player_Position.Y-2;
+                  if boxes(Int).X = Current_Player_Position.X and boxes(Int).Y = Current_Player_Position.Y-1 then
+                     boxes(Int).Y := Current_Player_Position.Y-2;
                      exit Boxes_Loop;
                   end if;
                end loop Boxes_Loop;
 
                Targets_Loop:
                for Int in targets'Range loop
-                  if targets(Int).Coordinates.X = Actual_Player_Position.X and targets(Int).Coordinates.Y = Actual_Player_Position.Y-2 then
+                  if targets(Int).Coordinates.X = Current_Player_Position.X and targets(Int).Coordinates.Y = Current_Player_Position.Y-2 then
                      targets(Int).Is_Full := True;
                      exit Targets_Loop;
                   end if;
                end loop Targets_Loop;
-            	Actual_Player_Position.Y := Actual_Player_Position.Y - 1;
+            	Current_Player_Position.Y := Current_Player_Position.Y - 1;
             	Set_Redraw_Board(redraw => True);
             else
             	Set_Redraw_Board(redraw => False);
@@ -242,42 +242,42 @@ procedure soko is
    end Make_Move_Up;
 
    procedure Make_Move_Down(boxes : in out Points; targets : in out Targets_Set) is
-      obj : Character := Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+1);
+      obj : Character := Game_Board(Current_Player_Position.X, Current_Player_Position.Y+1);
    begin
       if obj = ' ' then
-         Actual_Player_Position.Y := Actual_Player_Position.Y + 1;
+         Current_Player_Position.Y := Current_Player_Position.Y + 1;
          Set_Redraw_Board(redraw => True);
       elsif obj = 'b' then
-            if Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+2) = ' ' then
-               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+1) := ' ';
-               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+2) := 'b';
+            if Game_Board(Current_Player_Position.X, Current_Player_Position.Y+2) = ' ' then
+               Game_Board(Current_Player_Position.X, Current_Player_Position.Y+1) := ' ';
+               Game_Board(Current_Player_Position.X, Current_Player_Position.Y+2) := 'b';
                for Int in boxes'Range loop
-                  if boxes(Int).X = Actual_Player_Position.X and boxes(Int).Y = Actual_Player_Position.Y+1 then
-                     boxes(Int).Y := Actual_Player_Position.Y+2;
+                  if boxes(Int).X = Current_Player_Position.X and boxes(Int).Y = Current_Player_Position.Y+1 then
+                     boxes(Int).Y := Current_Player_Position.Y+2;
                   end if;
                end loop;
-            	Actual_Player_Position.Y := Actual_Player_Position.Y + 1;
+            	Current_Player_Position.Y := Current_Player_Position.Y + 1;
             	Set_Redraw_Board(redraw => True);
-            elsif Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+2) = 'p' then
-               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+1) := ' ';
-               Game_Board(Actual_Player_Position.X, Actual_Player_Position.Y+2) := 'X';
+            elsif Game_Board(Current_Player_Position.X, Current_Player_Position.Y+2) = 'p' then
+               Game_Board(Current_Player_Position.X, Current_Player_Position.Y+1) := ' ';
+               Game_Board(Current_Player_Position.X, Current_Player_Position.Y+2) := 'X';
 
                Boxes_Loop:
                for Int in boxes'Range loop
-                  if boxes(Int).X = Actual_Player_Position.X and boxes(Int).Y = Actual_Player_Position.Y+1 then
-                     boxes(Int).Y := Actual_Player_Position.Y+2;
+                  if boxes(Int).X = Current_Player_Position.X and boxes(Int).Y = Current_Player_Position.Y+1 then
+                     boxes(Int).Y := Current_Player_Position.Y+2;
                      exit Boxes_Loop;
                   end if;
                end loop Boxes_Loop;
 
                Targets_Loop:
                for Int in targets'Range loop
-                  if targets(Int).Coordinates.X = Actual_Player_Position.X and targets(Int).Coordinates.Y = Actual_Player_Position.Y+2 then
+                  if targets(Int).Coordinates.X = Current_Player_Position.X and targets(Int).Coordinates.Y = Current_Player_Position.Y+2 then
                      targets(Int).Is_Full := True;
                      exit Targets_Loop;
                   end if;
                end loop Targets_Loop;
-            	Actual_Player_Position.Y := Actual_Player_Position.Y + 1;
+            	Current_Player_Position.Y := Current_Player_Position.Y + 1;
             	Set_Redraw_Board(redraw => True);
          else
             Set_Redraw_Board(redraw => False);
@@ -288,42 +288,42 @@ procedure soko is
    end Make_Move_Down;
 
    procedure Make_Move_Left(boxes : in out Points; targets : in out Targets_Set) is
-      obj : Character := Game_Board(Actual_Player_Position.X-1, Actual_Player_Position.Y);
+      obj : Character := Game_Board(Current_Player_Position.X-1, Current_Player_Position.Y);
    begin
       if obj = ' ' then
-         Actual_Player_Position.X := Actual_Player_Position.X - 1;
+         Current_Player_Position.X := Current_Player_Position.X - 1;
          Set_Redraw_Board(redraw => True);
          elsif obj = 'b' then
-            if Game_Board(Actual_Player_Position.X-2, Actual_Player_Position.Y) = ' ' then
-               Game_Board(Actual_Player_Position.X-1, Actual_Player_Position.Y) := ' ';
-               Game_Board(Actual_Player_Position.X-2, Actual_Player_Position.Y) := 'b';
+            if Game_Board(Current_Player_Position.X-2, Current_Player_Position.Y) = ' ' then
+               Game_Board(Current_Player_Position.X-1, Current_Player_Position.Y) := ' ';
+               Game_Board(Current_Player_Position.X-2, Current_Player_Position.Y) := 'b';
                for Int in boxes'Range loop
-                  if boxes(Int).X = Actual_Player_Position.X-1 and boxes(Int).Y = Actual_Player_Position.Y then
-                     boxes(Int).X := Actual_Player_Position.X-2;
+                  if boxes(Int).X = Current_Player_Position.X-1 and boxes(Int).Y = Current_Player_Position.Y then
+                     boxes(Int).X := Current_Player_Position.X-2;
                   end if;
                end loop;
-            Actual_Player_Position.X := Actual_Player_Position.X - 1;
+            Current_Player_Position.X := Current_Player_Position.X - 1;
             Set_Redraw_Board(redraw => True);
-            elsif Game_Board(Actual_Player_Position.X-2, Actual_Player_Position.Y) = 'p' then
-               Game_Board(Actual_Player_Position.X-1, Actual_Player_Position.Y) := ' ';
-               Game_Board(Actual_Player_Position.X-2, Actual_Player_Position.Y) := 'X';
+            elsif Game_Board(Current_Player_Position.X-2, Current_Player_Position.Y) = 'p' then
+               Game_Board(Current_Player_Position.X-1, Current_Player_Position.Y) := ' ';
+               Game_Board(Current_Player_Position.X-2, Current_Player_Position.Y) := 'X';
 
                Boxes_Loop:
                for Int in boxes'Range loop
-                  if boxes(Int).X = Actual_Player_Position.X-1 and boxes(Int).Y = Actual_Player_Position.Y then
-                     boxes(Int).X := Actual_Player_Position.X-2;
+                  if boxes(Int).X = Current_Player_Position.X-1 and boxes(Int).Y = Current_Player_Position.Y then
+                     boxes(Int).X := Current_Player_Position.X-2;
                      exit Boxes_Loop;
                   end if;
                end loop Boxes_Loop;
 
                Targets_Loop:
                for Int in targets'Range loop
-                  if targets(Int).Coordinates.X = Actual_Player_Position.X-2 and targets(Int).Coordinates.Y = Actual_Player_Position.Y then
+                  if targets(Int).Coordinates.X = Current_Player_Position.X-2 and targets(Int).Coordinates.Y = Current_Player_Position.Y then
                      targets(Int).Is_Full := True;
                      exit Targets_Loop;
                   end if;
                end loop Targets_Loop;
-            Actual_Player_Position.X := Actual_Player_Position.X - 1;
+            Current_Player_Position.X := Current_Player_Position.X - 1;
             Set_Redraw_Board(redraw => True);
          else
             Set_Redraw_Board(redraw => False);
@@ -334,42 +334,42 @@ procedure soko is
    end Make_Move_Left;
 
    procedure Make_Move_Right(boxes : in out Points; targets : in out Targets_Set) is
-      obj : Character := Game_Board(Actual_Player_Position.X+1, Actual_Player_Position.Y);
+      obj : Character := Game_Board(Current_Player_Position.X+1, Current_Player_Position.Y);
    begin
       if obj = ' ' then
-         Actual_Player_Position.X := Actual_Player_Position.X + 1;
+         Current_Player_Position.X := Current_Player_Position.X + 1;
          Set_Redraw_Board(redraw => True);
          elsif obj = 'b' then
-            if Game_Board(Actual_Player_Position.X+2, Actual_Player_Position.Y) = ' ' then
-               Game_Board(Actual_Player_Position.X+1, Actual_Player_Position.Y) := ' ';
-               Game_Board(Actual_Player_Position.X+2, Actual_Player_Position.Y) := 'b';
+            if Game_Board(Current_Player_Position.X+2, Current_Player_Position.Y) = ' ' then
+               Game_Board(Current_Player_Position.X+1, Current_Player_Position.Y) := ' ';
+               Game_Board(Current_Player_Position.X+2, Current_Player_Position.Y) := 'b';
                for Int in boxes'Range loop
-                  if boxes(Int).X = Actual_Player_Position.X+1 and boxes(Int).Y = Actual_Player_Position.Y then
-                     boxes(Int).X := Actual_Player_Position.X+2;
+                  if boxes(Int).X = Current_Player_Position.X+1 and boxes(Int).Y = Current_Player_Position.Y then
+                     boxes(Int).X := Current_Player_Position.X+2;
                   end if;
                end loop;
-            Actual_Player_Position.X := Actual_Player_Position.X + 1;
+            Current_Player_Position.X := Current_Player_Position.X + 1;
             Set_Redraw_Board(redraw => True);
-            elsif Game_Board(Actual_Player_Position.X+2, Actual_Player_Position.Y) = 'p' then
-               Game_Board(Actual_Player_Position.X+1, Actual_Player_Position.Y) := ' ';
-               Game_Board(Actual_Player_Position.X+2, Actual_Player_Position.Y) := 'X';
+            elsif Game_Board(Current_Player_Position.X+2, Current_Player_Position.Y) = 'p' then
+               Game_Board(Current_Player_Position.X+1, Current_Player_Position.Y) := ' ';
+               Game_Board(Current_Player_Position.X+2, Current_Player_Position.Y) := 'X';
 
                Boxes_Loop:
                for Int in boxes'Range loop
-                  if boxes(Int).X = Actual_Player_Position.X+1 and boxes(Int).Y = Actual_Player_Position.Y then
-                     boxes(Int).X := Actual_Player_Position.X+2;
+                  if boxes(Int).X = Current_Player_Position.X+1 and boxes(Int).Y = Current_Player_Position.Y then
+                     boxes(Int).X := Current_Player_Position.X+2;
                      exit Boxes_Loop;
                   end if;
                end loop Boxes_Loop;
 
                Targets_Loop:
                for Int in targets'Range loop
-                  if targets(Int).Coordinates.X = Actual_Player_Position.X+2 and targets(Int).Coordinates.Y = Actual_Player_Position.Y then
+                  if targets(Int).Coordinates.X = Current_Player_Position.X+2 and targets(Int).Coordinates.Y = Current_Player_Position.Y then
                      targets(Int).Is_Full := True;
                      exit Targets_Loop;
                   end if;
                end loop Targets_Loop;
-            Actual_Player_Position.X := Actual_Player_Position.X + 1;
+            Current_Player_Position.X := Current_Player_Position.X + 1;
             Set_Redraw_Board(redraw => True);
          else
             Set_Redraw_Board(redraw => False);
@@ -509,19 +509,19 @@ begin
    end if;
 
    declare
-         Boxes_List : Points(1 .. Readed_Boxes);
+      Boxes_List : Points(1 .. Readed_Boxes);
       Targets_List : Targets_Set(1 .. Readed_Targets);
       Ava : Boolean := True;
       begin
         Update_Boxes_And_Targets(boxes => Boxes_List, targets => Targets_List);
       	Set_Cursor (False);
         Display_Board(boxes => Boxes_List, targets => Targets_List);
-         Start_Time := Ada.Calendar.Clock;
-         Ada.Calendar.Split(Start_Time, Year, Month, Day, Start);
+        Start_Time := Ada.Calendar.Clock;
+        Ada.Calendar.Split(Start_Time, Year, Month, Day, Start);
       while Key /= ASCII.ESC loop
          	Get_Immediate(Item => Key, Available => Ava);
          	Key := To_Upper(Key);
-         Check_Avaliability(key => Key, key_avaliable => Key_Avaliable);
+         If_Keys_Propper(key => Key, key_avaliable => Key_Avaliable);
          if Key_Avaliable and Game_State = 0 then
             Make_Move(key => Key, boxes => Boxes_List, targets => Targets_List);
             if Redraw_Board then
