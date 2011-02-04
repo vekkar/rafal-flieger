@@ -23,7 +23,7 @@ procedure soko is
    type Target is
       record
          Coordinates: Point;
-         Is_Full: Boolean;
+         Is_Filled: Boolean;
       end record;
 
    type Board is array(Natural range <>, Natural range <>) of Character;
@@ -37,7 +37,7 @@ procedure soko is
    Game_Board : Board (1 .. Max_Width, 1 .. Max_Height);
    Readed_Width : Natural;
    Readed_Height : Natural;
-   Key    	: Character := 'X';
+   Key    	: Character := 'z';
    Key_Avaliable : Boolean := False;
    Current_Player_Position : Point;
    Readed_Boxes : Natural := 0;
@@ -55,33 +55,30 @@ procedure soko is
 
    procedure Display_Board(boxes : in out Points_Set; targets : in out Targets_Set) is
    begin
-      Clear_Screen(Blue);
-      Set_Foreground(Blue);
-      Set_Background(Yellow);
+      Clear_Screen(Black);
+      Set_Foreground(Green);
+      Set_Background(Black);
       for I in 1..Readed_Width loop
          for J in 1..Readed_Height loop
             Goto_XY(I, J);
             Put(Game_Board(I,J));
          end loop;
       end loop;
+
       Set_Foreground(Red);
-      Set_Background(Yellow);
       Goto_XY(Current_Player_Position.X, Current_Player_Position.Y);
       Put('i');
 
-      Set_Foreground(Gray);
-      Set_Background(Brown);
+      Set_Foreground(Green);
       for Ind in boxes'Range loop
          Goto_XY(X => boxes(Ind).X, Y => boxes(Ind).Y);
          Put('b');
       end loop;
 
-
-      Set_Foreground(Gray);
-      Set_Background(Green);
+      Set_Foreground(White);
       for Ind in targets'Range loop
          Goto_XY(X => targets(Ind).Coordinates.X, Y => targets(Ind).Coordinates.Y);
-         if targets(Ind).Is_Full then
+         if targets(Ind).Is_Filled then
             Put('X');
          else
             Put('p');
@@ -227,7 +224,7 @@ procedure soko is
                Targets_Loop:
                for Int in targets'Range loop
                   if targets(Int).Coordinates.X = Current_Player_Position.X and targets(Int).Coordinates.Y = Current_Player_Position.Y-2 then
-                     targets(Int).Is_Full := True;
+                     targets(Int).Is_Filled := True;
                      exit Targets_Loop;
                   end if;
                end loop Targets_Loop;
@@ -273,7 +270,7 @@ procedure soko is
                Targets_Loop:
                for Int in targets'Range loop
                   if targets(Int).Coordinates.X = Current_Player_Position.X and targets(Int).Coordinates.Y = Current_Player_Position.Y+2 then
-                     targets(Int).Is_Full := True;
+                     targets(Int).Is_Filled := True;
                      exit Targets_Loop;
                   end if;
                end loop Targets_Loop;
@@ -319,7 +316,7 @@ procedure soko is
                Targets_Loop:
                for Int in targets'Range loop
                   if targets(Int).Coordinates.X = Current_Player_Position.X-2 and targets(Int).Coordinates.Y = Current_Player_Position.Y then
-                     targets(Int).Is_Full := True;
+                     targets(Int).Is_Filled := True;
                      exit Targets_Loop;
                   end if;
                end loop Targets_Loop;
@@ -365,7 +362,7 @@ procedure soko is
                Targets_Loop:
                for Int in targets'Range loop
                   if targets(Int).Coordinates.X = Current_Player_Position.X+2 and targets(Int).Coordinates.Y = Current_Player_Position.Y then
-                     targets(Int).Is_Full := True;
+                     targets(Int).Is_Filled := True;
                      exit Targets_Loop;
                   end if;
                end loop Targets_Loop;
@@ -392,7 +389,7 @@ procedure soko is
       end if;
    end Make_Move;
 
-   procedure Update_Boxes_And_Targets(boxes : in out Points_Set; targets : in out Targets_Set) is
+   procedure Fill_Boxes_And_Targets_List(boxes : in out Points_Set; targets : in out Targets_Set) is
       point_temp : Point;
       tar_temp : Target;
       box_counter : Natural := 1;
@@ -411,7 +408,7 @@ procedure soko is
             end if;
          end loop;
       end loop;
-   end Update_Boxes_And_Targets;
+   end Fill_Boxes_And_Targets_List;
 
    procedure Print_Counters is
    	package Fix_IO is new Ada.Text_IO.Fixed_IO(Day_Duration);
@@ -447,7 +444,7 @@ procedure soko is
       Counter : Natural := 0;
    begin
       for Ind in targets'Range loop
-         if targets(Ind).Is_Full then
+         if targets(Ind).Is_Filled then
             Counter := Counter + 1;
          end if;
       end loop;
@@ -513,7 +510,7 @@ begin
       Targets_List : Targets_Set(1 .. Readed_Targets);
       Ava : Boolean := True;
       begin
-        Update_Boxes_And_Targets(boxes => Boxes_List, targets => Targets_List);
+        Fill_Boxes_And_Targets_List(boxes => Boxes_List, targets => Targets_List);
       	Set_Cursor (False);
         Display_Board(boxes => Boxes_List, targets => Targets_List);
         Start_Time := Ada.Calendar.Clock;
