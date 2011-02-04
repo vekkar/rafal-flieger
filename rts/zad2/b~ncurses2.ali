@@ -10,20 +10,20 @@ A -mtune=generic
 P ZX
 R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvvnnvnnnnnnnnnnnnnnn
 
-U ada_main%b		b~ncurses2.adb		7f3e26c5 NE OO PK IL
+U ada_main%b		b~ncurses2.adb		1fb47fdc NE OO PK IL
 W system%s		system.ads		system.ali
 W system.restrictions%s	s-restri.adb		s-restri.ali
 
-U ada_main%s		b~ncurses2.ads		ff8e8794 EE NE OO PK IL
+U ada_main%s		b~ncurses2.ads		aaac197e EE NE OO PK IL
 W system%s		system.ads		system.ali
 
-D b~ncurses2.ads	20110204001448 f1e02151
-D b~ncurses2.adb	20110204001448 63f11aae
+D b~ncurses2.ads	20110204002050 a4c2bfbb
+D b~ncurses2.adb	20110204002050 5659dd5d
 D system.ads		20100603062800 0e6ea6c5
 D s-restri.ads		20100603062552 ed2f1d3a
 D s-rident.ads		20100603062552 e38f8060
 X 1 b~ncurses2.ads
-3K9*ada_main 678l5 678e13 2|7b14 257l5 257t13
+3K9*ada_main 672l5 672e13 2|7b14 257l5 257t13
 6i4*gnat_argc{integer} 10m22 2|228m7
 7m4*gnat_argv{3|67M9} 11m22 2|229m7
 8m4*gnat_envp{3|67M9} 12m22 2|230m7
@@ -55,8 +55,7 @@ X 1 b~ncurses2.ads
 . 373r22 375r22 377r22 379r22 381r22 383r22 385r22 387r22 389r22 391r22 393r22
 . 395r22 397r22 399r22 401r22 403r22 405r22 407r22 409r22 411r22 413r22 415r22
 . 417r22 419r22 421r22 423r22 425r22 427r22 429r22 431r22 433r22 435r22 437r22
-. 439r22 441r22 443r22 445r22 447r22 449r22 451r22 453r22 455r22 457r22 459r22
-. 461r22
+. 439r22 441r22 443r22 445r22 447r22 449r22 451r22 453r22 455r22 457r22
 41m4*u00001{40M9} 42r22
 43m4*u00002{40M9} 44r22
 45m4*u00003{40M9} 46r22
@@ -266,44 +265,42 @@ X 1 b~ncurses2.ads
 453m4*u00207{40M9} 454r22
 455m4*u00208{40M9} 456r22
 457m4*u00209{40M9} 458r22
-459m4*u00210{40M9} 460r22
-461m4*u00211{40M9} 462r22
 X 2 b~ncurses2.adb
 10U14 Do_Finalize 11b<c,system__standard_library__adafinal>22 204r7 236r7
 13a4 Local_Priority_Specific_Dispatching{string} 118r9
 14a4 Local_Interrupt_States{string} 120r27
 17b7*E013{boolean} 17m43 161m7
 18b7*E023{boolean} 18m43 133m7
-19b7*E100{boolean} 19m43 135m7
+19b7*E098{boolean} 19m43 135m7
 20b7*E077{boolean} 20m43 137m7
 21b7*E079{boolean} 21m43 159m7
 22b7*E082{boolean} 22m43 140m7
-23b7*E093{boolean} 23m43 158m7
-24b7*E091{boolean} 24m43 143m7
+23b7*E091{boolean} 23m43 158m7
+24b7*E089{boolean} 24m43 143m7
 25b7*E048{boolean} 25m43 156m7
-26b7*E111{boolean} 26m43 155m7
-27b7*E149{boolean} 27m43 147m7
+26b7*E109{boolean} 26m43 155m7
+27b7*E147{boolean} 27m43 147m7
 28b7*E006{boolean} 28m43 150m7
 29b7*E051{boolean} 29m43 152m7
 30b7*E057{boolean} 30m43 154m7
 31b7*E017{boolean} 31m43 163m7
-32b7*E090{boolean} 32m43 165m7
-33b7*E095{boolean} 33m43 168m7
-34b7*E088{boolean} 34m43 170m7
-35b7*E175{boolean} 35m43 172m7
-36b7*E086{boolean} 36m43 174m7
-37b7*E117{boolean} 37m43 176m7
-38b7*E109{boolean} 38m43 180m7
-39b7*E114{boolean} 39m43 178m7
-40b7*E195{boolean} 40m43 182m7
-41b7*E185{boolean} 41m43 184m7
-42b7*E137{boolean} 42m43 187m7
-43b7*E104{boolean} 43m43 190m7
-44b7*E199{boolean} 44m43 192m7
-45b7*E197{boolean} 45m43 194m7
-46b7*E191{boolean} 46m43 196m7
-47b7*E181{boolean} 47m43 197m7
-48b7*E183{boolean} 48m43 199m7
+32b7*E088{boolean} 32m43 165m7
+33b7*E093{boolean} 33m43 168m7
+34b7*E086{boolean} 34m43 170m7
+35b7*E173{boolean} 35m43 172m7
+36b7*E084{boolean} 36m43 174m7
+37b7*E115{boolean} 37m43 176m7
+38b7*E107{boolean} 38m43 180m7
+39b7*E112{boolean} 39m43 178m7
+40b7*E193{boolean} 40m43 182m7
+41b7*E183{boolean} 41m43 184m7
+42b7*E135{boolean} 42m43 187m7
+43b7*E102{boolean} 43m43 190m7
+44b7*E197{boolean} 44m43 192m7
+45b7*E195{boolean} 45m43 194m7
+46b7*E189{boolean} 46m43 196m7
+47b7*E179{boolean} 47m43 197m7
+48b7*E181{boolean} 48m43 199m7
 50i7*Main_Priority{integer} 51m25 87m7
 52i7*Time_Slice_Value{integer} 53m25 88m7
 54e7*WC_Encoding{character} 55m25 89m7
