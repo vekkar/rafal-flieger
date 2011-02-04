@@ -102,14 +102,8 @@ procedure Ncurses2 is
    end task1;
 
 
-   task body task2 is
-      Key    	: Character := 'X';
-      Ava : Boolean := True;
-   begin
-      while Key /= ASCII.ESC and not Terminate_Program loop
-         Get_Immediate(Item => Key, Available => Ava);
-         if Ava and Key = '1' then -- appending
-            declare
+   procedure Append_Text(Key : in out Character;
+                         Ava :in out Boolean) is
                temp : String(1..1);
                S : Ada.Strings.Unbounded.Unbounded_String := Ada.Strings.Unbounded.Null_Unbounded_String;
                T : Ada.Strings.Trim_End := Ada.Strings.Right;
@@ -137,9 +131,10 @@ procedure Ncurses2 is
                end loop;
                Edited_Text := Ada.Strings.Unbounded.Null_Unbounded_String;
                --Show_Edited(edited => Edited_Text);
-            end;
-         elsif Key = '2' then
-            declare
+            end Append_Text;
+
+   procedure Change_Line(Key : in out Character;
+                        Ava :in out Boolean) is
                S : Ada.Strings.Unbounded.Unbounded_String := Ada.Strings.Unbounded.Null_Unbounded_String;
                temp : String(1..1);
                Temp_Int : Natural := 0;
@@ -171,9 +166,10 @@ procedure Ncurses2 is
                --Show_Text(changePosition => True);
             exception
                   when others => Terminate_Program := True;
-            end;
-         elsif Key = '3' then
-            declare
+   end Change_Line;
+
+   procedure Change_Speed(Key : in out Character;
+                           Ava :in out Boolean) is
                S : Ada.Strings.Unbounded.Unbounded_String := Ada.Strings.Unbounded.Null_Unbounded_String;
                temp : String(1..1);
                i : Float;
@@ -210,7 +206,21 @@ procedure Ncurses2 is
                when Ex: others =>
                   Show_Edited(Ada.Strings.Unbounded.To_Unbounded_String(Ada.Exceptions.Exception_Name(Ex)));
                   Terminate_Program := True;
-            end;
+
+   end Change_Speed;
+
+   task body task2 is
+      Key    	: Character := 'X';
+      Ava : Boolean := True;
+   begin
+      while Key /= ASCII.ESC and not Terminate_Program loop
+         Get_Immediate(Item => Key, Available => Ava);
+         if Ava and Key = '1' then -- appending
+            Append_Text(Key => Key,Ava => Ava);
+         elsif Key = '2' then
+            Change_Line(Key => Key,Ava => Ava);
+         elsif Key = '3' then
+            Change_Speed(Key => Key,Ava => Ava);
          elsif Key = ASCII.ESC then
             begin
                Terminate_Program := True;

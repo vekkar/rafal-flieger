@@ -38,7 +38,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#161da67d#;
+   u00001 : constant Version_32 := 16#65898d24#;
    pragma Export (C, u00001, "ncurses2B");
    u00002 : constant Version_32 := 16#6385d640#;
    pragma Export (C, u00002, "system__standard_libraryB");
