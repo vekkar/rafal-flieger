@@ -4,7 +4,6 @@ with Ada.Strings.Fixed;       use Ada.Strings.Fixed;
 with Ada.Characters.Handling; use Ada.Characters.Handling;
 with Ada.Integer_Text_IO;     use Ada.Integer_Text_IO;
 with Ada.Characters.Latin_1;  use Ada.Characters.Latin_1;
-with Ada.Command_Line; -- not used;
 with ANSI_Term;
 with Ada.Calendar;		use Ada.Calendar;
 with Ada.Calendar.Formatting;
@@ -43,7 +42,7 @@ procedure Ncurses2 is
       Goto_XY(0,20);
       Ada.Text_IO.Put(Item => "[ 2 ] Zmiana lini");
       Goto_XY(0,21);
-      Ada.Text_IO.Put(Item => "[ 3 ] Zawies wyswietlanie tekstu");
+      Ada.Text_IO.Put(Item => "[ 3 ] Zawies wyswietlanie tekstu(opuznienie)");
       Goto_XY(0,22);
       Ada.Text_IO.Put(Item => "[Esc] Wyjscie");
       Goto_XY(0,23);
@@ -215,7 +214,7 @@ procedure Ncurses2 is
    begin
       while Key /= ASCII.ESC and not Terminate_Program loop
          Get_Immediate(Item => Key, Available => Ava);
-         if Ava and Key = '1' then -- appending
+         if Ava and Key = '1' then
             Append_Text(Key => Key,Ava => Ava);
          elsif Key = '2' then
             Change_Line(Key => Key,Ava => Ava);
