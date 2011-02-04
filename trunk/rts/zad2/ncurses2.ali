@@ -6,7 +6,7 @@ A -gnatA
 P SS ZX
 R nnnnnvvvnnnnnnnvvnvnvvvnnnnnnnvvnvnnnnvnnvnnnnvnvnnnnnnvnnvnnvnnnnnnnnv1+nnnv1+nn
 
-U ncurses2%b		ncurses2.adb		47496407 NE OO SU
+U ncurses2%b		ncurses2.adb		161da67d NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.calendar%s	a-calend.adb		a-calend.ali
 W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
@@ -70,7 +70,7 @@ D interfac.ads		20100603062246 a69cad5c
 D i-c.ads		20100603062234 bc3ef662
 D i-cstrin.ads		20100603062238 d0370103
 D i-cstrea.ads		20100603062238 e1e064a9
-D ncurses2.adb		20110203212848 39e21884
+D ncurses2.adb		20110204000314 68b6dafe
 D nt_console.ads	19990608105022 36f89425
 D system.ads		20100603062800 0e6ea6c5
 D s-atacco.ads		20100603062340 60789a20
@@ -185,8 +185,8 @@ X 30 ncurses2.adb
 25r4 Edited_Text{20|45R9} 50r73 117m16 121r73 123r86 125m28 126r36 128r77
 . 132m64 138m16 147m16 151r73 153r86 155m28 159m64 164r48 165r77 170m16 182m16
 . 186r73 188r86 190m28 194m67 199r48 200r69 205m15
-27t9 test1 87b14 102l8 102t13
-28t9 test3 105b14 220l8 220t13
+27t9 task1 87b14 102l8 102t13
+28t9 task2 105b14 220l8 220t13
 30W19 Writable_Object 32l8 32e23 34r9 80b19 85l8 85t23
 31U17 Write 81b17 84l11 84t16 95r20
 34w4 WO{30W19} 95r17
