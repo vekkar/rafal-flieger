@@ -10,15 +10,15 @@ A -mtune=generic
 P ZX
 R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvvnnvnnnnnnnnnnnnnnn
 
-U ada_main%b		b~soko.adb		b86bb611 NE OO PK IL
+U ada_main%b		b~soko.adb		674622cd NE OO PK IL
 W system%s		system.ads		system.ali
 W system.restrictions%s	s-restri.adb		s-restri.ali
 
-U ada_main%s		b~soko.ads		90979071 EE NE OO PK IL
+U ada_main%s		b~soko.ads		4fba04ad EE NE OO PK IL
 W system%s		system.ads		system.ali
 
-D b~soko.ads		20110203214140 9ef936b4
-D b~soko.adb		20110203214140 cbbd9d9f
+D b~soko.ads		20110204041406 41d4a268
+D b~soko.adb		20110204041406 cbbd9d9f
 D system.ads		20100603062800 0e6ea6c5
 D s-restri.ads		20100603062552 ed2f1d3a
 D s-rident.ads		20100603062552 e38f8060
