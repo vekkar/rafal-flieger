@@ -24,8 +24,8 @@ procedure Ncurses2 is
    Terminate_Program : Boolean := False;
    Edited_Text : Ada.Strings.Unbounded.Unbounded_String := Ada.Strings.Unbounded.Null_Unbounded_String;
 
-   task test1;
-   task test3;
+   task task1;
+   task task2;
 
    protected type Writable_Object is
       procedure Write;
@@ -84,7 +84,7 @@ procedure Ncurses2 is
       end Write;
    end Writable_Object;
 
-   task body test1 is
+   task body task1 is
    begin
       Next := Clock + Interval;
       if Ada.Strings.Unbounded.Length(Source => Text) = 0 then
@@ -99,10 +99,10 @@ procedure Ncurses2 is
             exit;
          end if;
       end loop;
-   end test1;
+   end task1;
 
 
-   task body test3 is
+   task body task2 is
       Key    	: Character := 'X';
       Ava : Boolean := True;
    begin
@@ -217,7 +217,7 @@ procedure Ncurses2 is
             end;
          end if;
       end loop;
-   end test3;
+   end task2;
 
 begin
    null;
