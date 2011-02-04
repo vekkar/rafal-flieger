@@ -32,7 +32,7 @@ procedure soko is
 
    Again   : Boolean := True;
    Max_Width : Natural := 70;
-   Max_Height : Natural := 24;
+   Max_Height : Natural := 15;
    Initial_Player_Position : Point;
    Game_Board : Board (1 .. Max_Width, 1 .. Max_Height);
    Readed_Width : Natural;
@@ -237,7 +237,7 @@ procedure soko is
    begin
       if obj = ' ' then
          Current_Player_Position.Y := Current_Player_Position.Y + 1;
-         Set_Redraw_Board(redraw => True);
+         Redraw_Board:= True;
       elsif obj = 'b' then
          if Game_Board(Current_Player_Position.X, Current_Player_Position.Y+2) = ' '
          then
@@ -258,7 +258,6 @@ procedure soko is
                for Int in boxes'Range loop
                   if boxes(Int).X = Current_Player_Position.X and boxes(Int).Y = Current_Player_Position.Y+1 then
                      boxes(Int).Y := Current_Player_Position.Y+2;
-                     exit Boxes_Loop;
                   end if;
                end loop ;
 
@@ -312,7 +311,7 @@ procedure soko is
                   end if;
                end loop;
             Current_Player_Position.X := Current_Player_Position.X - 1;
-            Set_Redraw_Board(redraw => True);
+            Redraw_Board:= True;
          else
             Redraw_Board:=False;
          end if;
@@ -338,7 +337,7 @@ procedure soko is
                   end if;
                end loop;
             Current_Player_Position.X := Current_Player_Position.X + 1;
-            Redraw_Board: True;
+            Redraw_Board:= True;
          elsif Game_Board(Current_Player_Position.X+2, Current_Player_Position.Y) = 'p'
          then
                Game_Board(Current_Player_Position.X+1, Current_Player_Position.Y) := ' ';
@@ -403,9 +402,9 @@ procedure soko is
    	package Fix_IO is new Ada.Text_IO.Fixed_IO(Day_Duration);
    	use Fix_IO;
       S : String := Integer'Image(Player_Moves);
-   begin
-      Set_Foreground(White);
-      Set_Background(Blue);
+    begin
+      Set_Foreground(Green);
+      Set_Background(Black);
       Goto_XY(X => Max_Width+2, Y => 1);
       Ada.Text_IO.Put(Item => "Moves:");
       Goto_XY(X => Max_Width+2, Y => 2);
@@ -519,11 +518,6 @@ begin
          Print_Counters;
          end loop;
       end;
-
-   Set_Foreground (Gray);
-   Clear_Screen;
-   Goto_XY;
-   Set_Cursor (True);
 
 exception
    when Ada.IO_Exceptions.Data_Error =>
