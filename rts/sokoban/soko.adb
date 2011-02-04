@@ -415,7 +415,8 @@ procedure soko is
       if Game_State = 0 then
          Ada.Calendar.Split(Ada.Calendar.Clock, Year, Month, Day, Seconds);
       end if;
-      Put(Seconds - Start, 4, 2, 0);
+      Put(Seconds - Start, 0, 2, 0);
+      --Put(Seconds - Start);
       Goto_XY(X => Max_Width+2, Y => 7);
       Ada.Text_IO.Put(Item => "State:");
       Goto_XY(X => Max_Width+2, Y => 8);
@@ -439,26 +440,17 @@ procedure soko is
       if Readed_Targets = Counter then
          Game_State := 1;
       else
-         Counter := 0;
-         I_Loop:
          for I in Game_Board'Range(1) loop
-            J_Loop:
        	    for J in Game_Board'Range(2) loop
                if Game_Board(I,J) = 'b' then
-                  Counter := 0;
-                  if Game_Board(I-1,J) = '|' or Game_Board(I+1,J) = '|' then
-                     Counter := Counter + 1;
-                  end if;
-                  if Game_Board(I,J-1) = '-' or Game_Board(I,J+1) = '-' then
-                     Counter := Counter + 1;
-                  end if;
-                  if Counter = 2 then
-                     Game_State := 2;
-                     exit I_Loop;
+                  if Game_Board(I,J+1)='-' or  Game_Board(I,J+1)='X' or Game_Board(I,J-1)='-' or Game_Board(I,J-1)='X' then
+                     if Game_Board(I+1,J)='|' or Game_Board(I-1,J)='|' or Game_Board(I-1,J)='X' or Game_Board(I+1,J)='X' then
+                        Game_State:=2;
+                     end if;
                   end if;
                end if;
-            end loop J_Loop;
-         end loop I_Loop;
+            end loop;
+         end loop;
       end if;
    end Check_End_Of_Game;
 
