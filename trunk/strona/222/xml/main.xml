@@ -34,8 +34,7 @@
     bgPreloaderAlpha = "0.1"
 		  
     fullscreenTxt = "Fullscreen"
-
-		  
+    
     menuExternalURLWindowTarget = "_blank"
   />
   <menu>		
@@ -81,6 +80,8 @@
     <menuItem page_title="BEZPIECZEŃSTWO">
       <submenu page_title="szafy ognioochronne" swf="staff.swf" xmlPath = "xml/ogniowe.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="szafy na chemikalia" swf="staff.swf" xmlPath = "xml/chemiczne.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="szafy na butle" swf="staff.swf" xmlPath = "xml/butle.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="szafy na dokumenty" swf="staff.swf" xmlPath = "xml/dokumenty.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <!--<submenu page_title="oczomyjki" swf="sraff.swf" xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="prysznice BHP" swf="staff.swf" xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
     </menuItem>
