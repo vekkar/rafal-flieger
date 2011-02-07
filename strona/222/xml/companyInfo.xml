@@ -41,7 +41,7 @@
 
     <!-- Begin image here -->
     <image>
-      <path slideShowDelay = "3" transition = "0">images/services/swf.swf</path>
+      <path slideShowDelay = "3" transition = "0">images\bio2d.jpg</path>
       <title bgColour="CCFF00" bgAlpha=".5" Ypos="10" Xpos="10"><![CDATA[<font color="#FFFFFF">TAWO</font>]]></title>
       <description bgColour="1b1b1b" bgAlpha=".7" txtWidth="260"><![CDATA[<font size="30" color="#FFFFFF">Kim jesteśmy?...</font>]]></description>
 
