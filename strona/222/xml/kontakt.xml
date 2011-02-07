@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<home>
+
+    <settings
+		 
+		 rotatorImageWidth = "780"
+		 rotatorImageHeight = "300"
+		 preloaderColor = "CCFF00"
+		 preloaderAlpha = "0.3"
+		
+		 bgColor = "1B1B1B"	  
+		 bgAlpha = ".5"	
+		 
+		 controlsIconColor = "FFFFFF"
+		 controlsIconAlpha = "1"
+		 controlsBgColor = "1B1B1B"
+		 controlsBgOverColor = "CCFF00"
+		 controlsBgAlpha = ".5"
+		 
+		 rotatorRandomTransitions = "false"
+		 
+		 
+    />
+
+    <rotator>
+	
+	 <!-- text transitions include (use the numbers) : 
+	 
+	 Blinds = 0
+	 Fade = 1 
+	 Fly = 2 
+	 Iris = 3 
+	 Photo = 4 
+	 PixelDissolve = 5 
+	 Rotate = 6 
+	 Squeeze = 7 
+	 Wipe = 8 
+	 Zoom = 9
+	 
+	 -->
+	
+	  <!-- Begin image here -->
+	<image>
+		<path slideShowDelay = "3" transition = "0">images/kontakt/mapka.swf</path>
+		<title bgColour="CCFF00" bgAlpha=".5" Ypos="10" Xpos="10"><![CDATA[<font color="#FFFFFF">Dygestoria</font>]]></title>
+		<description bgColour="1b1b1b" bgAlpha=".7" txtWidth="260"><![CDATA[]]></description>	
+		<text><![CDATA[<font size="24" face="GeosansLight">przykładowy opis dla tawo</font><br><br><a href="http://tawo.poznan.pl"><img vspace="4" hspace="6" src="images/services/small.jpg"/></a><br><br><br><br><br><br><br><br><br><br><br>]]></text>
+	</image>
+	<!-- End image here -->
+	
+	
+	</rotator>
+	 
+	
+</home>
