@@ -7,7 +7,7 @@ $contact_message = $_POST['message'];
 if( $contact_name == true )
 {
 	$sender = $contact_email;
-	$receiver = "info@motionflashdesigns.com";
+	$receiver = "r.flieger@tawo@poznan.pl";
 	$client_ip = $_SERVER['REMOTE_ADDR'];
 	$email_body = "Name: $contact_name \nEmail: $sender \nSubject: $contact_subject \nMessage: $contact_message \nIP: $client_ip ";		
 	$extra = "From: $sender\r\n" . "Reply-To: $sender \r\n" . "X-Mailer: PHP/" . phpversion();
