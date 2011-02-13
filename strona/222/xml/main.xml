@@ -98,9 +98,9 @@
   </copyright>
   
   <socialIcons>
-	  <icon url="http://sebastian-galazka.org.uk/blog/" tooltip = "Change language to English (under construction)">images/languages/english.png</icon>
-    <icon url="http://sebastian-galazka.org.uk/blog/" tooltip = "Change language to German (under construction)">images/languages/german.png</icon>
-    <icon url="http://sebastian-galazka.org.uk/blog/" tooltip = "Change language to Russian (under construction)">images/languages/russian.png</icon>
+	  <icon url="http://tawo.poznan.pl" tooltip = "Change language to English (under construction)">images/languages/english.png</icon>
+    <icon url="http://tawo.poznan.pl" tooltip = "Change language to German (under construction)">images/languages/german.png</icon>
+    <icon url="http://tawo.poznan.pl" tooltip = "Change language to Russian (under construction)">images/languages/russian.png</icon>
   </socialIcons>
 
 		   
