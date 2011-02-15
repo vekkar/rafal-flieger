@@ -44,11 +44,11 @@
 
     <menuItem page_title="O FIRMIE">
       <submenu page_title="info" swf="textContent_and_rotator.swf"  xmlPath = "xml/companyInfo.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-      <submenu page_title="referencje" swf="showroom.swf" xmlPath = "xml/referencje.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <!--<submenu page_title="referencje" swf="showroom.swf" xmlPath = "xml/referencje.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
       <submenu page_title="certyfiakty" swf="showroom.swf" xmlPath = "xml/certyfiakty.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
 
-      <submenu page_title="certyfiakty2" swf="media_gallery.swf" xmlPath = "xml/certyfikaty2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-      <submenu page_title="referencje2" swf="media_gallery.swf" xmlPath = "xml/referencje2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <!--<submenu page_title="certyfiakty2" swf="media_gallery.swf" xmlPath = "xml/certyfikaty2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
+      <submenu page_title="referencje" swf="media_gallery.swf" xmlPath = "xml/referencje2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
 
     </menuItem>
 

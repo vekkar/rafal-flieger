@@ -23,33 +23,31 @@
   
   <image>
     <src clickOption="text">images/certyfiakty/ISO_9001_2000.jpg</src>
-    <largeDesc><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></largeDesc>
+    <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
   
   <image>
     <src clickOption="text">images/certyfiakty/DYGESTORIUM.jpg</src>
-    <largeDesc><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></largeDesc>
+    <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
 
   <image>
     <src clickOption="text">images/certyfiakty/PZH_LITA.jpg</src>
-    <largeDesc><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></largeDesc>
+    <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
 
   <image>
     <src clickOption="text">images/certyfiakty/PZH_MEBLE.jpg</src>
-    <largeDesc><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></largeDesc>
+    <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
 
   <image>
     <src clickOption="text">images/certyfiakty/PZH_MONOLIT.jpg</src>
-    <largeDesc><![CDATA[<font size="24" face="GeosansLight">LOVE TO DANCE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></largeDesc>
+    <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
-
-  <!--<image>
-    <src clickOption="">images/showroom/swf.swf</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-  </image>-->
-
-  
 </showroom>

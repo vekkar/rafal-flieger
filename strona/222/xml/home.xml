@@ -3,7 +3,7 @@
 
     <settings
 	
-         playIntro="false"
+     playIntro="false"
 		 showControls="false"
 		 videoPath= "videos/theShatter.flv"
 		 videoBufferTime = "8"
@@ -22,8 +22,8 @@
 		 youTubeVideoAspectQuality = "hd720"
 		 
 		 playRotator="true"
-		 rotatorImageWidth = "700"
-		 rotatorImageHeight = "350"
+		 rotatorImageWidth = "780"
+		 rotatorImageHeight = "260"
 		 preloaderColor = "CCFF00"
 		 preloaderAlpha = "0.2"
 		
@@ -45,59 +45,49 @@
 	
 	  <!-- Begin image here -->
 	<image>
-		<path slideShowDelay = "6">images/home/1.jpg</path>
-		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="10" Xpos="375"><![CDATA[<font color="#CCFF00">LIQUID² - AS3 XML TEMPLATE</font>]]></title>
-		<description bgColour="21211F" bgAlpha="0" txtWidth="260"><![CDATA[<font face="GeosansLight" color="#ffffff" size="16">Welcome to my new template!</font><br><br><font color="#ffffff">Includes a <b>2 level menu</b>, <b>deep linking</b> and <b>9 reusable modules</b>.<br><br>Each module comes with its own <b>liquid transitions</b>  and can be duplicated easily from the xml file.</font>]]></description>
+		<path slideShowDelay = "2">images/bio2d-2 (0).jpg</path>
+		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="10" Xpos="375"><![CDATA[<font color="#CCFF00">Witamy w TAWO</font>]]></title>
+		<description bgColour="21211F" bgAlpha="0" txtWidth="260"><![CDATA[]]></description>
 	</image>
 	<!-- End image here -->
 	
     <!-- Begin image here -->
 	<image>
-		<path slideShowDelay = "6">images/home/2.jpg</path>
-		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="80" Xpos="420"><![CDATA[<font color="#CCFF00">DEEP LINKING</font>]]></title>
-		<description bgColour="21211F" bgAlpha=".55" txtWidth="250"><![CDATA[<font color="#ffffff">Internal links: <a href="#/services">Check it out!</a><br><br><b>Lorem ipsum dolor sit amet</b><br><br>Curabitur in urna augue, id dignissim nisl. Morbi eleifend feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</font>]]></description>
+		<path slideShowDelay = "2">images/bio2d-2 (1).jpg</path>
+		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="80" Xpos="580"><![CDATA[<font color="#CCFF00">Witamy w TAWO</font>]]></title>
+		<description bgColour="21211F" bgAlpha=".55" txtWidth="250"><![CDATA[]]></description>
 	</image>
 	<!-- End image here -->
-	
-	 <!-- Begin image here -->
-	<!--
+
 	<image>
-		<path slideShowDelay = "7">images/home/swf.swf</path>
-		<title bgColour="21211F" bgAlpha="0" Ypos="10" Xpos="410"><![CDATA[<font color="#FFFFFF">FLUID PAGE TRANSITIONS</font>]]></title>
-		<description bgColour="FAC4DE" bgAlpha=".1" txtWidth="220"><![CDATA[<font color="#D74C9F"><b>Lorem ipsum dolor sit amet et ultrices</b><br><br>Curabitur in urna augue, id dignissim nisl. Morbi eleifend feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.]]></description>
+		<path slideShowDelay = "2">images/LabInf.png</path>
+		<title bgColour="1b1b1b" bgAlpha=".9" Ypos="10" Xpos="10"><![CDATA[<font color="#CCFF00">Lab-InFinty</font>]]></title>
+		<description bgColour="1b1b1b" bgAlpha=".55" txtWidth="200"><![CDATA[<font color="#ffffff" size="15">Niskończoność i dowolność w labolatorium</font>]]></description>
 	</image>
 	<!-- End image here -->
 	
-    <!-- Begin image here -->
-	<image>
-		<path slideShowDelay = "5">images/home/3.jpg</path>
-		<title bgColour="1b1b1b" bgAlpha=".9" Ypos="150" Xpos="220"><![CDATA[<font color="#CCFF00">ANY WAY YOU WANT IT</font>]]></title>
-		<description bgColour="1b1b1b" bgAlpha=".55" txtWidth="200"><![CDATA[]]></description>
-	</image>
-	<!-- End image here -->
-	
-	 <!-- Begin image here -->
+	 <!-- Begin image here --><!--
 	<image>
 		<path slideShowDelay = "5">images/home/4.jpg</path>
 		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="10" Xpos="370"><![CDATA[<font color="#CCFF00">2 LEVEL MENU</font>]]></title>
 		<description bgColour="21211F" bgAlpha=".75" txtWidth="200"><![CDATA[<font face="GeosansLight" color="#ffffff" size="16">Lorem ipsum dolor sit amet.</font>]]></description>
 	</image>
-	<!-- End image here -->
+	--><!-- End image here --><!--
 	
-    <!-- Begin image here -->
+    --><!-- Begin image here --><!--
 	<image>
 		<path slideShowDelay = "5">images/home/5.jpg</path>
 		<title bgColour="1b1b1b" bgAlpha=".75" Ypos="10" Xpos="350"><![CDATA[<font color="#FFFFFF">REUSABLE MODULES</font>]]></title>
 		<description bgColour="1b1b1b" bgAlpha=".75" txtWidth="270"><![CDATA[<font color="#ffffff">You can duplicate modules as many times as you like simply by duplicating the XML files.</font>]]></description>
 	</image>
-	<!-- End image here -->
+	--><!-- End image here --><!--
 	
-	    <!-- Begin image here -->
+	    --><!-- Begin image here --><!--
 	<image>
 		<path slideShowDelay = "5">images/home/6.jpg</path>
 		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="90" Xpos="410"><![CDATA[<font color="#CCFF00">BACKGROUNDS</font>]]></title>
 		<description bgColour="1b1b1b" bgAlpha="0" txtWidth="400"><![CDATA[<font face="GeosansLight" color="#ffffff" size="16">Support Images, SWF, Video and YouTube</font>]]></description>
-	</image>
+	</image>-->
 	<!-- End image here -->
 	
 	</rotator>
