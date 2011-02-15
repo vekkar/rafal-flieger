@@ -43,16 +43,16 @@
       <path slideShowDelay = "3" transition = "0">images/bio2d-2 (0).jpg</path>
       <title bgColour="CCFF00" bgAlpha=".5" Ypos="10" Xpos="10"><![CDATA[<font color="#FFFFFF">Dygestoria</font>]]></title>
       <description bgColour="1b1b1b" bgAlpha=".7" txtWidth="260"><![CDATA[]]></description>
-
-      <text><![CDATA[<font size="24" face="GeosansLight">przykładowy opis dla tawo</font><br><br><a href="http://tawo.poznan.pl"><img vspace="4" hspace="6" src="images/services/small.jpg"/></a><br><br><br><br><br><br><br><br><br><br><br>]]></text>
+      <text><![CDATA[<font size="24">w budowie</font><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></text>
+      <!--<text><![CDATA[<font size="24" face="GeosansLight">przykładowy opis dla tawo</font><br><br><a href="http://tawo.poznan.pl"><img vspace="4" hspace="6" src="images/services/small.jpg"/></a><br><br><br><br><br><br><br><br><br><br><br>]]></text>-->
     </image>
 
     <image>
       <path slideShowDelay = "3" transition = "0">images/bio2d-2 (1).jpg</path>
       <title bgColour="CCFF00" bgAlpha=".5" Ypos="10" Xpos="10"><![CDATA[<font color="#FFFFFF">Dygestoria</font>]]></title>
       <description bgColour="1b1b1b" bgAlpha=".7" txtWidth="260"><![CDATA[]]></description>
-
-      <text><![CDATA[<font size="24" face="GeosansLight">przykładowy opis dla tawo</font><br><br><a href="http://tawo.poznan.pl"><img vspace="4" hspace="6" src="images/services/small.jpg"/></a><br><br><br><br><br><br><br><br><br><br><br>]]></text>
+      <text><![CDATA[<font size="24">w budowie</font><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></text>
+      <!--<text><![CDATA[<font size="24" face="GeosansLight">przykładowy opis dla tawo</font><br><br><a href="http://tawo.poznan.pl"><img vspace="4" hspace="6" src="images/services/small.jpg"/></a><br><br><br><br><br><br><br><br><br><br><br>]]></text>-->
     </image>
 
 

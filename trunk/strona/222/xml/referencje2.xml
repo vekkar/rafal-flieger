@@ -2,7 +2,7 @@
 <showroom>
 
   <settings
-       thumbBgColor = "1b1b1b"
+   thumbBgColor = "1b1b1b"
    thumbBgAlpha = "0.5"
 		 
    mainBgColor = "1b1b1b"
@@ -56,75 +56,64 @@ Start category
     <item>
       <thumbnail width="201">images/referencje/thumbnails/kryminalni.gif</thumbnail>
       <large type="image">images/referencje/1.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
-    </item>
+      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
+      <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
+   </item>
     
     <item>
       <thumbnail width="150">images/referencje/thumbnails/uam.gif</thumbnail>
       <large type="image">images/referencje/2.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
+      <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="150">images/referencje/thumbnails/uam.gif</thumbnail>
       <large type="image">images/referencje/3.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
+      <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="150">images/referencje/thumbnails/uam.gif</thumbnail>
       <large type="image">images/referencje/4.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
+      <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="210">images/referencje/thumbnails/rolnicza.jpg</thumbnail>
       <large type="image">images/referencje/5.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
+      <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="180">images/referencje/thumbnails/sulechow.gif</thumbnail>
       <large type="image">images/referencje/6.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
+      <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="210">images/referencje/thumbnails/uam.gif</thumbnail>
       <large type="image">images/referencje/7.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
+      <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="210">images/referencje/thumbnails/uam.gif</thumbnail>
       <large type="image">images/referencje/8.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
+      <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="200">images/referencje/thumbnails/up2.jpg</thumbnail>
       <large type="image">images/referencje/9.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">CLUB HOUSE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
+      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
+      <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
-    
-
-    <!--<item>
-	  <thumbnail width="296">images/referencje/thumbnails/topTown.jpg</thumbnail>
-	  <large type="video" videoHeight="430">videos/topOfTheTown.flv</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">TOP OF THE TOWN</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.]]></text>
-    </item>-->
-
-    <!--<item>
-      <thumbnail width="296">images/referencje/thumbnails/3.jpg</thumbnail>
-      <large type="swf">images/referencje/swf.swf</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">SWF FILE</font><br><br>Photographer:<br><A href="http://sebastian-galazka.org.uk/blog/">John Doe</a><br><br>This is the main news area for each news. This text is <b>HTML formated</b> and imported dynamically from XML. <br><br>You can easlily insert <A href="http://sebastian-galazka.org.uk/blog/">links</a>, <A href="mailto:yourEmail@mail.com">email links</a> styled using CSS, images etc... <br><br>This is a short description. The scroll bar will appear automaticaly if needed.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh. Morbi ullamcorper ante sit amet nibh.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec pellentesque dui a elit. Donec sollicitudin. Donec eu nisl sit amet lectus gravida luctus. In pretium leo vitae ipsum. Ut euismod erat sit amet leo. Mauris at libero. Integer scelerisque imperdiet risus.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula libero vel tortor. Nam nisi dolor, faucibus non, ultricies sit amet, tempor non, nibh.]]></text>
-    </item>
-
-    <item>
-      <thumbnail width="200">images/referencje/thumbnails/jayz.jpg</thumbnail>
-      <large type="youtube" videoHeight="400">0UjsXo9l6I8</large>
-      <text><![CDATA[]]></text>
-    </item>-->
-
   </category>
 </showroom>
