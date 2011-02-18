@@ -13,27 +13,27 @@
     BroswerPageTitle = "TAWO Meble Labolatoryjne"
     menuAlignment = "middle"
 		  
-    headerBgColor = "1B1B1B"
+    headerBgColor = "ffffff"
     headerBgAlpha = "0.8"
-    footerBgColor = "1B1B1B"
-    footerBgAlpha = "0.5"
+    footerBgColor = "1b1b1b"
+    footerBgAlpha = "0.8"
 		  
-    menuButtonsTextColor = "ffffff"
+    menuButtonsTextColor = "3366ff"
     menuButtonsBgColor = "1b1b1b"
     menuButtonsBgAlpha = "0.0"
     menuButtonsBgOverColor = "ccff00"
-    menuButtonsBgOverAlpha = "0.55"
+    menuButtonsBgOverAlpha = "1"
 		  
-    submenuButtonsTextColor = "FFFFFF"
-    submenuButtonsBgColor = "1B1B1B"
-    submenuButtonsBgAlpha = "0.5"
+    submenuButtonsTextColor = "3366ff"
+    submenuButtonsBgColor = "ffffff"
+    submenuButtonsBgAlpha = "0.8"
     submenuButtonsBgOverColor = "CCFF00"
-    submenuButtonsBgOverAlpha = "0.5"
+    submenuButtonsBgOverAlpha = "1"
 		  
     bgPreloaderColor = "CCFF00"
     bgPreloaderAlpha = "0.1"
 		  
-    fullscreenTxt = "Fullscreen"
+    fullscreenTxt = "Pełen ekran"
     
     menuExternalURLWindowTarget = "_blank"
   />
