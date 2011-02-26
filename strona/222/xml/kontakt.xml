@@ -4,7 +4,7 @@
     <settings
 		 
 		 rotatorImageWidth = "780"
-		 rotatorImageHeight = "300"
+		 rotatorImageHeight = "0"
 		 preloaderColor = "CCFF00"
 		 preloaderAlpha = "0.3"
 		
@@ -41,10 +41,10 @@
 	
 	  <!-- Begin image here -->
 	<image>
-		<path slideShowDelay = "3" transition = "0">images/kontakt/mapka.swf</path>
-		<title bgColour="CCFF00" bgAlpha=".5" Ypos="10" Xpos="10"><![CDATA[<font color="#FFFFFF">Dygestoria</font>]]></title>
+		<path slideShowDelay = "3" transition = "0">emptySWF.swf</path>
+		<title bgColour="CCFF00" bgAlpha=".5" Ypos="10" Xpos="10"><![CDATA[]]></title>
 		<description bgColour="1b1b1b" bgAlpha=".7" txtWidth="260"><![CDATA[]]></description>	
-		<text><![CDATA[<font size="24" face="GeosansLight">przykładowy opis dla tawo</font><br><br><a href="http://tawo.poznan.pl"><img vspace="4" hspace="6" src="images/services/small.jpg"/></a><br><br><br><br><br><br><br><br><br><br><br>]]></text>
+		<text><![CDATA[<font size="23"><b>TAWO Tadeusz Flieger</b></font><font size="15"></br><br/>Chodziewska 17<br/>Poznań 60-418<br/><a href="mapka.swf"><font size="13">zobacz na mapie</font></a><br/><br/><a href="mailto:info@tawo.poznan.pl">info@tawo.poznan.pl</a><br/><a href="http://tawo.poznan.pl">www.tawo.poznan.pl</a><br/><br/>Tel: +48 61 8618 888<br/>Fax: +48 61 8449 904<br/><br/><br/></font><font size="11">Adres rejestrowy: Poznań, Grochowska 12, 60-277.</font>]]></text>
 	</image>
 	<!-- End image here -->
 	
