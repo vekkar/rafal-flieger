@@ -56,63 +56,54 @@ Start category
     <item>
       <thumbnail width="201">images/referencje/thumbnails/kryminalni.gif</thumbnail>
       <large type="image">images/referencje/1.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
       <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
    </item>
     
     <item>
       <thumbnail width="150">images/referencje/thumbnails/uam.gif</thumbnail>
       <large type="image">images/referencje/2.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
       <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="150">images/referencje/thumbnails/uam.gif</thumbnail>
       <large type="image">images/referencje/3.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
       <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="150">images/referencje/thumbnails/uam.gif</thumbnail>
       <large type="image">images/referencje/4.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
       <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="210">images/referencje/thumbnails/rolnicza.jpg</thumbnail>
       <large type="image">images/referencje/5.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
       <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="180">images/referencje/thumbnails/sulechow.gif</thumbnail>
       <large type="image">images/referencje/6.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
       <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
-      <thumbnail width="210">images/referencje/thumbnails/uam.gif</thumbnail>
+      <thumbnail width="150">images/referencje/thumbnails/uam.gif</thumbnail>
       <large type="image">images/referencje/7.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
       <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
-      <thumbnail width="210">images/referencje/thumbnails/uam.gif</thumbnail>
+      <thumbnail width="150">images/referencje/thumbnails/uam.gif</thumbnail>
       <large type="image">images/referencje/8.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
       <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="200">images/referencje/thumbnails/up2.jpg</thumbnail>
       <large type="image">images/referencje/9.jpg</large>
-      <text><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></text>
       <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
   </category>
