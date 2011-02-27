@@ -23,31 +23,31 @@
   
   <image>
     <src clickOption="text">images/certyfiakty/ISO_9001_2000.jpg</src>
-    <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
+    <largeDesc><![CDATA[]]></largeDesc>
     <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
   
   <image>
     <src clickOption="text">images/certyfiakty/DYGESTORIUM.jpg</src>
-    <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
+    <largeDesc><![CDATA[]]></largeDesc>
     <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
 
   <image>
     <src clickOption="text">images/certyfiakty/PZH_LITA.jpg</src>
-    <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
+    <largeDesc><![CDATA[]]></largeDesc>
     <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
 
   <image>
     <src clickOption="text">images/certyfiakty/PZH_MEBLE.jpg</src>
-    <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
+    <largeDesc><![CDATA[]]></largeDesc>
     <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
 
   <image>
     <src clickOption="text">images/certyfiakty/PZH_MONOLIT.jpg</src>
-    <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
+    <largeDesc><![CDATA[]]></largeDesc>
     <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
 </showroom>
