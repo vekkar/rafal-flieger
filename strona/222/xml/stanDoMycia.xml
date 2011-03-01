@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<home>
+
+  <settings
+		 
+   rotatorImageWidth = "780"
+   rotatorImageHeight = "50"
+   preloaderColor = "CCFF00"
+   preloaderAlpha = "0.3"
+		
+   bgColor = "1B1B1B"
+   bgAlpha = ".5"
+		 
+   controlsIconColor = "FFFFFF"
+   controlsIconAlpha = "1"
+   controlsBgColor = "1B1B1B"
+   controlsBgOverColor = "CCFF00"
+   controlsBgAlpha = ".5"
+		 
+   rotatorRandomTransitions = "false"
+		 
+		 
+    />
+
+  <rotator>
+
+    <!-- text transitions include (use the numbers) : 
+	 
+	 Blinds = 0
+	 Fade = 1 
+	 Fly = 2 
+	 Iris = 3 
+	 Photo = 4 
+	 PixelDissolve = 5 
+	 Rotate = 6 
+	 Squeeze = 7 
+	 Wipe = 8 
+	 Zoom = 9
+	 
+	 -->
+
+    <image>
+      <path slideShowDelay = "3" transition = "0">emptySWF.swf</path>
+      <title bgColour="CCFF00" bgAlpha="0" Ypos="5" Xpos="0"><![CDATA[<font color="#FFFFFF" size="25"><b>Stanowiska do mycia         </b></font><a href="tawo.poznan.pl"><font size="10" color="#ffffff">pobierz PDF</font></a>]]></title>
+      <!--<description bgColour="1b1b1b" bgAlpha=".7" txtWidth="260" Ypos="-100"  Xpos="300"><![CDATA[<a href="tawo.poznan.pl">pobierz PDF</a>]]></description>-->
+      <text><![CDATA[<font size="13">Jedno, dwu lub wielokomorowe mogą być instalowane w stołach wyspowych,przyściennych lub jako odrębne stanowiska wolnostojące. Stanowiska do mycia są elementem systemu Lab-Infinuty, dlatego i tutaj jest ogromna możliwość wybory technologii wykonania, jak również dobór armatury i sposobu przechowywania. <br/> <img vspace="10" hspace="10" align="middle" src="images/mebleLab/domycia/1.jpg"/><img vspace="10" hspace="10" align="middle" src="images/mebleLab/domycia/2.jpg"/><img vspace="10" hspace="10" align="middle" src="images/mebleLab/domycia/3.jpg"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> </font>]]></text>
+      <!--<text><![CDATA[]]></text>-->
+      </image>
+
+
+  </rotator>
+
+
+</home>
