@@ -18,20 +18,20 @@
     footerBgColor = "1b1b1b"
     footerBgAlpha = "0.8"
 		  
-    menuButtonsTextColor = "3366ff"
+    menuButtonsTextColor = "010101"
     menuButtonsBgColor = "1b1b1b"
     menuButtonsBgAlpha = "0.0"
-    menuButtonsBgOverColor = "ccff00"
+    menuButtonsBgOverColor = "85a2f8"
     menuButtonsBgOverAlpha = "1"
 		  
-    submenuButtonsTextColor = "3366ff"
+    submenuButtonsTextColor = "010101"
     submenuButtonsBgColor = "ffffff"
-    submenuButtonsBgAlpha = "0.8"
-    submenuButtonsBgOverColor = "CCFF00"
+    submenuButtonsBgAlpha = "0.6"
+    submenuButtonsBgOverColor = "85a2f8"
     submenuButtonsBgOverAlpha = "1"
 		  
-    bgPreloaderColor = "CCFF00"
-    bgPreloaderAlpha = "0.1"
+    bgPreloaderColor = "85a2f8"
+    bgPreloaderAlpha = "0.4"
 		  
     fullscreenTxt = "Pełen ekran"
     
@@ -68,8 +68,8 @@
                bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="Blaty laboratoryjne" swf="textContent_and_rotator.swf"  xmlPath = "xml/blaty.xml"
                bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-      <submenu page_title="Meble specjalistyczne" swf="textContent_and_rotator.swf"  xmlPath = "xml/dydestoria.xml" 
-               bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <!--<submenu page_title="Meble specjalistyczne" swf="textContent_and_rotator.swf"  xmlPath = "xml/specjalisyczne.xml" 
+               bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
       <!--
         this will be for lss
         <submenu page_title="STAFF" swf="staff.swf"  xmlPath = "xml/staff.xml" bgType = "image" bgFile = "images/background/6.jpg"/>

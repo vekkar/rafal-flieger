@@ -23,15 +23,23 @@
     />
 
   <staff>
-    <thumb>images/bezpieczenstwo/butle/thumbnails/tmp.gif</thumb>
-    <image>images/bezpieczenstwo/butle/BC1350.png</image>
+    <thumb>images/bezpieczenstwo/butle/thumbnails/all.png</thumb>
+    <image>images/transporent2x500.png</image>
+    <textfieldWidth>1000</textfieldWidth>
+    <largeDesc><![CDATA[<img vspace="4" hspace="6" src="images/bezpieczenstwo/butle/main.png"/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
+  </staff>
+
+  <staff>
+    <thumb>images/bezpieczenstwo/butle/thumbnails/BC 1350.png</thumb>
+    <image>images/bezpieczenstwo/butle/BC 1350.png</image>
     <textfieldWidth>500</textfieldWidth>
     <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
     <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </staff>
 
   <staff>
-    <thumb>images/bezpieczenstwo/butle/thumbnails/tmp.gif</thumb>
+    <thumb>images/bezpieczenstwo/butle/thumbnails/BC 650.png</thumb>
     <image>images/bezpieczenstwo/butle/BC 650.png</image>
     <textfieldWidth>500</textfieldWidth>
     <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
@@ -39,7 +47,7 @@
   </staff>
   
   <staff>
-    <thumb>images/bezpieczenstwo/butle/thumbnails/tmp.gif</thumb>
+    <thumb>images/bezpieczenstwo/butle/thumbnails/dest.png</thumb>
     <image>images/bezpieczenstwo/butle/dest.png</image>
     <textfieldWidth>500</textfieldWidth>
     <largeDesc><![CDATA[<font size="24" face="GeosansLight">w budowie</font>]]></largeDesc>
