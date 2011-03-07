@@ -23,32 +23,53 @@
     />
 
   <staff>
-    <thumb>images/bezpieczenstwo/chemiczne/thumbnails/tmp.gif</thumb>
+    <thumb>images/bezpieczenstwo/chemiczne/thumbnails/all.png</thumb>
+    <image>images/transporent2x500.png</image>
+    <textfieldWidth>1000</textfieldWidth>
+    <largeDesc><![CDATA[<img vspace="4" hspace="6" src="images/bezpieczenstwo/chemiczne/main.png"/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>]]></largeDesc>
+    </staff>
+
+  <staff>
+    <thumb>images/bezpieczenstwo/chemiczne/thumbnails/AB 30.30 EST.png</thumb>
     <image>images/bezpieczenstwo/chemiczne/AB 30.30 EST.png</image>
     <textfieldWidth>500</textfieldWidth>
     <!--<largeDesc><![CDATA[]]></largeDesc>-->
     <largeDesc><![CDATA[<font size="25"><b>AB 30/30 EST</b></font><font size="15"></br><b><br/>Szafa z wentylatorem i filtrem do przechowywania 80 litrów substancji chemicznych, kwasów i zasad. </b><br/><br/>Produkt zgodny z normą PN EN 14470, certyfikat wydany przez TÜV (nr Z1 05 08 31739 012)<br/><br/><br/>Dane techniczne:<br/><ul><li>konstrukcja szafy wykonana  ze stali malowanej chemoodporną epoksydową farbą proszkową,</li><li>dwie niezależne wysuwane szuflady z pułkami z chemoodpornego tworzywa,</li><li>zamek z funkcją automatycznego blokowania,</li><li>uziom w celu zapobiegania elektryczności statycznej,</li><li>filtr z węglem aktywnym,</li><li>system informujący o potrzebie zmiany filtra,</li><li>wentylator z zabezpieczeniem termicznym IMQ IPX4 CE zgodnie z EN 603351 i EN 60335280,</li><li>uziom w celu zapobiegania elektryczności statycznej,</li><li>kontrolka ON/OFF urządzenia,</li><li>zasilanie 220/230 V,</li><li>pobór mocy 21 W,</li><li>4 regulowane nogi,</li><li>podstawa dostosowana do łatwego transportu i przenoszenia szafy,</li><li>naklejki ostrzegawcze zgodne z europejską normą PN EN 14470: substancje żrące, szkodliwe i toksyczne,</li></ul>wymiary zewnętrzne: 600 x 500 x 2010 mm,<br/>wymiary wewnętrzne: 260 + 260 x 490 x 1490 mm,<br/>waga: 132 kg,<br/>objętość wewnętrzna: 379 litrów.<br/></font>]]></largeDesc>
-    </staff>
+  </staff>
 
   <staff>
-    <thumb>images/bezpieczenstwo/chemiczne/thumbnails/tmp.gif</thumb>
+    <thumb>images/bezpieczenstwo/chemiczne/thumbnails/AB600.png</thumb>
     <image>images/bezpieczenstwo/chemiczne/AB600.png</image>
     <textfieldWidth>500</textfieldWidth>
     <largeDesc><![CDATA[<font size="25"><b>AB 600</b></font><font size="15"></br><b><br/>Szafa z wentylatorem i filtrem do przechowywania 90 litrów substancji chemicznych, kwasów i zasad. </b><br/><br/>Produkt zgodny z normą PN EN 14470, certyfikat wydany przez TÜV (nr Z1 05 08 31739 012).<br/><br/><br/>Dane techniczne:<br/><ul><li>konstrukcja szafy wykonana  ze stali malowanej chemoodporną epoksydową farbą proszkową,</li><li>dwie niezależne części osobno do przechowywania kwasów i zasad,</li><li>zamek z funkcją automatycznego blokowania,</li><li>półki w kształcie basenu wykonane ze stali malowanej chemoodporną epoksydową farbą,</li><li>filtr z węglem aktywnym,</li><li>system informujący o potrzebie zmiany filtra,</li><li>wentylator z zabezpieczeniem termicznym IMQ IPX4 CE zgodnie z EN 603351 i EN 60335280,</li><li>uziom w celu zapobiegania elektryczności statycznej,</li><li>kontrolka ON/OFF urządzenia,</li><li>zasilanie 220/230 V,</li><li>4 regulowane nogi,</li><li>podstawa dostosowana do łatwego transportu i przenoszenia szafy,</li><li>naklejki ostrzegawcze zgodne z europejską normą PN EN 14470: substancje żrące, szkodliwe i toksyczne,</li></ul>wymiary zewnętrzne: 600 x 500 x 720 mm,<br/>waga: 75 kg,<br/></font>]]></largeDesc>
   </staff>
-  
+
   <staff>
-    <thumb>images/bezpieczenstwo/chemiczne/thumbnails/tmp.gif</thumb>
+    <thumb>images/bezpieczenstwo/chemiczne/thumbnails/AB900.50.png</thumb>
     <image>images/bezpieczenstwo/chemiczne/AB900.50.png</image>
     <textfieldWidth>500</textfieldWidth>
     <largeDesc><![CDATA[<font size="25"><b>AB 1200.50</b></font><font size="15"></br><b><br/>Szafa z wentylatorem i filtrem do przechowywania 90 litrów substancji chemicznych, kwasów i zasad. </b><br/><br/>Produkt zgodny z normą PN EN 14470, certyfikat wydany przez TÜV (nr Z1 05 08 31739 012).<br/><br/><br/>Dane techniczne:<br/><ul><li>konstrukcja szafy wykonana  ze stali malowanej chemoodporną epoksydową farbą proszkową,</li><li>dwie niezależne części osobno do przechowywania kwasów i zasad,</li><li>zamek z funkcją automatycznego blokowania,</li><li>dwie półki w kształcie basenu wykonane ze stali malowanej chemoodporną epoksydową farbą,</li><li>filtr z węglem aktywnym,</li><li>system informujący o potrzebie zmiany filtra,</li><li>wentylator z zabezpieczeniem termicznym IMQ IPX4 CE zgodnie z EN 603351 i EN 60335280,</li><li>uziom w celu zapobiegania elektryczności statycznej,</li><li>kontrolka ON/OFF urządzenia,</li><li>zasilanie 220/230 V,</li><li>pobór mocy 21 W,</li><li>4 regulowane nogi,</li><li>podstawa dostosowana do łatwego transportu i przenoszenia szafy,</li><li>naklejki ostrzegawcze zgodne z europejską normą PN EN 14470: substancje żrące, szkodliwe i toksyczne,</li></ul>wymiary zewnętrzne: 1200 x 500 x 720 mm,<br/>wymiary wewnętrzne: 530 + 530 x 460 x 560 mm,<br/>waga: 75 kg,<br/>objętość wewnętrzna: 273 litrów.<br/></font>]]></largeDesc>
   </staff>
-  
+
   <staff>
-    <thumb>images/bezpieczenstwo/chemiczne/thumbnails/tmp.gif</thumb>
+    <thumb>images/bezpieczenstwo/chemiczne/thumbnails/AAW120.png</thumb>
     <image>images/bezpieczenstwo/chemiczne/AAW120.png</image>
     <textfieldWidth>500</textfieldWidth>
     <largeDesc><![CDATA[<font size="25"><b>AAW 1200</b></font><font size="15"></br><b><br/>Ognioochronna szafa do przechowywania 160 l substancji chemicznych, kwasów i zasad.</b><br/><br/>Możliwość podłączenia filtra i wentylatora<br/><br/><br/>Dane techniczne:<br/><ul><li>konstrukcja szafy wykonana  ze stali malowanej chemoodporną epoksydową farbą proszkową,</li><li>3 półki w kształcie basenu o pojemności 8 litrów i nośność 50 kg wykonane  ze stali malowanej chemoodporną epoksydową farbą proszkową,</li><li>1 dolna półka w kształcie basenu o pojemności 35 litrów wykonana  ze stali malowanej chemoodporną epoksydową farbą proszkową,</li><li>drzwi z nietłukącą się szybą,</li><li>zamek z funkcją automatycznego blokowania w 3 punktach,</li><li>uziom w celu zapobiegania elektryczności statycznej,</li><li>filtr z węglem aktywnym,</li><li>system informujący o potrzebie zmiany filtra,</li><li>wentylator z zabezpieczeniem termicznym IMQ IPX4 CE zgodnie z EN 603351 i EN 60335280,</li><li>uziom w celu zapobiegania elektryczności statycznej,</li><li>kontrolka ON/OFF urządzenia,</li><li>zasilanie 220/230 V,</li><li>pobór mocy 75 W,</li><li>4 regulowane nogi,</li><li>naklejki ostrzegawcze zgodne z europejską normą PN EN 14470: substancje żrące, szkodliwe i toksyczne,</li></ul>wymiary zewnętrzne: 1200 x 500 x 2010 mm,<br/>wymiary wewnętrzne: 1120 x 450 x 1500 mm,<br/>waga: 146 kg,<br/>objętość wewnętrzna: 756 litrów.<br/></font>]]></largeDesc>
+  </staff>
+
+  <staff>
+    <thumb>images/bezpieczenstwo/kemfire/thumbnails/all.png</thumb>
+    <image>images/transporent2x500.png</image>
+    <textfieldWidth>1000</textfieldWidth>
+    <largeDesc><![CDATA[<img vspace="4" hspace="6" src="images/bezpieczenstwo/kemfire/main.png"/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>]]></largeDesc>
+  </staff>
+
+  <staff>
+    <thumb>images/bezpieczenstwo/kemfire/thumbnails/kemfire600.png</thumb>
+    <image>images/bezpieczenstwo/kemfire/kemfire600.png</image>
+    <textfieldWidth>500</textfieldWidth>
+    <largeDesc><![CDATA[]]></largeDesc>
   </staff>
 
 </staff>

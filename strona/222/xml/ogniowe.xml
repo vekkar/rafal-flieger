@@ -23,7 +23,15 @@
     />
 
   <staff>
-    <thumb>images/bezpieczenstwo/ogniowe/thumbnails/tmp.gif</thumb>
+    <thumb>images/bezpieczenstwo/ogniowe/thumbnails/all.png</thumb>
+    <image>images/transporent2x500.png</image>
+    <textfieldWidth>1000</textfieldWidth>
+    <largeDesc><![CDATA[<img vspace="4" hspace="6" src="images/bezpieczenstwo/ogniowe/main.png"/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>]]></largeDesc>
+    
+  </staff>
+
+  <staff>
+  <thumb>images/bezpieczenstwo/ogniowe/thumbnails/ac600.png</thumb>
     <image>images/bezpieczenstwo/ogniowe/AC600CM.png</image>
     <textfieldWidth>500</textfieldWidth>
     <!--<largeDesc><![CDATA[]]></largeDesc>-->
@@ -31,22 +39,29 @@
     </staff>
 
   <staff>
-    <thumb>images/bezpieczenstwo/ogniowe/thumbnails/tmp.gif</thumb>
+    <thumb>images/bezpieczenstwo/ogniowe/thumbnails/ac1200.png</thumb>
     <image>images/bezpieczenstwo/ogniowe/AC 1200.png</image>
     <textfieldWidth>500</textfieldWidth>
     <largeDesc><![CDATA[<font size="25"><b>AC 1200</b></font><font size="15"></br><b><br/>Ognioochronna szafa do przechowywania 160 l substancji chemicznych.</b><br/><br/>Odporność szafy: <b>90 minut</b><br/>Możliwość podłączenia filtra i wentylatora<br/>Produkt zgodny z normą <b>PN EN 14470</b>, certyfikat wydany przez TÜV (nr Z1 09 07 31739 021)<br/><br/>Dane techniczne:<br/><ul><li>konstrukcja szafy wykonana  ze stali malowanej chemoodporną epoksydową farbą proszkową,</li><li>automatycznie uszczelnienie szafy zgodnie z DIN 4102,</li><li>wbudowany niezależny mechanizm automatycznie zamykający szafę w przypadku pożaru (przekroczenie 50 °C),</li><li>system wentylujący wyposażony w dwa niezależne zawory zapewniające swobodną cyrkulację, uszczelnia się automatycznie w przypadku pożaru (przekroczenie 70°C), zgodnie z PN EN 14470,</li><li>3 półki w kształcie basenu wykonane ze stali malowanej chemoodporną epoksydową farbą proszkową, oraz zaczepy umożliwiające łatwe manipulowanie pułkami,</li><li>1 dolna półka w kształcie basenu wykonana  ze stali malowanej chemoodporną epoksydową farbą proszkową,</li><li>zamek z funkcją automatycznego blokowania w 3 punktach,</li><li>uziom w celu zapobiegania elektryczności statycznej,</li><li>6 regulowanych nóg,</li><li>podstawa dostosowana do łatwego transportu i przenoszenia szafy,</li><li>naklejki ostrzegawcze zgodne z europejską normą DIN 4844 oraz ISO 3864 ,</li><li>ubezpieczenie pokrywające szkody powstałe przez nieprawidłowe działanie szafy,</li></ul>wymiary zewnętrzne: 1180 x 650 x 1985 mm,<br/>wymiary wewnętrzne: 1015 x 445 x 1685 mm,<br/>waga: 490 kg,<br/>objętość wewnętrzna: 740 litrów.<br/>]]></largeDesc>
   </staff>
 
   <staff>
-    <thumb>images/bezpieczenstwo/ogniowe/thumbnails/tmp.gif</thumb>
-    <image>images/bezpieczenstwo/ogniowe/AC 1200.500.png</image>
+    <thumb>images/bezpieczenstwo/ogniowe/thumbnails/ac1200.50.png</thumb>
+    <image>images/bezpieczenstwo/ogniowe/AC 1200.50.png</image>
     <textfieldWidth>500</textfieldWidth>
-    <largeDesc><![CDATA[<font size="25"><b>AC 1200/500</b></font><font size="15"></br><b><br/>Ognioochronna szafa do przechowywania 80 l substancji chemicznych.</b><br/><br/>Odporność szafy: <b>90 minut</b><br/>Możliwość podłączenia filtra i wentylatora<br/>Produkt zgodny z normą <b>PN EN 14470</b>, certyfikat wydany przez TÜV (nr Z1 09 07 31739 021)<br/><br/>Dane techniczne:<br/><ul><li>konstrukcja szafy wykonana  ze stali malowanej chemoodporną epoksydową farbą proszkową,</li><li>automatycznie uszczelnienie szafy zgodnie z DIN 4102,</li><li>wbudowany niezależny mechanizm automatycznie zamykający szafę w przypadku pożaru (przekroczenie 50 °C),</li><li>system wentylujący wyposażony w dwa niezależne zawory zapewniające swobodną cyrkulację, uszczelnia się automatycznie w przypadku pożaru (przekroczenie 70°C), zgodnie z PN EN 14470,</li><li>dwie wysuwane szuflady wykonane ze stali malowanej chemoodporną epoksydową farbą proszkową o wytrzymałości 80 kg.  z dolna półka w kształcie basenu wykonaną w tej samej technologii</li><li>zamek z funkcją automatycznego blokowania w 3 punktach,</li><li>uziom w celu zapobiegania elektryczności statycznej,</li><li>4 regulowane nogi,</li><li>naklejki ostrzegawcze zgodne z europejską normą DIN 4844 oraz ISO 3864 ,</li><li>ubezpieczenie pokrywające szkody powstałe przez nieprawidłowe działanie szafy,</li></ul>wymiary zewnętrzne: 1100 x 510 x 600 mm,<br/>wymiary wewnętrzne: 930  x 395 x 445 mm,<br/>waga: 220 kg,<br/>objętość wewnętrzna: 363 litrów.<br/></font>]]></largeDesc>
+    <largeDesc><![CDATA[<font size="25"><b>AC 1200/50</b></font><font size="15"></br><b><br/>Ognioochronna szafa do przechowywania 80 l substancji chemicznych.</b><br/><br/>Odporność szafy: <b>90 minut</b><br/>Możliwość podłączenia filtra i wentylatora<br/>Produkt zgodny z normą <b>PN EN 14470</b>, certyfikat wydany przez TÜV (nr Z1 09 07 31739 021)<br/><br/>Dane techniczne:<br/><ul><li>konstrukcja szafy wykonana  ze stali malowanej chemoodporną epoksydową farbą proszkową,</li><li>automatycznie uszczelnienie szafy zgodnie z DIN 4102,</li><li>wbudowany niezależny mechanizm automatycznie zamykający szafę w przypadku pożaru (przekroczenie 50 °C),</li><li>system wentylujący wyposażony w dwa niezależne zawory zapewniające swobodną cyrkulację, uszczelnia się automatycznie w przypadku pożaru (przekroczenie 70°C), zgodnie z PN EN 14470,</li><li>dwie wysuwane szuflady wykonane ze stali malowanej chemoodporną epoksydową farbą proszkową o wytrzymałości 80 kg.  z dolna półka w kształcie basenu wykonaną w tej samej technologii</li><li>zamek z funkcją automatycznego blokowania w 3 punktach,</li><li>uziom w celu zapobiegania elektryczności statycznej,</li><li>4 regulowane nogi,</li><li>naklejki ostrzegawcze zgodne z europejską normą DIN 4844 oraz ISO 3864 ,</li><li>ubezpieczenie pokrywające szkody powstałe przez nieprawidłowe działanie szafy,</li></ul>wymiary zewnętrzne: 1100 x 510 x 600 mm,<br/>wymiary wewnętrzne: 930  x 395 x 445 mm,<br/>waga: 220 kg,<br/>objętość wewnętrzna: 363 litrów.<br/></font>]]></largeDesc>
   </staff>
   
   <staff>
-    <thumb>images/bezpieczenstwo/ogniowe/thumbnails/tmp.gif</thumb>
-    <image>images/bezpieczenstwo/ogniowe/kemfire.png</image>
+    <thumb>images/bezpieczenstwo/kemfire/thumbnails/all.png</thumb>
+    <image>images/transporent2x500.png</image>
+    <textfieldWidth>1000</textfieldWidth>
+    <largeDesc><![CDATA[<img vspace="4" hspace="6" src="images/bezpieczenstwo/kemfire/main.png"/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>]]></largeDesc>
+  </staff>
+
+  <staff>
+    <thumb>images/bezpieczenstwo/kemfire/thumbnails/kemfire600.png</thumb>
+    <image>images/bezpieczenstwo/kemfire/kemfire600.png</image>
     <textfieldWidth>500</textfieldWidth>
     <largeDesc><![CDATA[]]></largeDesc>
   </staff>
