@@ -53,7 +53,9 @@
     </menuItem>
 
     <!-- start Meble laboratoryjne menu item here -->	
-    <menuItem page_title = "MEBLE LABOLATORYJNE">   
+    <menuItem page_title = "MEBLE LABOLATORYJNE">
+      <submenu page_title="Lab-Infinity" swf="textContent_and_rotator.swf" xmlPath = "xml/infinity.xml"
+              bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="Dygestoria" swf="textContent_and_rotator.swf" xmlPath = "xml/dydestoria.xml" 
                bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="Stoły laboratoryjne" swf="textContent_and_rotator.swf"  xmlPath = "xml/stoly.xml" 
@@ -90,6 +92,7 @@
               bgType = "image" bgFile = "images/background/pulpit.jpg"/>
     </menuItem>
 
+    <menuItem page_title="GALERIA" swf="showroom.swf" xmlPath = "xml/galeria.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
     <!--<menuItem page_title="KONTAKT" swf="contact.swf" xmlPath = "xml/contact.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
     <menuItem page_title="KONTAKT" swf="textContent_and_rotator.swf" xmlPath = "xml/kontakt.xml" bgType = "image" bgFile = "images/background/pulpit.jpg" />
     <!--<menuItem page_title="KONTAKT3" swf="mapka.swf" xmlPath = "" bgType = "image" bgFile = "images/background/pulpit.jpg" />-->
