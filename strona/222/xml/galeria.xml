@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<showroom>
+
+  <settings
+	
+   bgColor = "1b1b1b"
+   bgAlpha = ".5"
+		 
+   textBgColor = "1b1b1b"
+   textBgAlpha = ".5"
+		 
+   scrollSpeed = "2"
+   imageMaxHeight = "600"
+		 
+   scrollBtnOverColor = "CCFF00"
+   scrollBtnOverAlpha = ".5"
+   scrollBtnColor = "FFFFFF"
+   scrollBtnAlpha = ".5"
+   scrollBarColor = "FFFFFF"
+   scrollBarAlpha = ".5"
+		 
+    />
+  
+  <image>
+    <src clickOption="text">images/galeria/tata-1.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/tata-2.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/tata-3.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/tata-4.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/wrosław.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/wrosław-2.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/wrosław-3.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/wrosław-4.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/wrosław-5.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/wrosław-6.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/wrosław-7.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/wrosław-8.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/wrosław-9.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/wrosław-10.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/wrosław-11.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+ 
+</showroom>

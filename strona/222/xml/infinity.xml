@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<home>
+
+  <settings
+		 
+   rotatorImageWidth = "780"
+   rotatorImageHeight = "100"
+   preloaderColor = "CCFF00"
+   preloaderAlpha = "0.3"
+		
+   bgColor = "1B1B1B"
+   bgAlpha = ".5"
+		 
+   controlsIconColor = "FFFFFF"
+   controlsIconAlpha = "1"
+   controlsBgColor = "1B1B1B"
+   controlsBgOverColor = "CCFF00"
+   controlsBgAlpha = ".5"
+		 
+   rotatorRandomTransitions = "false"
+		 
+		 
+    />
+
+  <rotator>
+
+    <!-- text transitions include (use the numbers) : 
+	 
+	 Blinds = 0
+	 Fade = 1 
+	 Fly = 2 
+	 Iris = 3 
+	 Photo = 4 
+	 PixelDissolve = 5 
+	 Rotate = 6 
+	 Squeeze = 7 
+	 Wipe = 8 
+	 Zoom = 9
+	 
+	 -->
+
+    <image>
+      <path slideShowDelay = "3" transition = "0">images/mebleLab/lab_inf.png</path>
+      <title bgColour="CCFF00" bgAlpha="0" Ypos="5" Xpos="0"><![CDATA[<font color="#3366ff">Lab-InFinty          </font><a href="tawo.poznan.pl"><font size="10" color="#000000">pobierz PDF</font></a>]]></title>
+      <description bgColour="1b1b1b" bgAlpha=".7" txtWidth="260" Ypos="200"  Xpos="350"><![CDATA[<font color="#ffffff" size="15">Niskończoność i dowolność w labolatorium</font>]]></description>
+      <text><![CDATA[<font size="13">Dostosowanie mebli do obowiązujących norm europejskich wprowadza wiele ograniczeń. Mając to na uwadze stworzyliśmy system mebli laboratoaryjnych LAB-Infinity, który zrywa z obowiązującym kanonem, w którym narzuca się użytkownikowi gotowe rozwiązania tylko dlatego, że norma czegoś wymaga. Lab-Infinity to nieskończone możliwości konfiguracji, to wolność w twoim laboratorium. Od dzisiaj możesz pracować w wybranym miejscu i tak jak ci jest wygodnie. Nasze dygestoria, stoły oraz szafy zapewnią ci wygodę oraz łatwość konfiguracji. A zgodność z normami? Możesz o niej zapomnieć, bo u nas jest już w standardzie. <br /> <br /> Czasy się zmieniają, standardy w laboratorium też. </font>]]></text>
+      <!--<text><![CDATA[]]></text>-->
+    </image>
+
+
+  </rotator>
+
+
+</home>
