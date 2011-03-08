@@ -86,9 +86,9 @@
       <submenu page_title="szafy na chemikalia" swf="staff.swf" xmlPath = "xml/chemiczne.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="szafy na butle" swf="staff.swf" xmlPath = "xml/butle.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="szafy na dokumenty" swf="staff.swf" xmlPath = "xml/dokumenty.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-      <submenu page_title="oczomyjki" swf="textContent_and_rotator.swf"  xmlPath = "xml/dydestoria.xml"
+      <submenu page_title="prysznice BHP" swf="staff.swf"   xmlPath = "xml/prysznice.xml"
               bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-      <submenu page_title="prysznice BHP" swf="textContent_and_rotator.swf"  xmlPath = "xml/dydestoria.xml"
+      <submenu page_title="oczomyjki" swf="staff.swf"   xmlPath = "xml/oczo.xml"
               bgType = "image" bgFile = "images/background/pulpit.jpg"/>
     </menuItem>
 

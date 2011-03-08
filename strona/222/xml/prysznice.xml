@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<staff>
+
+  <settings
+	
+   thumbBgColor = "1b1b1b"
+   thumbBgAlpha = "0.5"
+		 
+   mainBgColor = "1b1b1b"
+   mainBgAlpha = "0.5"
+		 
+   scrollBtnOverColor = "CCFF00"
+   scrollBtnOverAlpha = ".5"
+   scrollBtnColor = "FFFFFF"
+   scrollBtnAlpha = ".5"
+   scrollBarColor = "FFFFFF"
+   scrollBarAlpha = ".5"
+		 
+		 
+   preloaderColor = "CCFF00"
+   preloaderAlpha = "0.3"
+		 
+    />
+
+  <staff>
+    <thumb>images/bezpieczenstwo/prysznice/thumbnails/all.png</thumb>
+    <image>images/transporent2x500.png</image>
+    <textfieldWidth>1000</textfieldWidth>
+    <largeDesc><![CDATA[<img vspace="4" hspace="6" src="images/bezpieczenstwo/prysznice/main.png"/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>]]></largeDesc>
+
+  </staff>
+
+  <staff>
+    <thumb>images/bezpieczenstwo/prysznice/thumbnails/1.png</thumb>
+    <image>images/bezpieczenstwo/prysznice/1.png</image>
+    <textfieldWidth>200</textfieldWidth>
+    <largeDesc><![CDATA[]]></largeDesc>
+  </staff>
+
+  <staff>
+    <thumb>images/bezpieczenstwo/prysznice/thumbnails/2.png</thumb>
+    <image>images/bezpieczenstwo/prysznice/2.png</image>
+    <textfieldWidth>200</textfieldWidth>
+    <largeDesc><![CDATA[]]></largeDesc>
+  </staff>
+
+  <staff>
+    <thumb>images/bezpieczenstwo/prysznice/thumbnails/3.png</thumb>
+    <image>images/bezpieczenstwo/prysznice/3.png</image>
+    <textfieldWidth>200</textfieldWidth>
+    <largeDesc><![CDATA[]]></largeDesc>
+  </staff>
+
+  <staff>
+    <thumb>images/bezpieczenstwo/prysznice/thumbnails/4.png</thumb>
+    <image>images/bezpieczenstwo/prysznice/4.png</image>
+    <textfieldWidth>200</textfieldWidth>
+    <largeDesc><![CDATA[]]></largeDesc>
+  </staff>
+
+</staff>
