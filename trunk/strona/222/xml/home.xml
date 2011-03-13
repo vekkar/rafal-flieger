@@ -1,96 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <home>
 
-    <settings
+  <settings
 	
-     playIntro="false"
-		 showControls="false"
-		 videoPath= "videos/theShatter.flv"
-		 videoBufferTime = "8"
-		 videoHeight="350"
-		 videoVolume=".5"
-		 skipIntroText = "SKIP INTRO"
-		 videoControlsLoadBarColor = "CCFF00"
-		 videoControlsLoadBarAlpha = ".2"
-		 videoControlsProgressBarColor = "CCFF00"
-		 videoControlsProgressBarAlpha = ".8"
-		 volumeSlideBarColor = "CCFF00"
-		 volumeSlideBarAlpha = ".2"
-		 volumeTooltipColor = "CCFF00"
-		 volumeTooltipAlpha = ".5"
-		 youTubeVideoAspectRatio = "5:3"
-		 youTubeVideoAspectQuality = "hd720"
+   playIntro="false"
+   showControls="false"
+   videoPath= "videos/theShatter.flv"
+   videoBufferTime = "8"
+   videoHeight="350"
+   videoVolume=".5"
+   skipIntroText = "SKIP INTRO"
+   videoControlsLoadBarColor = "CCFF00"
+   videoControlsLoadBarAlpha = ".2"
+   videoControlsProgressBarColor = "CCFF00"
+   videoControlsProgressBarAlpha = ".8"
+   volumeSlideBarColor = "CCFF00"
+   volumeSlideBarAlpha = ".2"
+   volumeTooltipColor = "CCFF00"
+   volumeTooltipAlpha = ".5"
+   youTubeVideoAspectRatio = "5:3"
+   youTubeVideoAspectQuality = "hd720"
 		 
-		 playRotator="true"
-		 rotatorImageWidth = "780"
-		 rotatorImageHeight = "260"
-		 preloaderColor = "CCFF00"
-		 preloaderAlpha = "0.2"
+   playRotator="true"
+   rotatorImageWidth = "780"
+   rotatorImageHeight = "400"
+   preloaderColor = "CCFF00"
+   preloaderAlpha = "0.2"
 		
-		 bgColor = "1B1B1B"	  
-		 bgAlpha = ".5"	
+   bgColor = "1B1B1B"
+   bgAlpha = ".5"
 		 
-		 controlsIconColor = "FFFFFF"
-		 controlsIconAlpha = "1"
-		 controlsBgColor = "1B1B1B"
-		 controlsBgOverColor = "CCFF00"
-		 controlsBgAlpha = ".5"
+   controlsIconColor = "FFFFFF"
+   controlsIconAlpha = "1"
+   controlsBgColor = "1B1B1B"
+   controlsBgOverColor = "CCFF00"
+   controlsBgAlpha = ".5"
 		
 		 
 		 
     />
 
-    <rotator>
-	
-	
-	  <!-- Begin image here -->
-	<image>
-		<path slideShowDelay = "2">images/bio2d-2 (0).jpg</path>
-		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="10" Xpos="375"><![CDATA[<font color="#CCFF00">Witamy w TAWO</font>]]></title>
-		<description bgColour="21211F" bgAlpha="0" txtWidth="260"><![CDATA[]]></description>
-	</image>
-	<!-- End image here -->
-	
-    <!-- Begin image here -->
-	<image>
-		<path slideShowDelay = "2">images/bio2d-2 (1).jpg</path>
-		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="80" Xpos="580"><![CDATA[<font color="#CCFF00">Witamy w TAWO</font>]]></title>
-		<description bgColour="21211F" bgAlpha=".55" txtWidth="250"><![CDATA[]]></description>
-	</image>
-	<!-- End image here -->
+  <rotator>
+    <image>
+      <path slideShowDelay = "1" transition = "2">images/home/lab1.png</path>
+      <!--<title bgColour="1b1b1b" bgAlpha=".9" Ypos="10" Xpos="10"><![CDATA[<font color="#CCFF00">Lab-InFinty</font>]]></title>
+		<description bgColour="1b1b1b" bgAlpha=".55" txtWidth="200"><![CDATA[<font color="#ffffff" size="15">Niskończona dowolność w labolatorium</font>]]></description>-->
+    </image>
+    <image>
+      <path slideShowDelay = "1" transition = "2">images/home/lab2.png</path>
+      <!--<title bgColour="1b1b1b" bgAlpha=".9" Ypos="10" Xpos="10"><![CDATA[<font color="#CCFF00">Lab-InFinty</font>]]></title>
+		<description bgColour="1b1b1b" bgAlpha=".55" txtWidth="200"><![CDATA[<font color="#ffffff" size="15">Niskończona dowolność w labolatorium</font>]]></description>-->
+    </image>
 
-	<image>
-		<path slideShowDelay = "2">images/LabInf.png</path>
-		<title bgColour="1b1b1b" bgAlpha=".9" Ypos="10" Xpos="10"><![CDATA[<font color="#CCFF00">Lab-InFinty</font>]]></title>
-		<description bgColour="1b1b1b" bgAlpha=".55" txtWidth="200"><![CDATA[<font color="#ffffff" size="15">Niskończoność i dowolność w labolatorium</font>]]></description>
-	</image>
-	<!-- End image here -->
-	
-	 <!-- Begin image here --><!--
-	<image>
-		<path slideShowDelay = "5">images/home/4.jpg</path>
-		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="10" Xpos="370"><![CDATA[<font color="#CCFF00">2 LEVEL MENU</font>]]></title>
-		<description bgColour="21211F" bgAlpha=".75" txtWidth="200"><![CDATA[<font face="GeosansLight" color="#ffffff" size="16">Lorem ipsum dolor sit amet.</font>]]></description>
-	</image>
-	--><!-- End image here --><!--
-	
-    --><!-- Begin image here --><!--
-	<image>
-		<path slideShowDelay = "5">images/home/5.jpg</path>
-		<title bgColour="1b1b1b" bgAlpha=".75" Ypos="10" Xpos="350"><![CDATA[<font color="#FFFFFF">REUSABLE MODULES</font>]]></title>
-		<description bgColour="1b1b1b" bgAlpha=".75" txtWidth="270"><![CDATA[<font color="#ffffff">You can duplicate modules as many times as you like simply by duplicating the XML files.</font>]]></description>
-	</image>
-	--><!-- End image here --><!--
-	
-	    --><!-- Begin image here --><!--
-	<image>
-		<path slideShowDelay = "5">images/home/6.jpg</path>
-		<title bgColour="1b1b1b" bgAlpha=".6" Ypos="90" Xpos="410"><![CDATA[<font color="#CCFF00">BACKGROUNDS</font>]]></title>
-		<description bgColour="1b1b1b" bgAlpha="0" txtWidth="400"><![CDATA[<font face="GeosansLight" color="#ffffff" size="16">Support Images, SWF, Video and YouTube</font>]]></description>
-	</image>-->
-	<!-- End image here -->
-	
-	</rotator>
-	 
-	
+    <image>
+      <path slideShowDelay = "1" transition = "2">images/home/lab3.png</path>
+      <!--<title bgColour="1b1b1b" bgAlpha=".9" Ypos="10" Xpos="10"><![CDATA[<font color="#CCFF00">Lab-InFinty</font>]]></title>
+		<description bgColour="1b1b1b" bgAlpha=".55" txtWidth="200"><![CDATA[<font color="#ffffff" size="15">Niskończona dowolność w labolatorium</font>]]></description>-->
+    </image>
+
+    <image>
+      <path slideShowDelay = "3" transition = "2">images/home/lab4.png</path>
+      <!--<title bgColour="1b1b1b" bgAlpha=".9" Ypos="10" Xpos="10"><![CDATA[<font color="#CCFF00">Lab-InFinty</font>]]></title>
+		<description bgColour="1b1b1b" bgAlpha=".55" txtWidth="200"><![CDATA[<font color="#ffffff" size="15">Niskończona dowolność w labolatorium</font>]]></description>-->
+    </image>
+  </rotator>
+
+
 </home>
