@@ -39,29 +39,29 @@
 		 
 		 
     />
-
+	
   <rotator>
     <image>
-      <path slideShowDelay = "1" transition = "2">images/home/lab1.png</path>
-      <!--<title bgColour="1b1b1b" bgAlpha=".9" Ypos="10" Xpos="10"><![CDATA[<font color="#CCFF00">Lab-InFinty</font>]]></title>
-		<description bgColour="1b1b1b" bgAlpha=".55" txtWidth="200"><![CDATA[<font color="#ffffff" size="15">Niskończona dowolność w labolatorium</font>]]></description>-->
+      <path slideShowDelay = "1" >images/home/lab1.png</path>
+      <title bgColour="1b1b1b" bgAlpha="0" Ypos="0" Xpos="0"><![CDATA[]]></title>
+      <description bgColour="1b1b1b" bgAlpha="0" txtWidth="260"><![CDATA[]]></description>
     </image>
     <image>
-      <path slideShowDelay = "1" transition = "2">images/home/lab2.png</path>
-      <!--<title bgColour="1b1b1b" bgAlpha=".9" Ypos="10" Xpos="10"><![CDATA[<font color="#CCFF00">Lab-InFinty</font>]]></title>
-		<description bgColour="1b1b1b" bgAlpha=".55" txtWidth="200"><![CDATA[<font color="#ffffff" size="15">Niskończona dowolność w labolatorium</font>]]></description>-->
-    </image>
-
-    <image>
-      <path slideShowDelay = "1" transition = "2">images/home/lab3.png</path>
-      <!--<title bgColour="1b1b1b" bgAlpha=".9" Ypos="10" Xpos="10"><![CDATA[<font color="#CCFF00">Lab-InFinty</font>]]></title>
-		<description bgColour="1b1b1b" bgAlpha=".55" txtWidth="200"><![CDATA[<font color="#ffffff" size="15">Niskończona dowolność w labolatorium</font>]]></description>-->
+      <path slideShowDelay = "1" >images/home/lab2.png</path>
+      <title bgColour="1b1b1b" bgAlpha="0" Ypos="0" Xpos="0"><![CDATA[]]></title>
+      <description bgColour="1b1b1b" bgAlpha="0" txtWidth="260"><![CDATA[]]></description>
     </image>
 
     <image>
-      <path slideShowDelay = "3" transition = "2">images/home/lab4.png</path>
-      <!--<title bgColour="1b1b1b" bgAlpha=".9" Ypos="10" Xpos="10"><![CDATA[<font color="#CCFF00">Lab-InFinty</font>]]></title>
-		<description bgColour="1b1b1b" bgAlpha=".55" txtWidth="200"><![CDATA[<font color="#ffffff" size="15">Niskończona dowolność w labolatorium</font>]]></description>-->
+      <path slideShowDelay = "1" >images/home/lab3.png</path>
+      <title bgColour="1b1b1b" bgAlpha="0" Ypos="0" Xpos="0"><![CDATA[]]></title>
+      <description bgColour="1b1b1b" bgAlpha="0" txtWidth="260"><![CDATA[]]></description>
+    </image>
+
+    <image>
+      <path slideShowDelay = "3" >images/home/lab4.png</path>
+      <title bgColour="1b1b1b" bgAlpha="0" Ypos="0" Xpos="0"><![CDATA[]]></title>
+      <description bgColour="1b1b1b" bgAlpha="0" txtWidth="260"><![CDATA[]]></description>
     </image>
   </rotator>
 

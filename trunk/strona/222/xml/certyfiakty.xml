@@ -22,31 +22,43 @@
     />
   
   <image>
-    <src clickOption="text">images/certyfiakty/ISO_9001_2000.jpg</src>
+    <src clickOption="text">images/certyfiakty/ISO_9001_2000.png</src>
     <largeDesc><![CDATA[]]></largeDesc>
     <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
+
+  <image>
+    <src clickOption="text">images/certyfiakty/ISO_9001_2008pl.png</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <!--<image>
+    <src clickOption="text">images/certyfiakty/ISO_9001_2008en.png</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    --><!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>--><!--
+  </image>-->
   
   <image>
-    <src clickOption="text">images/certyfiakty/DYGESTORIUM.jpg</src>
+    <src clickOption="text">images/certyfiakty/DYGESTORIUM.png</src>
     <largeDesc><![CDATA[]]></largeDesc>
     <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
 
   <image>
-    <src clickOption="text">images/certyfiakty/PZH_LITA.jpg</src>
+    <src clickOption="text">images/certyfiakty/PZH_LITA.png</src>
     <largeDesc><![CDATA[]]></largeDesc>
     <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
 
   <image>
-    <src clickOption="text">images/certyfiakty/PZH_MEBLE.jpg</src>
+    <src clickOption="text">images/certyfiakty/PZH_MEBLE.png</src>
     <largeDesc><![CDATA[]]></largeDesc>
     <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
 
   <image>
-    <src clickOption="text">images/certyfiakty/PZH_MONOLIT.jpg</src>
+    <src clickOption="text">images/certyfiakty/PZH_MONOLIT.png</src>
     <largeDesc><![CDATA[]]></largeDesc>
     <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></largeDesc>-->
   </image>
