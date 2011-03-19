@@ -66,10 +66,10 @@
                bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="System przechowywania" swf="textContent_and_rotator.swf"  xmlPath = "xml/przechowywanie.xml"
               bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-      <submenu page_title="Krzesła laboratoryjne" swf="textContent_and_rotator.swf"  xmlPath = "xml/krzesła.xml"
-               bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <submenu page_title="Blaty laboratoryjne" swf="textContent_and_rotator.swf"  xmlPath = "xml/blaty.xml"
                bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="Krzesła laboratoryjne" swf="textContent_and_rotator.swf"  xmlPath = "xml/krzesła.xml"
+              bgType = "image" bgFile = "images/background/pulpit.jpg"/>
       <!--<submenu page_title="Meble specjalistyczne" swf="textContent_and_rotator.swf"  xmlPath = "xml/specjalisyczne.xml" 
                bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
       <!--
