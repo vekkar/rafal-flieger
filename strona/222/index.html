@@ -35,6 +35,12 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+  
+  function popitup(url) {
+	newwindow=window.open('popup.html','name','height=200,width=150');
+	if (window.focus) {newwindow.focus()}
+	return false;
+	}
 
 </script>
 <!--meke proper exlusion for boots, only google and microsoft allowed-->
