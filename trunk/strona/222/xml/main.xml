@@ -93,10 +93,8 @@
     </menuItem>
 
     <menuItem page_title="GALERIA" swf="showroom.swf" xmlPath = "xml/galeria.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
-    <!--<menuItem page_title="KONTAKT" swf="contact.swf" xmlPath = "xml/contact.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
     <menuItem page_title="KONTAKT" swf="textContent_and_rotator.swf" xmlPath = "xml/kontakt.xml" bgType = "image" bgFile = "images/background/pulpit.jpg" />
-    <!--<menuItem page_title="KONTAKT3" swf="mapka.swf" xmlPath = "" bgType = "image" bgFile = "images/background/pulpit.jpg" />-->
-
+    
   </menu>	
   <copyright>
     <![CDATA[<a href="mailto:info@tawo.poznan.pl">TAWO Tadeusz Flieger</a> Kompleksowe wyposarzanie laboratorów]]>
