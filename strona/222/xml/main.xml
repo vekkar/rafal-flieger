@@ -52,6 +52,8 @@
 
     </menuItem>
 
+    <menuItem page_title="NEWS" swf="staff.swf" xmlPath = "xml/news.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+    
     <!-- start Meble laboratoryjne menu item here -->	
     <menuItem page_title = "MEBLE LABOLATORYJNE">
       <submenu page_title="Lab-Infinity" swf="textContent_and_rotator.swf" xmlPath = "xml/infinity.xml"
