@@ -49,6 +49,8 @@
 
       <!--<submenu page_title="certyfiakty2" swf="media_gallery.swf" xmlPath = "xml/certyfikaty2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
       <submenu page_title="referencje" swf="media_gallery.swf" xmlPath = "xml/referencje2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <submenu page_title="news" swf="#/news"/>
+
 
     </menuItem>
 
@@ -94,7 +96,11 @@
               bgType = "image" bgFile = "images/background/pulpit.jpg"/>
     </menuItem>
 
-    <menuItem page_title="GALERIA" swf="showroom.swf" xmlPath = "xml/galeria.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+    <menuItem page_title="GALERIA" swf="showroom.swf" xmlPath = "xml/galeria.xml" bgType = "image" bgFile = "images/background/pulpit.jpg">
+      <submenu page_title="Laboratoria" swf="showroom.swf" xmlPath = "xml/galeria.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+      <!--<submenu page_title="Spizbergen" swf="showroom.swf" xmlPath = "xml/hornsund-galeria.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>-->
+      <submenu page_title="Spizbergen" swf="media_gallery.swf" xmlPath = "xml/hornsund-galeria2.xml" bgType = "image" bgFile = "images/background/pulpit.jpg"/>
+    </menuItem>
     <menuItem page_title="KONTAKT" swf="textContent_and_rotator.swf" xmlPath = "xml/kontakt.xml" bgType = "image" bgFile = "images/background/pulpit.jpg" />
     
   </menu>	
