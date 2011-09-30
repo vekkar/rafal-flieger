@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<staff>
+
+  <settings
+	
+   thumbBgColor = "1b1b1b"
+   thumbBgAlpha = "0.5"
+		 
+   mainBgColor = "1b1b1b"
+   mainBgAlpha = "0.5"
+		 
+   scrollBtnOverColor = "CCFF00"
+   scrollBtnOverAlpha = ".5"
+   scrollBtnColor = "FFFFFF"
+   scrollBtnAlpha = ".5"
+   scrollBarColor = "FFFFFF"
+   scrollBarAlpha = ".5"
+		 
+		 
+   preloaderColor = "CCFF00"
+   preloaderAlpha = "0.3"
+		 
+    />
+
+  <staff>
+    <thumb>images/news/thumbnails/wyprawa.png</thumb>
+    <image>images/transporent2x500.png</image>
+    <textfieldWidth>1000</textfieldWidth>
+    <!--<largeDesc><![CDATA[<font size="15">Firma <b>TAWO</b> rozpoczęła przygotowania do wyprawy na Spitzbergen. Będziemy realizować tam projekt związany z budową laboratorium dla <a href="http://hornsund.igf.edu.pl/" target="_blank">Polskiej Stacji Polarnej HORNSUND</a>. Będzie to dla nas wspaniała okazja do przetestowania materiałów oraz technologii, które proponujemy naszym klientom. Jesteśmy przekonani, ze nasze doświadczenie pozwoli nam przygotować rozwiązania, które przetrwają trudne warunki polarne. Zapraszamy ponownie za kilka tygodni do przeczytania relacji z wyprawy.</font><br/><br/><br/><img vspace="4" hspace="4" src="images/news/stacja.png"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>]]></largeDesc>-->
+    <largeDesc><![CDATA[<img vspace="4" hspace="4" src="images/news/horsund_news1.png"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><img vspace="4" hspace="4" src="images/news/horsund_news2.png"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><font size="13"><a href="#/spizbergen">zobacz</a> pełną galerię lub ją <a href="">pobierz.</a></font>]]></largeDesc>
+  </staff>
+  
+  <staff>
+    <thumb>images/news/thumbnails/rzetelna_firma.png</thumb>
+    <image>images/transporent2x500.png</image>
+    <textfieldWidth>550</textfieldWidth>
+    <!--<largeDesc><![CDATA[]]></largeDesc>-->
+    <largeDesc><![CDATA[<font size="20"><b><br/>     TAWO</b> otrzymało znak <b>RZETELNA FIRMA</b><br/><br/><a href="http://www.rzetelnafirma.pl/CVQCLUVX/1" target="_blank"><img vspace="4" hspace="4" src="images/news/certyfikat-hands.png"/></a></font><font size="15">Na rynku mebli i urządzeń laboratoryjnych działamy już od ponad 20 lat. Olbrzymi wkład i staranność z ale przede wszystkim rzetelność  naszej pracy została zauważona i doceniona przez naszych klientów. Przyznana nam pieczęć rzetelna firma to znak który od dzisiaj będzie o tym informował naszych obecnych i przyszłych kontrahentów.<br/><br/>Zapraszamy do obejrzenia naszego profilu i certyfikatu w Krajowym Rejestrze Długów, oraz listy <a href="#/referencje">naszych referencji</a> od zadowolonych klientów.</font><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>]]></largeDesc>
+  </staff>
+
+  <staff>
+    <thumb>images/news/thumbnails/expo120-90.png</thumb>
+    <image>images/transporent2x350.png</image>
+    <textfieldWidth>520</textfieldWidth>
+    <largeDesc><![CDATA[<font size="15"><a href="http://www.exposilesia.pl/expolab/pl/" target="_blank"><img vspace="4" hspace="8" src="images/news/expolab-baner.gif"/></a>W dniach od <b>13 do 14 października 2011 r.</b> zapraszamy do odwiedzenia nas podczas Targów Analityki, Technik i <b>Wyposażenia Laboratorium ExpoLAB</b>. Na <b>stoisku numer 25</b> nasi specjaliści chętnie opowiedzą o naszych produktach, a w drugim dniu targów odbędzie się prowadzone przez nas <b>konferencja na temat bezpieczeństwa w laboratorium.</b><br/><br/><br/><br/><a href="mailto:info@tawo.poznan.pl">Napisz do nas aby otrzymać bezpłatne zaproszenie.</a><br/>Przeczytaj<a href="http://issuu.com/tawo/docs/expolab?viewMode=presentation&mode=embed" target="_blank"> ulotkę targową.</a><br/><br/><br/><br/><br/><br/><br/></font>]]></largeDesc>
+  </staff>
+
+  <staff>
+    <thumb>images/news/thumbnails/wyprawa.png</thumb>
+    <image>images/news/mapkaHornsund2.png</image>
+    <textfieldWidth>500</textfieldWidth>
+    <!--<largeDesc><![CDATA[<font size="15">Firma <b>TAWO</b> rozpoczęła przygotowania do wyprawy na Spitzbergen. Będziemy realizować tam projekt związany z budową laboratorium dla <a href="http://hornsund.igf.edu.pl/" target="_blank">Polskiej Stacji Polarnej HORNSUND</a>. Będzie to dla nas wspaniała okazja do przetestowania materiałów oraz technologii, które proponujemy naszym klientom. Jesteśmy przekonani, ze nasze doświadczenie pozwoli nam przygotować rozwiązania, które przetrwają trudne warunki polarne. Zapraszamy ponownie za kilka tygodni do przeczytania relacji z wyprawy.</font><br/><br/><br/><img vspace="4" hspace="4" src="images/news/stacja.png"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>]]></largeDesc>-->
+    <largeDesc><![CDATA[<font size="15">Firma <b>TAWO</b> rozpoczęła przygotowania do wyprawy na Spitzbergen. Będziemy realizować tam projekt związany z budową laboratorium dla <a href="http://hornsund.igf.edu.pl/" target="_blank">Polskiej Stacji Polarnej HORNSUND</a>. Będzie to dla nas wspaniała okazja do przetestowania materiałów oraz technologii, które proponujemy naszym klientom. Jesteśmy przekonani, ze nasze doświadczenie pozwoli nam przygotować rozwiązania, które przetrwają trudne warunki polarne. Zapraszamy ponownie za kilka tygodni do przeczytania relacji z wyprawy.</font><br/><br/><br/><img vspace="4" hspace="4" src="images/news/stacja.png"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> ]]></largeDesc>
+  </staff>
+
+  <staff>
+    <thumb>images/news/thumbnails/euro.png</thumb>
+    <image>images/transporent2x350.png</image>
+    <textfieldWidth>520</textfieldWidth>
+    <largeDesc><![CDATA[<font size="15">Zapraszamy Państwa do udziału XIII międzynarodowych Targach Analityki i Technik Pomiarowych EuroLab które odbędą się 9-13 marca 2011. Chętnie oprowadzimy Państwa po naszym stoisku i opowiemy o nowościach w naszej ofercie.</font>]]></largeDesc>
+  </staff>
+  
+</staff>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<showroom>
+
+  <settings
+	
+   bgColor = "1b1b1b"
+   bgAlpha = ".5"
+		 
+   textBgColor = "1b1b1b"
+   textBgAlpha = ".5"
+		 
+   scrollSpeed = "2"
+   imageMaxHeight = "600"
+		 
+   scrollBtnOverColor = "CCFF00"
+   scrollBtnOverAlpha = ".5"
+   scrollBtnColor = "FFFFFF"
+   scrollBtnAlpha = ".5"
+   scrollBarColor = "FFFFFF"
+   scrollBarAlpha = ".5"
+		 
+    />
+  
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-1.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-2.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-3.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-4.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-21.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+  
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-8.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-22.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-5.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-6.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-7.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+ 
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-9.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-10.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-11.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-12.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-13.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-14.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-15.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-16.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-17.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-18.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+
+  <image>
+    <src clickOption="text">images/galeria/hornsund/horsund-19.jpg</src>
+    <largeDesc><![CDATA[]]></largeDesc>
+    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
+  </image>
+  
+ 
+  
+</showroom>
