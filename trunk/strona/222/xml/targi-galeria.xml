@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<showroom>
+
+  <settings
+   thumbBgColor = "1b1b1b"
+   thumbBgAlpha = "0.5"
+		 
+   mainBgColor = "1b1b1b"
+   mainBgAlpha = "0.5"
+		 
+   categoryDimBgColor = "1b1b1b"
+   categoryDimBgAlpha = "0.8"
+   categoryTxtBgColor = "1b1b1b"
+   categoryTxtBgAlpha = "0.7"
+   categoryTxtColor = "FFFFFF"
+		 
+   preloaderColor = "CCFF00"
+   preloaderAlpha = "0.5"
+		 
+   controlsIconColor = "FFFFFF"
+   controlsIconAlpha = "1"
+   controlsBgColor = "1B1B1B"
+   controlsBgOverColor = "CCFF00"
+   controlsBgAlpha = ".5"
+		 
+   scrollBtnOverColor = "CCFF00"
+   scrollBtnOverAlpha = ".5"
+   scrollBtnColor = "FFFFFF"
+   scrollBtnAlpha = ".5"
+   scrollBarColor = "FFFFFF"
+   scrollBarAlpha = ".5"
+		 
+   youTubeVideoAspectQuality = "hd720"
+   videoVolume=".5"
+   videoBufferTime = "5"
+   youTubeVideoAspectRatio = "5:3"
+   videoControlsLoadBarColor = "CCFF00"
+   videoControlsLoadBarAlpha = ".2"
+   videoControlsProgressBarColor = "CCFF00"
+   videoControlsProgressBarAlpha = ".8"
+   volumeSlideBarColor = "CCFF00"
+   volumeSlideBarAlpha = ".2"
+   volumeTooltipColor = "CCFF00"
+   volumeTooltipAlpha = ".5"
+		 
+    />
+
+  <!-- content type for large item can be: "image", "video", "youtube" or "swf" -->
+
+  <!--
+
+Start category
+
+-->
+  <category title="ExpoLab 2011" catThumbnail="images/galeria/expolab11/thumbnails/expolab11-8.jpg" smallThumbnailsWidth = "100" smallThumbnailsHeight = "150">
+    <item>
+      <thumbnail width="100">images/galeria/expolab11/thumbnails/expolab11-8.jpg</thumbnail>
+      <large type="image">images/galeria/expolab11/expolab11-8.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="225">images/galeria/expolab11/thumbnails/expolab11-1.jpg</thumbnail>
+      <large type="image">images/galeria/expolab11/expolab11-1.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="225">images/galeria/expolab11/thumbnails/expolab11-2.jpg</thumbnail>
+      <large type="image">images/galeria/expolab11/expolab11-2.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="225">images/galeria/expolab11/thumbnails/expolab11-3.jpg</thumbnail>
+      <large type="image">images/galeria/expolab11/expolab11-4.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="100">images/galeria/expolab11/thumbnails/expolab11-9.jpg</thumbnail>
+      <large type="image">images/galeria/expolab11/expolab11-9.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="100">images/galeria/expolab11/thumbnails/expolab11-10.jpg</thumbnail>
+      <large type="image">images/galeria/expolab11/expolab11-10.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="225">images/galeria/expolab11/thumbnails/expolab11-4.jpg</thumbnail>
+      <large type="image">images/galeria/expolab11/expolab11-4.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="225">images/galeria/expolab11/thumbnails/expolab11-7.jpg</thumbnail>
+      <large type="image">images/galeria/expolab11/expolab11-7.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+
+    <item>
+      <thumbnail width="225">images/galeria/expolab11/thumbnails/expolab11-5.jpg</thumbnail>
+      <large type="image">images/galeria/expolab11/expolab11-5.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="225">images/galeria/expolab11/thumbnails/expolab11-6.jpg</thumbnail>
+      <large type="image">images/galeria/expolab11/expolab11-6.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+  </category>
+
+  <category title="EuroLab 2011" catThumbnail="images/galeria/euroLab11/thumbnails/expolab11-4.jpg" smallThumbnailsWidth = "100" smallThumbnailsHeight = "150">
+    <item>
+      <thumbnail width="100">images/galeria/euroLab11/thumbnails/expolab11-4.jpg</thumbnail>
+      <large type="image">images/galeria/euroLab11/expolab11-4.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="100">images/galeria/euroLab11/thumbnails/expolab11-1.jpg</thumbnail>
+      <large type="image">images/galeria/euroLab11/expolab11-1.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="100">images/galeria/euroLab11/thumbnails/expolab11-2.jpg</thumbnail>
+      <large type="image">images/galeria/euroLab11/expolab11-2.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="100">images/galeria/euroLab11/thumbnails/expolab11-5.jpg</thumbnail>
+      <large type="image">images/galeria/euroLab11/expolab11-5.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="100">images/galeria/euroLab11/thumbnails/expolab11-6.jpg</thumbnail>
+      <large type="image">images/galeria/euroLab11/expolab11-6.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+    
+  </category>
+</showroom>

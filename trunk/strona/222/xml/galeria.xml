@@ -2,15 +2,26 @@
 <showroom>
 
   <settings
-	
-   bgColor = "1b1b1b"
-   bgAlpha = ".5"
+   thumbBgColor = "1b1b1b"
+   thumbBgAlpha = "0.5"
 		 
-   textBgColor = "1b1b1b"
-   textBgAlpha = ".5"
+   mainBgColor = "1b1b1b"
+   mainBgAlpha = "0.5"
 		 
-   scrollSpeed = "2"
-   imageMaxHeight = "600"
+   categoryDimBgColor = "1b1b1b"
+   categoryDimBgAlpha = "0.8"
+   categoryTxtBgColor = "1b1b1b"
+   categoryTxtBgAlpha = "0.7"
+   categoryTxtColor = "FFFFFF"
+		 
+   preloaderColor = "CCFF00"
+   preloaderAlpha = "0.5"
+		 
+   controlsIconColor = "FFFFFF"
+   controlsIconAlpha = "1"
+   controlsBgColor = "1B1B1B"
+   controlsBgOverColor = "CCFF00"
+   controlsBgAlpha = ".5"
 		 
    scrollBtnOverColor = "CCFF00"
    scrollBtnOverAlpha = ".5"
@@ -19,97 +30,156 @@
    scrollBarColor = "FFFFFF"
    scrollBarAlpha = ".5"
 		 
+   youTubeVideoAspectQuality = "hd720"
+   videoVolume=".5"
+   videoBufferTime = "5"
+   youTubeVideoAspectRatio = "5:3"
+   videoControlsLoadBarColor = "CCFF00"
+   videoControlsLoadBarAlpha = ".2"
+   videoControlsProgressBarColor = "CCFF00"
+   videoControlsProgressBarAlpha = ".8"
+   volumeSlideBarColor = "CCFF00"
+   volumeSlideBarAlpha = ".2"
+   volumeTooltipColor = "CCFF00"
+   volumeTooltipAlpha = ".5"
+		 
     />
+
+  <!-- content type for large item can be: "image", "video", "youtube" or "swf" -->
+
+  <!--
+
+Start category
+
+-->
+  <category title="  I  " catThumbnail="images/galeria/lab1/thumbnails/lab1-12.jpg" smallThumbnailsWidth = "225" smallThumbnailsHeight = "150">
+    
+    <item>
+      <thumbnail width="200">images/galeria/lab1/thumbnails/lab1-1.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-1.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="200">images/galeria/lab1/thumbnails/lab1-2.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-2.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="199">images/galeria/lab1/thumbnails/lab1-3.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-3.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="225">images/galeria/lab1/thumbnails/lab1-4.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-4.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="225">images/galeria/lab1/thumbnails/lab1-5.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-5.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="225">images/galeria/lab1/thumbnails/lab1-6.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-6.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="225">images/galeria/lab1/thumbnails/lab1-7.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-7.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+
+    <item>
+      <thumbnail width="225">images/galeria/lab1/thumbnails/lab1-8.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-8.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="225">images/galeria/lab1/thumbnails/lab1-9.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-9.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+
+    <item>
+      <thumbnail width="220">images/galeria/lab1/thumbnails/lab1-10.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-10.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="225">images/galeria/lab1/thumbnails/lab1-11.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-11.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+
+    <item>
+      <thumbnail width="225">images/galeria/lab1/thumbnails/lab1-12.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-12.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="113">images/galeria/lab1/thumbnails/lab1-13.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-13.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="100">images/galeria/lab1/thumbnails/lab1-14jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-14.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+    
+    <item>
+      <thumbnail width="100">images/galeria/lab1/thumbnails/lab1-15.jpg</thumbnail>
+      <large type="image">images/galeria/lab1/lab1-15.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+    
+  </category>
   
-  <image>
-    <src clickOption="text">images/galeria/tata-1.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
+  <category title=" II " catThumbnail="images/galeria/geografia/thumbnails/geografia-5.jpg" smallThumbnailsWidth = "200" smallThumbnailsHeight = "150">
+    <item>
+      <thumbnail width="105">images/galeria/geografia/thumbnails/geografia-2.jpg</thumbnail>
+      <large type="image">images/galeria/geografia/geografia-2.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
 
-  <image>
-    <src clickOption="text">images/galeria/tata-2.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
+    <item>
+      <thumbnail width="113">images/galeria/geografia/thumbnails/geografia-1.jpg</thumbnail>
+      <large type="image">images/galeria/geografia/geografia-1.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
 
-  <image>
-    <src clickOption="text">images/galeria/tata-3.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
+    <item>
+      <thumbnail width="185">images/galeria/geografia/thumbnails/geografia-4.jpg</thumbnail>
+      <large type="image">images/galeria/geografia/geografia-4.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
 
-  <image>
-    <src clickOption="text">images/galeria/tata-4.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
+    <item>
+      <thumbnail width="375">images/galeria/geografia/thumbnails/geografia-3.jpg</thumbnail>
+      <large type="image">images/galeria/geografia/geografia-3.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
 
-  <image>
-    <src clickOption="text">images/galeria/wrosław.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
 
-  <image>
-    <src clickOption="text">images/galeria/wrosław-2.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
+    <item>
+      <thumbnail width="200">images/galeria/geografia/thumbnails/geografia-5.jpg</thumbnail>
+      <large type="image">images/galeria/geografia/geografia-5.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
 
-  <image>
-    <src clickOption="text">images/galeria/wrosław-3.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
-
-  <image>
-    <src clickOption="text">images/galeria/wrosław-4.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
-
-  <image>
-    <src clickOption="text">images/galeria/wrosław-5.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
-
-  <image>
-    <src clickOption="text">images/galeria/wrosław-6.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
-
-  <image>
-    <src clickOption="text">images/galeria/wrosław-7.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
-
-  <image>
-    <src clickOption="text">images/galeria/wrosław-8.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
-
-  <image>
-    <src clickOption="text">images/galeria/wrosław-9.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
-
-  <image>
-    <src clickOption="text">images/galeria/wrosław-10.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
-
-  <image>
-    <src clickOption="text">images/galeria/wrosław-11.jpg</src>
-    <largeDesc><![CDATA[]]></largeDesc>
-    <!--<largeDesc><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> ma�y opis i link do instytucji]]></largeDesc>-->
-  </image>
-
- 
+  </category>
 </showroom>
