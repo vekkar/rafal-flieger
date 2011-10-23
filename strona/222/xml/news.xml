@@ -23,6 +23,13 @@
     />
 
   <staff>
+    <thumb>images/news/thumbnails/expo120-90.png</thumb>
+    <image>images/transporent2x350.png</image>
+    <textfieldWidth>520</textfieldWidth>
+    <largeDesc><![CDATA[<font size="15">Nasze dygestorium zdobyło <B>wyróżnienie w kategorii „Innowacyjny produkt Polski”</b> podczas targów Analityki I technik Laboratoryjnych <b>ExpoLab</b>. Dziękujemy wszystkim za odwiedzenie naszego stoiska i zraszamy w przyszłym roku.</font></br><a href="#/Targi">skocz do galerii</a>]]></largeDesc>
+  </staff>
+  
+  <staff>
     <thumb>images/news/thumbnails/wyprawa.png</thumb>
     <image>images/transporent2x500.png</image>
     <textfieldWidth>1000</textfieldWidth>

@@ -15,7 +15,7 @@
    categoryTxtColor = "FFFFFF"
 		 
    preloaderColor = "CCFF00"
-   preloaderAlpha = "0.3"
+   preloaderAlpha = "0.5"
 		 
    controlsIconColor = "FFFFFF"
    controlsIconAlpha = "1"
@@ -54,132 +54,120 @@ Start category
 -->
   <category title="" catThumbnail="" smallThumbnailsWidth = "" smallThumbnailsHeight = "200">
     <item>
+      <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-17.jpg</thumbnail>
+      <large type="image">images/galeria/hornsund/horsund-17.jpg</large>
+      <!--<text><![CDATA[]]></text>-->
+    </item>
+
+    <item>
+      <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-18.jpg</thumbnail>
+      <large type="image">images/galeria/hornsund/horsund-18.jpg</large>
+    </item>
+
+    <item>
+      <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-19.jpg</thumbnail>
+      <large type="image">images/galeria/hornsund/horsund-19.jpg</large>
+    </item>
+    <item>
       <thumbnail width="127">images/galeria/hornsund/thumbnails/horsund-1.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-1.jpg</large>
-      <text><![CDATA[]]></text>
       <!--<text><![CDATA[[<font size="24" face="GeosansLight">opis certyfikaty</font><br><br>wystawca:<br> mały opis i link do instytucji]]></text>-->
     </item>
 
     <item>
       <thumbnail width="136">images/galeria/hornsund/thumbnails/horsund-2.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-2.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
 
     <item>
       <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-4.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-4.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
 
     <item>
       <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-5.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-5.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
 
     <item>
       <thumbnail width="206">images/galeria/hornsund/thumbnails/horsund-6.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-6.jpg</large>
-      <text><![CDATA[]]></text> 
+      <!--<text><![CDATA[]]></text>--> 
     </item>
 
     <item>
       <thumbnail width="133">images/galeria/hornsund/thumbnails/horsund-7.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-7.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
 
     <item>
       <thumbnail width="200">images/galeria/hornsund/thumbnails/horsund-8.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-8.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
 
     <item>
       <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-9.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-9.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
     
     <item>
       <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-10.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-10.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
 
     <item>
       <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-11.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-11.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
 
     <item>
       <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-12.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-12.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
 
     <item>
       <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-13.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-13.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
 
     <item>
       <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-14.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-14.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
 
     <item>
       <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-15.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-15.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
 
     <item>
       <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-16.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-16.jpg</large>
-      <text><![CDATA[]]></text>
+      <!--<text><![CDATA[]]></text>-->
     </item>
 
-    <item>
-      <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-17.jpg</thumbnail>
-      <large type="image">images/galeria/hornsund/horsund-17.jpg</large>
-      <text><![CDATA[]]></text>
-    </item>
-
-    <item>
-      <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-18.jpg</thumbnail>
-      <large type="image">images/galeria/hornsund/horsund-18.jpg</large>
-      <text><![CDATA[]]></text>
-    </item>
-
-    <item>
-      <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-19.jpg</thumbnail>
-      <large type="image">images/galeria/hornsund/horsund-19.jpg</large>
-      <text><![CDATA[]]></text>
-    </item>
-
-    <item>
-      <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-20.jpg</thumbnail>
-      <large type="image">images/galeria/hornsund/horsund-20.jpg</large>
-      <text><![CDATA[]]></text>
-    </item>
+<!--20 is mising in the numeration-->
 
     <item>
       <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-21.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-21.jpg</large>
-      <text><![CDATA[]]></text>
     </item>
     
     <item>
       <thumbnail width="300">images/galeria/hornsund/thumbnails/horsund-22.jpg</thumbnail>
       <large type="image">images/galeria/hornsund/horsund-22.jpg</large>
-      <text><![CDATA[]]></text>
     </item>
-  
-    
-  </category>
+ </category>
 </showroom>

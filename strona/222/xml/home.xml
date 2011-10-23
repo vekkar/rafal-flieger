@@ -22,8 +22,8 @@
    youTubeVideoAspectQuality = "hd720"
 		 
    playRotator="true"
-   rotatorImageWidth = "780"
-   rotatorImageHeight = "400"
+   rotatorImageWidth = "650"
+   rotatorImageHeight = "500"
    preloaderColor = "CCFF00"
    preloaderAlpha = "0.2"
 		
@@ -42,16 +42,25 @@
 	
   <rotator>
     <image>
-      <path slideShowDelay = "1" >images/home/lab1.png</path>
-      <title bgColour="1b1b1b" bgAlpha="0" Ypos="0" Xpos="0"><![CDATA[]]></title>
-      <description bgColour="1b1b1b" bgAlpha="0" txtWidth="260"><![CDATA[]]></description>
+      <path slideShowDelay = "4" >images/home/diagram1.png</path>
+      <title bgColour="1b1b1b" bgAlpha="0.0" Ypos="0" Xpos="0"><![CDATA[]]></title>
+      <description bgColour="1b1b1b" bgAlpha="0" txtWidth="700"><![CDATA[<img vspace="0" hspace="0" src="images/home/diagram2.png"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>   ]]></description>
     </image>
-    <image>
-      <path slideShowDelay = "1" >images/home/lab2.png</path>
+	
+	<image>
+      <path slideShowDelay = "4" >images/home/lab6.png</path>
       <title bgColour="1b1b1b" bgAlpha="0" Ypos="0" Xpos="0"><![CDATA[]]></title>
       <description bgColour="1b1b1b" bgAlpha="0" txtWidth="260"><![CDATA[]]></description>
     </image>
 
+    <image>
+      <path slideShowDelay = "4" >images/home/lab5.png</path>
+      <title bgColour="1b1b1b" bgAlpha="0" Ypos="0" Xpos="0"><![CDATA[]]></title>
+      <description bgColour="1b1b1b" bgAlpha="0" txtWidth="260"><![CDATA[]]></description>
+    </image>
+	
+
+	<!--
     <image>
       <path slideShowDelay = "1" >images/home/lab3.png</path>
       <title bgColour="1b1b1b" bgAlpha="0" Ypos="0" Xpos="0"><![CDATA[]]></title>
@@ -62,7 +71,7 @@
       <path slideShowDelay = "3" >images/home/lab4.png</path>
       <title bgColour="1b1b1b" bgAlpha="0" Ypos="0" Xpos="0"><![CDATA[]]></title>
       <description bgColour="1b1b1b" bgAlpha="0" txtWidth="260"><![CDATA[]]></description>
-    </image>
+    </image>-->
   </rotator>
 
 
